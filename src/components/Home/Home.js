@@ -27,14 +27,17 @@ export default class Home extends Component {
                   size="2x"
                 />
               </a>
-              <a href="https://www.linkedin.com/in/kaplan-matthew/" target="blank">
+              <a
+                href="https://www.linkedin.com/in/kaplan-matthew/"
+                target="blank"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="github-icon"
+                  size="2x"
+                />
+              </a>
               <FontAwesomeIcon
-                icon={faLinkedin}
-                className="github-icon"
-                size="2x"
-              />
-            </a>
-            <FontAwesomeIcon
                 icon={faEnvelope}
                 className="github-icon"
                 size="2x"
@@ -42,13 +45,15 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
-        <div className="scroll-down">
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            className="scroll-down-icon bounce"
-            size="3x"
-          />
-        </div>
+        <Link to="about-component" spy={true} smooth={true} offset={0} duration={600}>
+          <div className="scroll-down">
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="scroll-down-icon bounce"
+              size="3x"
+            />
+          </div>
+        </Link>
       </div>
     );
   }

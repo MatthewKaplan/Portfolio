@@ -1,0 +1,19 @@
+.contact-component {
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .overlay {
+    background-color: #cbf1f5;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.35;
+    filter: alpha(opacity=75);
+  }
+}

@@ -18,7 +18,7 @@
   }
 
   img.bg-image {
-    position: absolute;
+    position: fixed;
     z-index: -1;
     height: 100%;
     width: 100%;
@@ -57,7 +57,7 @@
       justify-content: space-around;
       width: 8em;
       margin: 0 2em 0 2em;
-      
+
       a {
         color: white;
       }
@@ -74,6 +74,7 @@
     background-color: #222222;
     text-align: center;
     z-index: 6;
+    cursor: pointer;
 
     .scroll-down-icon {
       color: white;
