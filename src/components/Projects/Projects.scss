@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
 
   .overlay {
@@ -15,5 +15,34 @@
     right: 0px;
     opacity: 0.35;
     filter: alpha(opacity=75);
+  }
+
+  .phish-image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30% 70%;
+  }
+
+  .device {
+    position: relative;
+    opacity: 1;
+  }
+
+  .laptop-image {
+    max-width: 100%;
+    border: 0;
+  }
+
+  .goPhish-image {
+    position: absolute;
+    top: 0;
+    left: 16.9%;
+    display: inline-block;
+    width: 65.6%;
+    height: 73%;
+    top: 7.1%;
   }
 }
