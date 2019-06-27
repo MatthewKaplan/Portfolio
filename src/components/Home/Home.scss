@@ -1,0 +1,163 @@
+.home-component {
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .overlay {
+    background-color: #22a39f;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.35;
+    filter: alpha(opacity=75);
+  }
+
+  img.bg-image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section {
+    display: flex;
+    align-items: flex-end;
+    border-radius: 30px;
+    padding: 10px 40px;
+    position: relative;
+
+    .intro {
+      color: white;
+      font-size: 2.2rem;
+      margin: 50px 10px;
+      text-align: center;
+    }
+
+    .name {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ffffff;
+      border-bottom-color: rgba(255, 255, 255, 0.35);
+      display: inline-block;
+    }
+
+    .position {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-around;
+      width: 8em;
+      margin: 0 2em 0 2em;
+      
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .scroll-down {
+    height: 80px;
+    width: 110px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background-color: #222222;
+    text-align: center;
+    z-index: 6;
+
+    .scroll-down-icon {
+      color: white;
+      margin-top: 23px;
+    }
+
+    .bounce {
+      display: inline-block;
+      position: relative;
+      -moz-animation: bounce 1.4s infinite linear;
+      -o-animation: bounce 1.4s infinite linear;
+      -webkit-animation: bounce 1.4s infinite linear;
+      animation: bounce 1.4s infinite linear;
+    }
+
+    @-webkit-keyframes bounce {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: -0.2em;
+      }
+      70% {
+        top: -0.3em;
+      }
+      100% {
+        top: 0;
+      }
+    }
+    @-moz-keyframes bounce {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: -0.2em;
+      }
+      70% {
+        top: -0.3em;
+      }
+      100% {
+        top: 0;
+      }
+    }
+    @-o-keyframes bounce {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: -0.2em;
+      }
+      70% {
+        top: -0.3em;
+      }
+      100% {
+        top: 0;
+      }
+    }
+    @-ms-keyframes bounce {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: -0.2em;
+      }
+      70% {
+        top: -0.3em;
+      }
+      100% {
+        top: 0;
+      }
+    }
+    @keyframes bounce {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: -0.2em;
+      }
+      70% {
+        top: -0.3em;
+      }
+      100% {
+        top: 0;
+      }
+    }
+  }
+}
