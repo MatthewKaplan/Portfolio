@@ -1,10 +1,19 @@
 .contact-component {
-  display: flex;
+  // display: flex;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   height: 100vh;
+  flex-direction: row;
+
+  img.bg-image {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
   .overlay {
     background-color: #cbf1f5;
@@ -15,5 +24,90 @@
     right: 0px;
     opacity: 0.35;
     filter: alpha(opacity=75);
+    // z-index: 1;
+  }
+
+  .contact-form {
+    z-index: 999;
+    position: relative;
+  }
+
+  div.input-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #0b6623;
+    border-radius: 20px;
+    background-color: #e7f6f7;
+    z-index: 999;
+
+    label {
+      font-weight: bold;
+      color: #0b6623;
+    }
+
+    input {
+      height: 2.5rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 125px;
+      margin-bottom: 25px;
+      background-color: white;
+      resize: none;
+    }
+
+    input.submit-btn {
+      width: 100px;
+      margin: auto;
+      height: 40px;
+      border: 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background-color: #e7f6f7;
+      transition: all ease-in-out 200ms;
+      border: 2px solid #80b1b6;
+      color: #80b1b6;
+    }
+  }
+  input.email-btn:hover {
+    color: #0b6623 !important;
+  }
+}
+
+article {
+  display: flex;
+  padding-top: 70px;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 1;
+  position: relative;
+  z-index: 999;
+
+  div.contact-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1;
+    h3 {
+      font-size: 2rem;
+      color: #0b6623;
+    }
+
+    p {
+      color: #0b6623;
+      font-size: 1.2rem;
+      min-width: 300px;
+      padding: 5px 20px;
+      max-width: 500px;
+      text-indent: 40px;
+    }
   }
 }

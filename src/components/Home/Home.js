@@ -19,7 +19,6 @@ export default class Home extends Component {
 
   render() {
     const { isNotCopied } = this.state;
-    console.log(isNotCopied)
     return (
       <div className="home-component">
         <div className="overlay" />
@@ -46,7 +45,7 @@ export default class Home extends Component {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="github-icon"
+                  className="linkedin-icon"
                   size="2x"
                 />
               </a>

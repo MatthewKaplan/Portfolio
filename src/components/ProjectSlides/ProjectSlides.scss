@@ -1,0 +1,95 @@
+.laptop-image {
+  max-width: 100%;
+  border: 0;
+}
+
+.device {
+  position: absolute;
+  opacity: 1;
+}
+
+.project-slides {
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;
+  display: flex;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45vh;
+  width: 600px;
+  bottom: 21%;
+  left: 15%;
+}
+
+.laptopImgs {
+  left: 1.9%;
+  width: 55.6%;
+  height: 63%;
+  top: 7.1%;
+  background-repeat: no-repeat;
+  background-size: 600px 361px;
+}
+
+.slider-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-wrapper2 {
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border: 3px solid red;
+
+}
+
+.backGroundSlide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in 0.1s;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  z-index: 999;
+  color: #fff;
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 999;
+  color: #fff;
+}
+
+.fa-arrow-right:before,
+.fa-arrow-left:before {
+  color: #222;
+}
