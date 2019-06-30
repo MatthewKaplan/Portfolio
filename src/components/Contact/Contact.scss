@@ -9,7 +9,7 @@
 
   img.bg-image {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -24,10 +24,12 @@
     right: 0px;
     opacity: 0.35;
     filter: alpha(opacity=75);
+    // z-index: 1;
   }
 
   .contact-form {
     z-index: 999;
+    position: relative;
   }
 
   div.input-container {
@@ -40,6 +42,7 @@
     border: 2px solid #0b6623;
     border-radius: 20px;
     background-color: #e7f6f7;
+    z-index: 999;
 
     label {
       font-weight: bold;
@@ -56,6 +59,7 @@
       height: 125px;
       margin-bottom: 25px;
       background-color: white;
+      resize: none;
     }
 
     input.submit-btn {
@@ -83,6 +87,8 @@ article {
   margin: 0 auto;
   text-align: center;
   opacity: 1;
+  position: relative;
+  z-index: 999;
 
   div.contact-intro {
     display: flex;

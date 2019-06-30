@@ -18,7 +18,7 @@
 
     &.inactive {
       opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.25s ease-in-out;
       -webkit-transition-delay: 0s;
       -moz-transition-delay: 0s;
       -o-transition-delay: 0s;
@@ -38,7 +38,7 @@
     }
     &.active {
       opacity: 1;
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.25s ease-in-out;
       -webkit-transition-delay: 0.5s;
       -moz-transition-delay: 0.5s;
       -o-transition-delay: 0.5s;
@@ -59,7 +59,7 @@
 
   img.bg-image {
     position: fixed;
-    z-index: -1;
+    z-index: -8;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -104,6 +104,21 @@
 
       .envelope-icon {
         cursor: pointer;
+      }
+
+      .envelope-icon:hover {
+        transform: scale(1.2);
+        transition: .25s ease-out;
+      }
+
+      .github-icon:hover {
+        transform: scale(1.2);
+        transition: .25s ease-out;
+      }
+
+      .linkedin-icon:hover {
+        transform: scale(1.2);
+        transition: .25s ease-out;
       }
     }
   }

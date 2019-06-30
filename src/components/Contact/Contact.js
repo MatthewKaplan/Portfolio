@@ -29,17 +29,19 @@ export default class Contact extends Component {
     const { enabled, senderName, senderEmail, senderMessage } = this.state;
     return (
       <div className="contact-component">
-        <div className="overlay" />
         <img
           className="bg-image"
           src={require("../../assets/trees.jpg")}
           alt="Space"
         />
+        <div className="overlay" />
         <article>
           <div className="contact-intro">
             <h3>Let's get in touch!</h3>
             <p>
-              I'm currently looking for work in the Denver, CO area. If you are interested in grabbing a cup of coffee or speaking over the phone please reach out and I'll get back to you as soon as possible.
+              I'm currently looking for work in the Denver, CO area. If you are
+              interested in grabbing a cup of coffee or speaking over the phone
+              please reach out and I'll get back to you as soon as possible.
             </p>
           </div>
         </article>

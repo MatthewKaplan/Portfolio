@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import ScrollableAnchor from "react-scrollable-anchor";
+// import Slider from "./components/Projects/Projects";
 import { configureAnchors } from "react-scrollable-anchor";
 import { withRouter } from "react-router-dom";
 
