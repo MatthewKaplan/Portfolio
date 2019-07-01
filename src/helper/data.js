@@ -98,7 +98,47 @@ const projectData = [
   }
 ];
 
+const hobbyImages = [
+  "https://i.imgur.com/6BOZ5Ia.png",
+  "https://i.imgur.com/qcQuyml.png",
+  "https://i.imgur.com/e72vFDz.png",
+  "https://i.imgur.com/TeKoxzp.png",
+  "https://i.imgur.com/mPG0Cx6.png",
+  "https://i.imgur.com/OMMCVRp.png",
+  "https://i.imgur.com/RlKW6Jv.png",
+  "https://i.imgur.com/Lj06sPb.png",
+  "https://i.imgur.com/qVibDkn.png",
+  "https://i.imgur.com/5cOpEki.png",
+  "https://i.imgur.com/t9n4SDq.png",
+  "https://i.imgur.com/vJzalka.png",
+  "https://i.imgur.com/GZhjbJJ.png",
+  "https://i.imgur.com/Mh9qmR5.png",
+  "https://i.imgur.com/CbKGEw0.png",
+  "https://i.imgur.com/0GQDl94.png"
+]
+
+const hobbyNames = [
+  "SCUBA DIVING",
+  "TRAVELING",
+  "DOGS",
+  "SKIING",
+  "MUSIC",
+  "CAMPING",
+  "FAMILY",
+  "REACT",
+  "READING",
+  "SWIMMING",
+  "MAC",
+  "TELEVISION",
+  "BEER",
+  "COOKING",
+  "ASTRONOMY",
+  "HIKING"
+]
+
 
 module.exports = {
-  projectData
+  projectData,
+  hobbyImages,
+  hobbyNames
 };
