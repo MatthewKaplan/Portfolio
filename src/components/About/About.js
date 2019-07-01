@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import LoveSlides from "../LoveSlides/LoveSlides";
 import "./About.scss";
 
 export default class About extends Component {
   state = { bio: false, love: false, work: false };
 
   render() {
-    const {bio, love, work} = this.state;
+    const { bio, love, work } = this.state;
     return (
       <div className="about-component">
         <img
@@ -14,42 +15,54 @@ export default class About extends Component {
           alt="Space"
         />
         <div className="overlay" />
-        {bio === false && love === false && work === false &&
-        <section className="about-imgs">
-          <div className="heart-container">
-            <div className="image">
-              <span />
-              <span />
-              <span />
-              <span />
+        {bio === false && love === false && work === false && (
+          <section className="about-imgs">
+            <div
+              className="heart-container"
+              onClick={() => this.setState({ love: true })}
+            >
+              <div className="image">
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
+              <div className="content">
+                <h1>LOVE</h1>
+              </div>
             </div>
-            <div className="content">
-              <h1>LOVE</h1>
+            <div className="brain-container">
+              <div className="image">
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
+              <div className="align-text">
+                <div className="left-content">
+                  <h1>WO</h1>
+                </div>
+                <div className="right-content">
+                  <h1>RK</h1>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="brain-container">
-            <div className="image">
-              <span />
-              <span />
-              <span />
-              <span />
+            <div
+              className="fingerprint-container"
+              onClick={() => this.setState({ bio: true })}
+            >
+              <div className="image">
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
+              <div className="content">
+                <h1>BIO</h1>
+              </div>
             </div>
-            <div className="content">
-              <h1>WORK</h1>
-            </div>
-          </div>
-          <div className="fingerprint-container" onClick={() => this.setState({bio: true})}>
-            <div className="image">
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="content">
-              <h1>BIO</h1>
-            </div>
-          </div>
-        </section>}
+          </section>
+        )}
         {bio && (
           <section className="about-me-section">
             <img
@@ -76,15 +89,24 @@ export default class About extends Component {
                 the course of seven months to become a job ready engineer.
               </p>
             </article>
+            <div
+              className="close-section"
+              onClick={() => this.setState({ bio: false })}
+            />
+          </section>
+        )}
+        {love && (
+          <section className="love-section">
+            <div
+              className="close-section"
+              onClick={() => this.setState({ love: false })}
+            />
+            <div className="slides">
+              <LoveSlides />
+            </div>
           </section>
         )}
       </div>
     );
   }
 }
-
-// <img
-// className="heart-img"
-// src={require("../../assets/heart.png")}
-// alt="heart"
-// />
