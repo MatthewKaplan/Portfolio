@@ -7,27 +7,38 @@ import "./Projects.scss";
 import ProjectSlides from "../ProjectSlides/ProjectSlides";
 
 export default class Projects extends Component {
-  state = { slidesPosition: 0 };
+  state = { slidesPosition: 0, autoSlides: () => {} };
+
+  componentDidMount() {
+    const autoSlides = setInterval(this.changeSlidesPositionForward, 6000);
+    this.setState({ autoSlides });
+  }
 
   changeSlidesPositionForward = () => {
     const { slidesPosition } = this.state;
+    const autoSlides = setInterval(this.changeSlidesPositionForward, 6000);
     let position = slidesPosition;
     if (position < 8) {
       position++;
-      this.setState({ slidesPosition: position });
+      clearInterval(this.state.autoSlides);
+      this.setState({ slidesPosition: position, autoSlides });
     } else {
-      this.setState({ slidesPosition: 0 });
+      clearInterval(this.state.autoSlides);
+      this.setState({ slidesPosition: 0, autoSlides });
     }
   };
 
   changeSlidesPositionBack = () => {
     const { slidesPosition } = this.state;
+    const autoSlides = setInterval(this.changeSlidesPositionForward, 6000);
     let position = slidesPosition;
     if (slidesPosition === 0) {
-      this.setState({ slidesPosition: 8 });
+      clearInterval(this.state.autoSlides);
+      this.setState({ slidesPosition: 8, autoSlides });
     } else {
       position--;
-      this.setState({ slidesPosition: position });
+      clearInterval(this.state.autoSlides);
+      this.setState({ slidesPosition: position, autoSlides });
     }
   };
 
@@ -101,6 +112,10 @@ export default class Projects extends Component {
         </div>
       </div>
     );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.autoSlides);
   }
 }
 
