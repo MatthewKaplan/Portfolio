@@ -5,6 +5,7 @@ export default class About extends Component {
   state = { bio: false, love: false, work: false };
 
   render() {
+    const {bio, love, work} = this.state;
     return (
       <div className="about-component">
         <img
@@ -13,6 +14,7 @@ export default class About extends Component {
           alt="Space"
         />
         <div className="overlay" />
+        {bio === false && love === false && work === false &&
         <section className="about-imgs">
           <div className="heart-container">
             <div className="image">
@@ -36,7 +38,7 @@ export default class About extends Component {
               <h1>WORK</h1>
             </div>
           </div>
-          <div className="fingerprint-container">
+          <div className="fingerprint-container" onClick={() => this.setState({bio: true})}>
             <div className="image">
               <span />
               <span />
@@ -47,8 +49,8 @@ export default class About extends Component {
               <h1>BIO</h1>
             </div>
           </div>
-        </section>
-        {this.state.bio && (
+        </section>}
+        {bio && (
           <section className="about-me-section">
             <img
               className="profile-picture"

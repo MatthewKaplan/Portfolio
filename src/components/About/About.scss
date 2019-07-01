@@ -36,7 +36,6 @@
       position: relative;
       top: 66px;
       left: 10%;
-      // background-image: url("../../assets/brain.png");
       border-radius: 6px;
       background-size: contain;
       background-repeat: no-repeat;
@@ -126,7 +125,6 @@
       position: relative;
       top: 66px;
       left: 10%;
-      // background-image: url("../../assets/brain.png");
       border-radius: 6px;
       background-size: contain;
       background-repeat: no-repeat;
@@ -216,7 +214,6 @@
       position: relative;
       top: 66px;
       left: 10%;
-      // background-image: url("../../assets/brain.png");
       border-radius: 6px;
       background-size: contain;
       background-repeat: no-repeat;
@@ -314,11 +311,10 @@
 
   .about-me-section {
     display: flex;
-    z-index: 999;
-    margin: 0 200px 0 200px;
+    margin: 0 100px 0 100px;
 
     .profile-picture {
-      position: relative;
+      position: absolute;
       height: 300px;
       width: 300px;
       border-radius: 50%;
@@ -326,7 +322,7 @@
 
     article {
       text-align: left;
-      margin: 0 50px 0 50px;
+      margin: 25px 150px 0 350px;
       padding: 0;
     }
   }
