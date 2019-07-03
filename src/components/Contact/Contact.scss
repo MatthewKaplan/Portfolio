@@ -1,25 +1,17 @@
+@import "../../sass/variables";
+
 .contact-component {
   position: relative;
   height: 100vh;
   flex-direction: row;
 
   img.bg-image {
-    position: absolute;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    @include background-color-styles;
   }
 
   .overlay {
-    background-color: #cbf1f5;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.35;
-    filter: alpha(opacity=75);
+    background-color: $secondary-overlay;
+    @include overlay-style;
   }
 
   article {
@@ -42,17 +34,17 @@
 
       h3 {
         font-size: 3rem;
-        color: #0b6623;
-        font-family: "Space Mono", monospace;
+        color: $contact-text;
+        font-family: $main-headings;
         margin: 0;
       }
 
       p {
-        color: #0b6623;
+        color: $contact-text;
         font-size: 1.2rem;
         min-width: 550px;
         padding: 5px 20px;
-        font-family: "Work Sans", sans-serif;
+        font-family: $body-text;
         text-align: center;
         margin-bottom: 50px;
       }
@@ -71,14 +63,14 @@
       max-width: 500px;
       margin: auto;
       padding: 20px;
-      border: 2px solid #0b6623;
+      border: 2px solid $contact-text;
       border-radius: 20px;
-      background-color: #e7f6f7;
+      background-color: $contact-form;
       z-index: 999;
 
       label {
         font-weight: bold;
-        color: #0b6623;
+        color: $contact-text;
       }
 
       input {
@@ -90,7 +82,7 @@
       textarea {
         height: 125px;
         margin-bottom: 25px;
-        background-color: white;
+        background-color: $main-text;
         resize: none;
       }
 
@@ -101,14 +93,14 @@
         border: 0;
         font-weight: bold;
         font-size: 1.2rem;
-        background-color: #e7f6f7;
+        background-color: $contact-form;
         transition: all ease-in-out 200ms;
-        border: 2px solid #80b1b6;
-        color: #80b1b6;
+        border: 2px solid $contact-btn;
+        color: $contact-btn;
         cursor: pointer;
 
         &:hover {
-          color: #0b6623 !important;
+          color: $contact-text !important;
         }
       }
     }

@@ -1,78 +1,44 @@
+@import "../../sass/variables";
+
 .about-component {
-  display: flex;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  @include component-styles;
 
   .bio-bg-color {
-    background-color: #03c8c7;
-    position: absolute;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    background-color: $bio-background;
+    @include background-color-styles;
   }
 
   .love-bg-color {
-    background-color: #e8a1b7;
-    position: absolute;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    background-color: $love-background;
+    @include background-color-styles;
   }
 
-  .work-bg-color {
-    background-color: #333333;
-    position: absolute;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  .skills-bg-color {
+    background-color: $skills-background;
+    @include background-color-styles;
   }
 
   .bg-color {
-    background-image: radial-gradient(#eeeeee 40%, #228b22);
-    position: absolute;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    background-image: radial-gradient($main-text 40%, $about-background);
+    @include background-color-styles;
   }
 
   .overlay {
-    background-color: #cbf1f5;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.35;
-    filter: alpha(opacity=75);
+    background-color: $secondary-overlay;
+    @include overlay-style;
   }
 
   .about-imgs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 100px;
+    grid-column-gap: 75px;
 
     h1 {
-      font-family: "Space Mono", monospace;
+      font-family: $main-headings;
     }
 
     .fingerprint-container {
-      width: 300px;
-      height: 400px;
-      position: relative;
-      top: 35px;
-      left: 0%;
-      border-radius: 6px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      overflow: hidden;
-      cursor: pointer;
+      @include about-me-images;
 
       &:before {
         content: "";
@@ -82,17 +48,12 @@
       }
 
       .image {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        display: flex;
+        @include about-me-image-styles;
 
         span {
           width: 25%;
           height: 100%;
-          background-image: url("../../assets/fingerprint.png");
+          background-image: url("https://i.imgur.com/Vwgemka.png");
           background-size: cover;
           transition: 0.6s ease-in-out;
 
@@ -135,17 +96,10 @@
       }
 
       .content {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        color: #03c8c7;
-        width: 100%;
-        height: 100%;
+        color: $bio-background;
         font-size: 50px;
-        font-family: sans-serif;
-        transition: 1s;
-        transition-delay: 0.1s;
         transform: translateX(-100%);
+        @include content-styles;
       }
 
       &:hover .content {
@@ -156,16 +110,7 @@
     }
 
     .brain-container {
-      width: 300px;
-      height: 400px;
-      position: relative;
-      top: 35px;
-      left: 0%;
-      border-radius: 6px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      overflow: hidden;
-      cursor: pointer;
+      @include about-me-images;
 
       &:before {
         content: "";
@@ -175,17 +120,12 @@
       }
 
       .image {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        display: flex;
+        @include about-me-image-styles;
 
         span {
           width: 25%;
           height: 100%;
-          background-image: url("../../assets/brain.png");
+          background-image: url("https://i.imgur.com/YIKuAnP.png");
           background-size: cover;
           transition: 0.6s ease-in-out;
 
@@ -231,14 +171,13 @@
           justify-content: center;
           align-items: center;
           display: flex;
-          color: #333333;
+          color: $skills-background;
           width: 100%;
           height: 100%;
           font-size: 80px;
-          font-family: sans-serif;
           transition: 1s;
           transition-delay: 0.1s;
-          font-family: "Space Mono", monospace;
+          font-family: $main-headings;
         }
 
         .left-content h1 {
@@ -259,16 +198,7 @@
     }
 
     .heart-container {
-      width: 300px;
-      height: 400px;
-      position: relative;
-      top: 35px;
-      left: 0%;
-      border-radius: 6px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      overflow: hidden;
-      cursor: pointer;
+      @include about-me-images;
 
       &:before {
         content: "";
@@ -278,17 +208,12 @@
       }
 
       .image {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        display: flex;
+        @include about-me-image-styles;
 
         span {
           width: 25%;
           height: 100%;
-          background-image: url("../../assets/human-heart.png");
+          background-image: url("https://i.imgur.com/bHFUvWP.png");
           background-size: cover;
           transition: 0.6s ease-in-out;
 
@@ -331,17 +256,10 @@
       }
 
       .content {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        color: #e8a1b7;
-        width: 100%;
-        height: 100%;
+        color: $love-background;
         font-size: 60px;
-        font-family: sans-serif;
-        transition: 1s;
-        transition-delay: 0.1s;
         transform: translateX(100%);
+        @include content-styles;
       }
 
       &:hover .content {
@@ -361,17 +279,17 @@
       height: 300px;
       width: 300px;
       border-radius: 50%;
-      box-shadow: 2px 5px 5px white;
+      box-shadow: 2px 5px 5px $main-text;
     }
 
     article {
       text-align: left;
       margin: 0px 150px 0 350px;
       padding: 30px;
-      border: 2px solid white;
-      color: white;
+      border: 2px solid $main-text;
+      color: $main-text;
       border-radius: 6px;
-      font-family: "Work Sans", sans-serif;
+      font-family: $body-text;
       font-weight: 800;
       width: 750px;
       z-index: 998;
@@ -381,39 +299,21 @@
     }
 
     .close-section {
-      height: 40px;
-      width: 115px;
-      background-image: url("../../assets/circle.svg");
-      background-size: contain;
-      position: relative;
-      background-repeat: no-repeat;
-      right: 14%;
-      top: 8px;
-      cursor: pointer;
-      z-index: 999;
+      @include close-section-styles;
 
       &:hover {
-        background-image: url("../../assets/solid-circle.svg");
+        background-image: url("https://i.imgur.com/GhddtOU.png");
       }
     }
   }
 
   .love-section {
     .close-section {
-      height: 40px;
-      width: 115px;
-      background-image: url("../../assets/circle.svg");
-      background-size: contain;
-      position: relative;
-      background-repeat: no-repeat;
-      right: 14%;
-      top: 8px;
-      cursor: pointer;
-      z-index: 999;
+      @include close-section-styles;
       left: 90%;
 
       &:hover {
-        background-image: url("../../assets/solid-circle.svg");
+        background-image: url("https://i.imgur.com/GhddtOU.png");
       }
     }
 

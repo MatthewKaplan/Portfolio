@@ -6,19 +6,18 @@ import {
   skillNames,
   skillIcons
 } from "../../helper/data";
-import "./About.scss";
 
 export default class About extends Component {
-  state = { bio: false, love: false, work: false };
+  state = { bio: false, love: false, skills: false };
 
   render() {
-    const { bio, love, work } = this.state;
+    const { bio, love, skills } = this.state;
     return (
       <div className="about-component">
         {bio && <div className="bio-bg-color" />}
         {love && <div className="love-bg-color" />}
-        {work && <div className="work-bg-color" />}
-        {bio === false && love === false && work === false && (
+        {skills && <div className="skills-bg-color" />}
+        {bio === false && love === false && skills === false && (
           <React.Fragment>
             <div className="bg-color" />
             <div className="overlay" />
@@ -39,7 +38,7 @@ export default class About extends Component {
               </div>
               <div
                 className="brain-container"
-                onClick={() => this.setState({ work: true })}
+                onClick={() => this.setState({ skills: true })}
               >
                 <div className="image">
                   <span />
@@ -116,11 +115,11 @@ export default class About extends Component {
             </div>
           </section>
         )}
-        {work && (
+        {skills && (
           <section className="love-section">
             <div
               className="close-section"
-              onClick={() => this.setState({ work: false })}
+              onClick={() => this.setState({ skills: false })}
             />
             <div className="slides">
               <Slides icons={skillIcons} iconNames={skillNames} />

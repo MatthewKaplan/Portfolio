@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Slides.scss";
 
 class Slides extends Component {
   state = {
