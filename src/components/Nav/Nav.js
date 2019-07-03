@@ -8,78 +8,76 @@ export default class Nav extends Component {
     return (
       <div className="nav-component">
         <nav className="nav-bar">
-          <div className="nav-links">
-            <ul className="nav navbar-nav">
-              <Link
-                to="home-component"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={600}
+          <ul className="navbar-nav">
+            <Link
+              to="home-component"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={600}
+            >
+              <li
+                className={
+                  pathname === "http://localhost:3000/#section1"
+                    ? "active"
+                    : null
+                }
               >
-                <li
-                  className={
-                    pathname === "http://localhost:3000/#section1"
-                      ? "active"
-                      : null
-                  }
-                >
-                  HOME
-                </li>
-              </Link>
-              <Link
-                to="about-component"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={600}
+                HOME
+              </li>
+            </Link>
+            <Link
+              to="about-component"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={600}
+            >
+              <li
+                className={
+                  pathname === "http://localhost:3000/#section2"
+                    ? "active"
+                    : null
+                }
               >
-                <li
-                  className={
-                    pathname === "http://localhost:3000/#section2"
-                      ? "active"
-                      : null
-                  }
-                >
-                  ABOUT
-                </li>
-              </Link>
-              <Link
-                to="projects-component"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={600}
+                ABOUT
+              </li>
+            </Link>
+            <Link
+              to="projects-component"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={600}
+            >
+              <li
+                className={
+                  pathname === "http://localhost:3000/#section3"
+                    ? "active"
+                    : null
+                }
               >
-                <li
-                  className={
-                    pathname === "http://localhost:3000/#section3"
-                      ? "active"
-                      : null
-                  }
-                >
-                  PORTFOLIO
-                </li>
-              </Link>
-              <Link
-                to="contact-component"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={600}
+                PORTFOLIO
+              </li>
+            </Link>
+            <Link
+              to="contact-component"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={600}
+            >
+              <li
+                className={
+                  pathname === "http://localhost:3000/#section4"
+                    ? "active"
+                    : null
+                }
               >
-                <li
-                  className={
-                    pathname === "http://localhost:3000/#section4"
-                      ? "active"
-                      : null
-                  }
-                >
-                  CONTACT
-                </li>
-              </Link>
-            </ul>
-          </div>
+                CONTACT
+              </li>
+            </Link>
+          </ul>
         </nav>
       </div>
     );

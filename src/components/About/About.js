@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import LoveSlides from "../LoveSlides/LoveSlides";
+import Slides from "../Slides/Slides";
 import {
   hobbyImages,
   hobbyNames,
@@ -112,7 +112,7 @@ export default class About extends Component {
               onClick={() => this.setState({ love: false })}
             />
             <div className="slides">
-              <LoveSlides icons={hobbyImages} iconNames={hobbyNames} />
+              <Slides icons={hobbyImages} iconNames={hobbyNames} />
             </div>
           </section>
         )}
@@ -123,7 +123,7 @@ export default class About extends Component {
               onClick={() => this.setState({ work: false })}
             />
             <div className="slides">
-              <LoveSlides icons={skillIcons} iconNames={skillNames} />
+              <Slides icons={skillIcons} iconNames={skillNames} />
             </div>
           </section>
         )}

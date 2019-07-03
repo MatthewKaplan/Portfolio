@@ -6,46 +6,6 @@
   justify-content: center;
   height: 100vh;
 
-  .isCopied {
-    background-color: #22a39f;
-    position: absolute;
-    bottom: -10%;
-    left: 37%;
-    width: 200px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-
-    &.inactive {
-      opacity: 0;
-      transition: opacity 0.25s ease-in-out;
-      -webkit-transition-delay: 0s;
-      -moz-transition-delay: 0s;
-      -o-transition-delay: 0s;
-      transition-delay: 0s;
-    }
-    &:after {
-      content: "";
-      width: 3px;
-      height: 0px;
-      border-top: 10px solid transparent;
-      border-bottom: 23px solid #22a39f;
-      border-right: 10px solid transparent;
-      border-left: 10px solid transparent;
-      position: absolute;
-      bottom: 100%;
-      left: 75%;
-    }
-    &.active {
-      opacity: 1;
-      transition: opacity 0.25s ease-in-out;
-      -webkit-transition-delay: 0.5s;
-      -moz-transition-delay: 0.5s;
-      -o-transition-delay: 0.5s;
-      transition-delay: 0.5s;
-    }
-  }
-
   .overlay {
     background-color: #22a39f;
     position: absolute;
@@ -77,51 +37,85 @@
       font-size: 2.2rem;
       margin: 50px 10px;
       text-align: center;
+
+      .name {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ffffff;
+        border-bottom-color: rgba(255, 255, 255, 1.35);
+        display: inline-block;
+        font-family: "Space Mono", monospace;
+      }
+
+      .position {
+        margin-top: 0;
+        font-size: 32px;
+        font-family: "Space Mono", monospace;
+      }
+
+      .logo-container {
+        display: flex;
+        justify-content: space-around;
+        width: 10em;
+        margin: 0 2em 0 2em;
+
+        a {
+          color: white;
+        }
+
+        .envelope-icon {
+          cursor: pointer;
+        }
+
+        .envelope-icon:hover,
+        .github-icon:hover,
+        .linkedin-icon:hover {
+          transform: scale(1.2);
+          transition: 0.25s ease-out;
+        }
+      }
+    }
+  }
+
+  .isCopied {
+    background-color: #22a39f;
+    position: absolute;
+    bottom: -10%;
+    left: 37%;
+    width: 200px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+    &.inactive {
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+      -webkit-transition-delay: 0s;
+      -moz-transition-delay: 0s;
+      -o-transition-delay: 0s;
+      transition-delay: 0s;
     }
 
-    .name {
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #ffffff;
-      border-bottom-color: rgba(255, 255, 255, 1.35);
-      display: inline-block;
-      font-family: "Space Mono", monospace;
+    &:after {
+      content: "";
+      width: 3px;
+      height: 0px;
+      border-top: 10px solid transparent;
+      border-bottom: 23px solid #22a39f;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      position: absolute;
+      bottom: 100%;
+      left: 75%;
     }
-
-    .position {
-      margin-top: 0;
-      font-size: 32px;
-      font-family: "Space Mono", monospace;
-    }
-
-    .logo-container {
-      display: flex;
-      justify-content: space-around;
-      width: 10em;
-      margin: 0 2em 0 2em;
-
-      a {
-        color: white;
-      }
-
-      .envelope-icon {
-        cursor: pointer;
-      }
-
-      .envelope-icon:hover {
-        transform: scale(1.2);
-        transition: 0.25s ease-out;
-      }
-
-      .github-icon:hover {
-        transform: scale(1.2);
-        transition: 0.25s ease-out;
-      }
-
-      .linkedin-icon:hover {
-        transform: scale(1.2);
-        transition: 0.25s ease-out;
-      }
+    
+    &.active {
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out;
+      -webkit-transition-delay: 0.5s;
+      -moz-transition-delay: 0.5s;
+      -o-transition-delay: 0.5s;
+      transition-delay: 0.5s;
     }
   }
 

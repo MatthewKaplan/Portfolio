@@ -4,7 +4,7 @@ const projectData = [
     img: "https://i.imgur.com/efke6kI.png",
     backdrop: "https://i.imgur.com/6dwW8Af.jpg",
     description:
-      "GoPhish is a web application that allows fans of the rock band Phish to dig through their musical archive and explore their previous tours, songs, shows, set lists, band information, and upcoming shows. Users also have the ability to save shows that they have been to and visit the 'My Stats' page to view their personal Phish stats.",
+      "GoPhish is a web application that allows fans of the rock band Phish to dig through their musical archive and explore their previous tours, songs, shows, set lists, band information, and upcoming shows.",
     website: "https://gophish.netlify.com",
     repo: "https://github.com/MatthewKaplan/Go-Phish",
     tools_used: [
@@ -15,7 +15,19 @@ const projectData = [
       "React-Router",
       "SASS"
     ],
-    tested_with: ["JEST", "ENZYME"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/s9F3Q5b.png",
+      "https://i.imgur.com/HuxcEJX.png",
+      "https://i.imgur.com/4DAHjyl.png",
+      "https://i.imgur.com/iVwUSvz.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
   },
   {
     name: "MovieTracker",
@@ -33,7 +45,19 @@ const projectData = [
       "React-Router",
       "SASS"
     ],
-    tested_with: ["JEST", "ENZYME"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/s9F3Q5b.png",
+      "https://i.imgur.com/HuxcEJX.png",
+      "https://i.imgur.com/4DAHjyl.png",
+      "https://i.imgur.com/iVwUSvz.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
   },
   {
     name: "CoYo - Colorado Yoga Collective",
@@ -44,7 +68,16 @@ const projectData = [
     website: "https://matthewkaplan.github.io/CoYo-Colorado-Yoga-Collective/",
     repo: "https://github.com/MatthewKaplan/CoYo-Colorado-Yoga-Collective",
     tools_used: ["JAVASCRIPT", "REACT.JS", "SASS"],
-    tested_with: ["JEST", "ENZYME"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/iVwUSvz.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
   },
   {
     name: "TrapperKeeper",
@@ -62,7 +95,19 @@ const projectData = [
       "React-Router",
       "SASS"
     ],
-    tested_with: ["JEST", "ENZYME"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/s9F3Q5b.png",
+      "https://i.imgur.com/HuxcEJX.png",
+      "https://i.imgur.com/4DAHjyl.png",
+      "https://i.imgur.com/iVwUSvz.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
   },
   {
     name: "Jest Do It",
@@ -73,7 +118,17 @@ const projectData = [
     website: "https://jest-do-it.netlify.com/",
     repo: "https://github.com/MatthewKaplan/Jest-Do-It",
     tools_used: ["JAVASCRIPT", "REACT.JS", "SASS", "React-Router"],
-    tested_with: ["JEST", "ENZYME"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/iVwUSvz.png",
+      "https://i.imgur.com/4DAHjyl.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
   },
   {
     name: "SwapiBox",
@@ -84,7 +139,16 @@ const projectData = [
     website: "https://matthewkaplan.github.io/swapiBox/",
     repo: "https://github.com/MatthewKaplan/swapiBox",
     tools_used: ["JAVASCRIPT", "REACT.JS", "SASS"],
-    tested_with: ["JEST", "ENZYME"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/iVwUSvz.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
   },
   {
     name: "GameTime",
@@ -95,7 +159,17 @@ const projectData = [
     website: "",
     repo: "https://github.com/MatthewKaplan/Jeopardy",
     tools_used: ["JAVASCRIPT", "Webpack", "HTML", "CSS"],
-    tested_with: ["Mocha", "Chai"]
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/uYQtYC8.png",
+      "https://i.imgur.com/txWQbDh.png",
+      "https://i.imgur.com/hQxyiun.png"
+    ],
+    tested_with: ["Mocha", "Chai"],
+    tested_icons: [
+      "https://i.imgur.com/nrqz7cO.png",
+      "https://i.imgur.com/u1x56ni.png"
+    ]
   },
   {
     name: "Foto Finder",
@@ -105,7 +179,12 @@ const projectData = [
       "A web application where the user can create an online photo collection by uploading photos that can also be favorited.",
     website: "https://matthewkaplan.github.io/Foto-Finder/",
     repo: "https://github.com/MatthewKaplan/Foto-Finder",
-    tools_used: ["JAVASCRIPT", "HTML", "CSS"]
+    tools_used: ["JAVASCRIPT", "HTML", "CSS"],
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/txWQbDh.png",
+      "https://i.imgur.com/hQxyiun.png"
+    ]
   },
   {
     name: "Idea Box",
@@ -115,7 +194,12 @@ const projectData = [
       "A web application where the user can jot down ideas to refeer to later. They can also rank their ideas based on how good they think it is.",
     website: "https://matthewkaplan.github.io/IdeaBox/",
     repo: "https://github.com/MatthewKaplan/IdeaBox",
-    tools_used: ["JAVASCRIPT", "HTML", "CSS"]
+    tools_used: ["JAVASCRIPT", "HTML", "CSS"],
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/txWQbDh.png",
+      "https://i.imgur.com/hQxyiun.png"
+    ]
   }
 ];
 

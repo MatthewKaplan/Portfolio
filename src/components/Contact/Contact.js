@@ -6,16 +6,8 @@ export default class Contact extends Component {
     senderName: "",
     senderEmail: "",
     senderMessage: "",
-    enabled: false,
     usernameActive: false,
     userEmailActive: false
-  };
-
-  validateInput = () => {
-    const { senderEmail, senderName, senderMessage } = this.state;
-    if (senderName.length && senderEmail.length && senderMessage.length) {
-      this.setState({ enabled: true });
-    } else this.setState({ enabled: false });
   };
 
   inputHandler = e => {
@@ -24,11 +16,10 @@ export default class Contact extends Component {
     this.setState({
       [key]: value
     });
-    this.validateInput();
   };
 
   render() {
-    const { enabled, senderName, senderEmail, senderMessage } = this.state;
+    const { senderName, senderEmail, senderMessage } = this.state;
     return (
       <div className="contact-component">
         <img
@@ -85,10 +76,9 @@ export default class Contact extends Component {
                 type="text"
               />
             <input
-              className={`submit-btn ${enabled && "email-btn"}`}
+              className="submit-btn"
               type="submit"
               value="Send"
-              disabled={!enabled}
             />
           </div>
         </form>
