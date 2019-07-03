@@ -69,13 +69,14 @@
   }
 
   .isCopied {
-    background-color: $main-overlay;
+    background-color: rgba(0, 0, 0, 0.704);
     position: absolute;
     bottom: -10%;
-    left: 37%;
+    left: 42%;
     width: 200px;
     color: $main-text;
     font-size: 30px;
+    border-radius: 5px;
     text-align: center;
 
     &.inactive {
@@ -92,7 +93,7 @@
       width: 3px;
       height: 0px;
       border-top: 10px solid transparent;
-      border-bottom: 23px solid $main-overlay;
+      border-bottom: 23px solid rgba(0, 0, 0, 0.704);
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
       position: absolute;
