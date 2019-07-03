@@ -209,3 +209,16 @@
     }
   }
 }
+
+@media (max-width: 480px)
+{
+  .home-component section {
+    .intro {
+      font-size: 1.6rem;
+      .position {
+        font-size: 25px;
+      }
+    }
+
+  }
+}
