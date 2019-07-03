@@ -6,10 +6,10 @@
   .nav-bar {
     background-color: #222222;
     position: absolute;
-    top: 90%;
+    top: 80%;
     right: 5%;
     width: 110px;
-    min-height: 50px;
+    min-height: 40px;
 
     .navbar-nav {
       float: none;
@@ -24,10 +24,10 @@
       li {
         display: block;
         float: none;
-        height: 80px;
+        height: 50px;
         display: block;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 30px;
         font-weight: 600;
         color: white;
         cursor: pointer;
