@@ -15,8 +15,8 @@
 
   .slide {
     display: inline-block;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -28,10 +28,9 @@
 
   .hobby {
     position: absolute;
-    right: -150px;
     margin-top: 0px;
     font-size: 60px;
-    width: 800px;
+    width: 100%;
     color: $main-text;
   }
 
