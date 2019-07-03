@@ -19,6 +19,9 @@ export default class Home extends Component {
 
   render() {
     const { isNotCopied } = this.state;
+    const pStyle = {
+      color: 'white'
+    };
     return (
       <div className="home-component">
         <div className="overlay" />

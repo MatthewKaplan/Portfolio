@@ -6,7 +6,9 @@ export default class Contact extends Component {
     senderName: "",
     senderEmail: "",
     senderMessage: "",
-    enabled: false
+    enabled: false,
+    usernameActive: false,
+    userEmailActive: false
   };
 
   validateInput = () => {
@@ -51,35 +53,37 @@ export default class Contact extends Component {
           className="contact-form"
         >
           <div className="input-container">
-            <label htmlFor="sender-name">FULL NAME:</label>
-            <input
-              value={this.state.senderName}
-              onChange={this.inputHandler}
-              name="senderName"
-              className="senderName"
-              id="sender-name"
-              type="text"
-              required
-            />
-            <label htmlFor="sender-email">EMAIL:</label>
-            <input
-              value={this.state.senderEmail}
-              name="senderEmail"
-              className="senderEmail"
-              onChange={this.inputHandler}
-              id="sender-email"
-              type="email"
-              required
-            />
-            <label htmlFor="message">MESSAGE:</label>
-            <textarea
-              value={this.state.senderMessage}
-              className="senderMessage"
-              name="senderMessage"
-              onChange={this.inputHandler}
-              id="message"
-              type="text"
-            />
+              <label htmlFor="sender-name">
+                FULL NAME:
+              </label>
+              <input
+                value={senderName}
+                onChange={this.inputHandler}
+                name="senderName"
+                className="senderName"
+                id="sender-name"
+                type="text"
+                required
+              />
+              <label htmlFor="sender-email">EMAIL:</label>
+              <input
+                value={senderEmail}
+                name="senderEmail"
+                className="senderEmail"
+                onChange={this.inputHandler}
+                id="sender-email"
+                type="email"
+                required
+              />
+              <label htmlFor="message">MESSAGE:</label>
+              <textarea
+                value={senderMessage}
+                className="senderMessage"
+                name="senderMessage"
+                onChange={this.inputHandler}
+                id="message"
+                type="text"
+              />
             <input
               className={`submit-btn ${enabled && "email-btn"}`}
               type="submit"

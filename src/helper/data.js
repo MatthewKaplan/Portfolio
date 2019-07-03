@@ -7,7 +7,14 @@ const projectData = [
       "GoPhish is a web application that allows fans of the rock band Phish to dig through their musical archive and explore their previous tours, songs, shows, set lists, band information, and upcoming shows. Users also have the ability to save shows that they have been to and visit the 'My Stats' page to view their personal Phish stats.",
     website: "https://gophish.netlify.com",
     repo: "https://github.com/MatthewKaplan/Go-Phish",
-    tools_used: ["JAVASCRIPT", "REACT.JS", "REDUX", "NODE.JS", "React-Router", "SASS"],
+    tools_used: [
+      "JAVASCRIPT",
+      "REACT.JS",
+      "REDUX",
+      "NODE.JS",
+      "React-Router",
+      "SASS"
+    ],
     tested_with: ["JEST", "ENZYME"]
   },
   {
@@ -18,7 +25,14 @@ const projectData = [
       "MovieTracker is a web application that allows the user to keep track of their favorite movies and television shows all while allowing them to create an account so they can save their favorites.",
     website: "https://matthewkaplan.github.io/Movie-Tracker",
     repo: "https://github.com/MatthewKaplan/Movie-Tracker",
-    tools_used: ["JAVASCRIPT", "REACT.JS", "REDUX", "NODE.JS", "React-Router", "SASS"],
+    tools_used: [
+      "JAVASCRIPT",
+      "REACT.JS",
+      "REDUX",
+      "NODE.JS",
+      "React-Router",
+      "SASS"
+    ],
     tested_with: ["JEST", "ENZYME"]
   },
   {
@@ -40,7 +54,14 @@ const projectData = [
       "TrapperKeeper is a web application that is based off the famous note-taking service Google Keep. It allows the user to keep track of their busy life by creating an online checklist.",
     website: "",
     repo: "https://github.com/MatthewKaplan/Trapper-Keeper",
-    tools_used: ["JAVASCRIPT", "REACT.JS", "REDUX", "NODE.JS", "React-Router", "SASS"],
+    tools_used: [
+      "JAVASCRIPT",
+      "REACT.JS",
+      "REDUX",
+      "NODE.JS",
+      "React-Router",
+      "SASS"
+    ],
     tested_with: ["JEST", "ENZYME"]
   },
   {
@@ -70,7 +91,7 @@ const projectData = [
     img: "https://i.imgur.com/Rtmd87X.png",
     backdrop: "https://i.imgur.com/LaoxIMa.jpg",
     description:
-      "\"I'll take ___ for $1,000, Alex.\" Come test your trivia knowledge playing Jeopardy, Revenge of the nerds style! ",
+      '"I\'ll take ___ for $1,000, Alex." Come test your trivia knowledge playing Jeopardy, Revenge of the nerds style! ',
     website: "",
     repo: "https://github.com/MatthewKaplan/Jeopardy",
     tools_used: ["JAVASCRIPT", "Webpack", "HTML", "CSS"],
@@ -99,29 +120,33 @@ const projectData = [
 ];
 
 const hobbyImages = [
-  "https://i.imgur.com/6BOZ5Ia.png",
-  "https://i.imgur.com/qcQuyml.png",
-  "https://i.imgur.com/e72vFDz.png",
-  "https://i.imgur.com/TeKoxzp.png",
-  "https://i.imgur.com/mPG0Cx6.png",
-  "https://i.imgur.com/OMMCVRp.png",
-  "https://i.imgur.com/RlKW6Jv.png",
-  "https://i.imgur.com/Lj06sPb.png",
-  "https://i.imgur.com/qVibDkn.png",
-  "https://i.imgur.com/5cOpEki.png",
-  "https://i.imgur.com/t9n4SDq.png",
-  "https://i.imgur.com/vJzalka.png",
-  "https://i.imgur.com/GZhjbJJ.png",
-  "https://i.imgur.com/Mh9qmR5.png",
-  "https://i.imgur.com/CbKGEw0.png",
-  "https://i.imgur.com/0GQDl94.png"
-]
+  "https://i.imgur.com/3TRADSU.png",
+  "https://i.imgur.com/yHJwMgA.png",
+  "https://i.imgur.com/gGmiMCC.png",
+  "https://i.imgur.com/sdoC1cK.png",
+  "https://i.imgur.com/DmoHKgD.png",
+  "https://i.imgur.com/dlg3Tlv.png",
+  "https://i.imgur.com/AZeDkyX.png",
+  "https://i.imgur.com/2JgZsQP.png",
+  "https://i.imgur.com/JO27CzS.png",
+  "https://i.imgur.com/axiLwzP.png?1",
+  "https://i.imgur.com/pi9t8dL.png",
+  "https://i.imgur.com/Nhww1SJ.png",
+  "https://i.imgur.com/WsaWOHd.png",
+  "https://i.imgur.com/G1w3d15.png",
+  "https://i.imgur.com/XsOIazD.png",
+  "https://i.imgur.com/mB5USbc.png",
+  "https://i.imgur.com/eekTAXP.png",
+  "https://i.imgur.com/fDQlZES.png"
+];
 
 const hobbyNames = [
   "SCUBA DIVING",
+  "CLIMBING",
   "TRAVELING",
   "DOGS",
   "SKIING",
+  "FOOTBALL",
   "MUSIC",
   "CAMPING",
   "FAMILY",
@@ -130,15 +155,60 @@ const hobbyNames = [
   "SWIMMING",
   "MAC",
   "TELEVISION",
-  "BEER",
+  "BREWING",
   "COOKING",
   "ASTRONOMY",
   "HIKING"
-]
+];
 
+const skillIcons = [
+  "https://i.imgur.com/axiLwzP.png?1",
+  "https://i.imgur.com/hQxyiun.png",
+  "https://i.imgur.com/3mSlFpH.png",
+  "https://i.imgur.com/txWQbDh.png",
+  "https://i.imgur.com/iVwUSvz.png",
+  "https://i.imgur.com/s9F3Q5b.png",
+  "https://i.imgur.com/HuxcEJX.png",
+  "https://i.imgur.com/sTWqv95.png",
+  "https://i.imgur.com/zUMEX7a.png",
+  "https://i.imgur.com/pE1ocnr.png",
+  "https://i.imgur.com/AwGXGTT.png",
+  "https://i.imgur.com/nrqz7cO.png",
+  "https://i.imgur.com/u1x56ni.png",
+  "https://i.imgur.com/xYrmrDV.png",
+  "https://i.imgur.com/eBGvh81.png",
+  "https://i.imgur.com/7ERgJOl.png",
+  "https://i.imgur.com/4DAHjyl.png",
+  "https://i.imgur.com/uYQtYC8.png",
+  "https://i.imgur.com/YqmfKAg.png"
+];
+
+const skillNames = [
+  "REACT",
+  "CSS",
+  "JAVASCRIPT",
+  "HTML",
+  "SASS",
+  "REDUX",
+  "NODE.JS",
+  "JQUERY",
+  "JEST",
+  "ENZYME",
+  "BOOTSTRAP",
+  "MOCHA",
+  "CHAI",
+  "GITHUB",
+  "POSTGRES",
+  "ADOBE XD",
+  "REACT ROUTER",
+  "WEBPACK",
+  "HEROKU"
+];
 
 module.exports = {
   projectData,
   hobbyImages,
-  hobbyNames
+  hobbyNames,
+  skillIcons,
+  skillNames
 };
