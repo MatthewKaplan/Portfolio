@@ -106,3 +106,27 @@
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .contact-component article div.contact-intro h3 {
+    font-size: 2rem;
+  }
+
+  .contact-component article {
+    width: 100%;
+  }
+
+  .contact-component .contact-form {
+    margin: 0;
+  }
+
+  .contact-component article div.contact-intro p {
+    font-size: 1rem;
+    min-width: 300px;
+    width: 300px;
+  }
+
+  .contact-component .contact-form div.input-container {
+    max-width: 300px;
+  }
+}

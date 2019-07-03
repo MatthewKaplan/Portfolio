@@ -219,3 +219,18 @@
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .projects-component .device .laptop-image {
+    display: none;
+  }
+
+  .projects-component .project-description {
+    left: 4.5%;
+    bottom: 20%;
+  }
+
+  .projects-component .arrow {
+    top: 85%;
+  }
+}
