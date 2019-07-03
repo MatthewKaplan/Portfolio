@@ -6,17 +6,6 @@
   justify-content: center;
   height: 100vh;
 
-  .overlay {
-    background-color: #cbf1f5;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.35;
-    filter: alpha(opacity=75);
-  }
-
   .bio-bg-color {
     background-color: #03c8c7;
     position: absolute;
@@ -27,7 +16,7 @@
   }
 
   .love-bg-color {
-    background-color: #E8A1B7;
+    background-color: #e8a1b7;
     position: absolute;
     z-index: 0;
     height: 100%;
@@ -44,8 +33,8 @@
     object-fit: cover;
   }
 
-  .bg-image {
-    background-color: #03c8c7;
+  .bg-color {
+    background-image: radial-gradient(#eeeeee 40%, #228b22);
     position: absolute;
     z-index: 0;
     height: 100%;
@@ -53,13 +42,15 @@
     object-fit: cover;
   }
 
-  .bg-color {
-    background-image: radial-gradient(#eeeeee 40%,#228B22);
+  .overlay {
+    background-color: #cbf1f5;
     position: absolute;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.35;
+    filter: alpha(opacity=75);
   }
 
   .about-imgs {
@@ -67,206 +58,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 100px;
 
-    .heart-container {
-      width: 300px;
-      height: 400px;
-      position: relative;
-      top: 35px;
-      left: 0%;
-      border-radius: 6px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      overflow: hidden;
-    }
-
-    .heart-container:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .heart-container .image {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-    }
-
-    .heart-container .image span {
-      width: 25%;
-      height: 100%;
-      background-image: url("../../assets/human-heart.png");
-      background-size: cover;
-      transition: 0.6s ease-in-out;
-    }
-
-    .heart-container .image span:nth-child(1) {
-      background-position: 0;
-      transition-delay: 0s;
-    }
-    .heart-container .image span:nth-child(2) {
-      background-position: 33.33%;
-      transition-delay: 0.1s;
-    }
-    .heart-container .image span:nth-child(3) {
-      background-position: 66.66%;
-      transition-delay: 0.2s;
-    }
-    .heart-container .image span:nth-child(4) {
-      background-position: 99.99%;
-      transition-delay: 0.3s;
-    }
-
-    .heart-container:hover .image > span:nth-child(1) {
-      transform: translateY(-100%);
-    }
-
-    .heart-container:hover .image > span:nth-child(2) {
-      transform: translateY(100%);
-    }
-
-    .heart-container:hover .image > span:nth-child(3) {
-      transform: translateY(-100%);
-    }
-
-    .heart-container:hover .image > span:nth-child(4) {
-      transform: translateY(100%);
-    }
-
-    .heart-container .content {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      color: #E8A1B7;
-      width: 100%;
-      height: 100%;
-      font-size: 60px;
-      font-family: sans-serif;
-      transition: 1s;
-      transition-delay: 0.1s;
-      transform: translateX(100%);
-    }
-
-    .heart-container:hover .content {
-      transform: translateX(0%);
-      transition: 1s;
-      transition-delay: 0.1s;
-    }
-
-    .brain-container {
-      width: 300px;
-      height: 400px;
-      position: relative;
-      top: 35px;
-      left: 0%;
-      border-radius: 6px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      overflow: hidden;
-    }
-
-    .brain-container:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .brain-container .image {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-    }
-
-    .brain-container .image span {
-      width: 25%;
-      height: 100%;
-      background-image: url("../../assets/brain.png");
-      background-size: cover;
-      transition: 0.6s ease-in-out;
-    }
-
-    .brain-container .image span:nth-child(1) {
-      background-position: 0;
-      transition-delay: 0s;
-    }
-    .brain-container .image span:nth-child(2) {
-      background-position: 33.33%;
-      transition-delay: 0.1s;
-    }
-    .brain-container .image span:nth-child(3) {
-      background-position: 66.66%;
-      transition-delay: 0.2s;
-    }
-    .brain-container .image span:nth-child(4) {
-      background-position: 99.99%;
-      transition-delay: 0.3s;
-    }
-
-    .brain-container:hover .image > span:nth-child(1) {
-      transform: translateY(-100%);
-    }
-
-    .brain-container:hover .image > span:nth-child(2) {
-      transform: translateY(100%);
-    }
-
-    .brain-container:hover .image > span:nth-child(3) {
-      transform: translateY(-100%);
-    }
-
-    .brain-container:hover .image > span:nth-child(4) {
-      transform: translateY(100%);
-    }
-
-    .brain-container .left-content h1 {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      color: #333333;
-      width: 100%;
-      height: 100%;
-      font-size: 80px;
-      font-family: sans-serif;
-      transition: 1s;
-      transition-delay: 0.1s;
-      transform: translateX(-300%);
-    }
-
-    .brain-container:hover .left-content h1 {
-      transform: translateX(0%);
-      transition: 1s;
-      transition-delay: 0.1s;
-    }
-
-    .brain-container .right-content h1 {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      color: #333333;
-      width: 100%;
-      height: 100%;
-      font-size: 80px;
-      font-family: sans-serif;
-      transition: 1s;
-      transition-delay: 0.1s;
-      transform: translateX(300%);
-    }
-
-    .brain-container:hover .right-content h1 {
-      transform: translateX(0%);
-      transition: 1s;
-      transition-delay: 0.1s;
-    }
-
-    .align-text {
-      display: flex;
+    h1 {
+      font-family: "Space Mono", monospace;
     }
 
     .fingerprint-container {
@@ -279,98 +72,283 @@
       background-size: contain;
       background-repeat: no-repeat;
       overflow: hidden;
-    }
-
-    .fingerprint-container:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .fingerprint-container .image {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-    }
-
-    .fingerprint-container .image span {
-      width: 25%;
-      height: 100%;
-      background-image: url("../../assets/fingerprint.png");
-      background-size: cover;
-      transition: 0.6s ease-in-out;
-    }
-
-    .fingerprint-container .image span:nth-child(1) {
-      background-position: 0;
-      transition-delay: 0s;
-    }
-    .fingerprint-container .image span:nth-child(2) {
-      background-position: 33.33%;
-      transition-delay: 0.1s;
-    }
-    .fingerprint-container .image span:nth-child(3) {
-      background-position: 66.66%;
-      transition-delay: 0.2s;
-    }
-    .fingerprint-container .image span:nth-child(4) {
-      background-position: 99.99%;
-      transition-delay: 0.3s;
-    }
-
-    .fingerprint-container:hover .image > span:nth-child(1) {
-      transform: translateY(-100%);
-    }
-
-    .fingerprint-container:hover .image > span:nth-child(2) {
-      transform: translateY(100%);
-    }
-
-    .fingerprint-container:hover .image > span:nth-child(3) {
-      transform: translateY(-100%);
-    }
-
-    .fingerprint-container:hover .image > span:nth-child(4) {
-      transform: translateY(100%);
-    }
-
-    .fingerprint-container .content {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      color: #03c8c7;
-      width: 100%;
-      height: 100%;
-      font-size: 50px;
-      font-family: sans-serif;
-      transition: 1s;
-      transition-delay: 0.1s;
-      transform: translateX(-100%);
-    }
-
-    .fingerprint-container:hover .content {
-      transform: translateX(0%);
-      transition: 1s;
-      transition-delay: 0.1s;
-    }
-
-    div {
       cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        span {
+          width: 25%;
+          height: 100%;
+          background-image: url("../../assets/fingerprint.png");
+          background-size: cover;
+          transition: 0.6s ease-in-out;
+
+          &:nth-child(1) {
+            background-position: 0;
+            transition-delay: 0s;
+          }
+
+          &:nth-child(2) {
+            background-position: 33.33%;
+            transition-delay: 0.1s;
+          }
+
+          &:nth-child(3) {
+            background-position: 66.66%;
+            transition-delay: 0.2s;
+          }
+
+          &:nth-child(4) {
+            background-position: 99.99%;
+            transition-delay: 0.3s;
+          }
+        }
+      }
+
+      &:hover .image > span:nth-child(1) {
+        transform: translateY(-100%);
+      }
+
+      &:hover .image > span:nth-child(2) {
+        transform: translateY(100%);
+      }
+
+      &:hover .image > span:nth-child(3) {
+        transform: translateY(-100%);
+      }
+
+      &:hover .image > span:nth-child(4) {
+        transform: translateY(100%);
+      }
+
+      .content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: #03c8c7;
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+        font-family: sans-serif;
+        transition: 1s;
+        transition-delay: 0.1s;
+        transform: translateX(-100%);
+      }
+
+      &:hover .content {
+        transform: translateX(0%);
+        transition: 1s;
+        transition-delay: 0.1s;
+      }
     }
 
-    .fingerprint-img {
-      height: 350px;
-      width: 250px;
+    .brain-container {
+      width: 300px;
+      height: 400px;
       position: relative;
-      margin-top: 50px;
+      top: 35px;
+      left: 0%;
+      border-radius: 6px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        span {
+          width: 25%;
+          height: 100%;
+          background-image: url("../../assets/brain.png");
+          background-size: cover;
+          transition: 0.6s ease-in-out;
+
+          &:nth-child(1) {
+            background-position: 0;
+            transition-delay: 0s;
+          }
+          &:nth-child(2) {
+            background-position: 33.33%;
+            transition-delay: 0.1s;
+          }
+          &:nth-child(3) {
+            background-position: 66.66%;
+            transition-delay: 0.2s;
+          }
+          &:nth-child(4) {
+            background-position: 99.99%;
+            transition-delay: 0.3s;
+          }
+        }
+      }
+
+      &:hover .image > span:nth-child(1) {
+        transform: translateY(-100%);
+      }
+
+      &:hover .image > span:nth-child(2) {
+        transform: translateY(100%);
+      }
+
+      &:hover .image > span:nth-child(3) {
+        transform: translateY(-100%);
+      }
+
+      &:hover .image > span:nth-child(4) {
+        transform: translateY(100%);
+      }
+
+      .align-text {
+        display: flex;
+
+        h1 {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          color: #333333;
+          width: 100%;
+          height: 100%;
+          font-size: 80px;
+          font-family: sans-serif;
+          transition: 1s;
+          transition-delay: 0.1s;
+          font-family: "Space Mono", monospace;
+        }
+
+        .left-content h1 {
+          transform: translateX(-300%);
+        }
+
+        .right-content h1 {
+          transform: translateX(300%);
+        }
+      }
+
+      &:hover .left-content h1,
+      &:hover .right-content h1 {
+        transform: translateX(0%);
+        transition: 1s;
+        transition-delay: 0.1s;
+      }
     }
 
-    h1 {
-      font-family: 'Space Mono', monospace;
+    .heart-container {
+      width: 300px;
+      height: 400px;
+      position: relative;
+      top: 35px;
+      left: 0%;
+      border-radius: 6px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        span {
+          width: 25%;
+          height: 100%;
+          background-image: url("../../assets/human-heart.png");
+          background-size: cover;
+          transition: 0.6s ease-in-out;
+
+          &:nth-child(1) {
+            background-position: 0;
+            transition-delay: 0s;
+          }
+
+          &:nth-child(2) {
+            background-position: 33.33%;
+            transition-delay: 0.1s;
+          }
+
+          &:nth-child(3) {
+            background-position: 66.66%;
+            transition-delay: 0.2s;
+          }
+
+          &:nth-child(4) {
+            background-position: 99.99%;
+            transition-delay: 0.3s;
+          }
+        }
+      }
+
+      &:hover .image > span:nth-child(1) {
+        transform: translateY(-100%);
+      }
+
+      &:hover .image > span:nth-child(2) {
+        transform: translateY(100%);
+      }
+
+      &:hover .image > span:nth-child(3) {
+        transform: translateY(-100%);
+      }
+
+      &:hover .image > span:nth-child(4) {
+        transform: translateY(100%);
+      }
+
+      .content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: #e8a1b7;
+        width: 100%;
+        height: 100%;
+        font-size: 60px;
+        font-family: sans-serif;
+        transition: 1s;
+        transition-delay: 0.1s;
+        transform: translateX(100%);
+      }
+
+      &:hover .content {
+        transform: translateX(0%);
+        transition: 1s;
+        transition-delay: 0.1s;
+      }
     }
   }
 
@@ -389,36 +367,54 @@
     article {
       text-align: left;
       margin: 0px 150px 0 350px;
-      padding: 20px;
+      padding: 30px;
       border: 2px solid white;
       color: white;
       border-radius: 6px;
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       font-weight: 800;
+      width: 750px;
+      z-index: 998;
       p {
         font-size: 17px;
       }
     }
-  }
 
-  .close-section {
-    height: 50px;
-    width: 125px;
-    background-image: url("../../assets/circle.svg");
-    background-size: contain;
-    position: relative;
-    background-repeat: no-repeat;
-    right: 10%;
-    cursor: pointer;
+    .close-section {
+      height: 40px;
+      width: 115px;
+      background-image: url("../../assets/circle.svg");
+      background-size: contain;
+      position: relative;
+      background-repeat: no-repeat;
+      right: 14%;
+      top: 8px;
+      cursor: pointer;
+      z-index: 999;
 
-    &:hover {
-      background-image: url("../../assets/solid-circle.svg");
+      &:hover {
+        background-image: url("../../assets/solid-circle.svg");
+      }
     }
   }
 
   .love-section {
     .close-section {
+      height: 40px;
+      width: 115px;
+      background-image: url("../../assets/circle.svg");
+      background-size: contain;
+      position: relative;
+      background-repeat: no-repeat;
+      right: 14%;
+      top: 8px;
+      cursor: pointer;
+      z-index: 999;
       left: 90%;
+
+      &:hover {
+        background-image: url("../../assets/solid-circle.svg");
+      }
     }
 
     .slides {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./LoveSlides.scss";
+import "./Slides.scss";
 
-class LoveSlides extends Component {
+class Slides extends Component {
   state = {
     icons: [],
     iconNames: [],
@@ -99,4 +99,4 @@ const Slide = ({ image }) => {
   return <div className="slide" style={styles} />;
 };
 
-export default LoveSlides;
+export default Slides;
