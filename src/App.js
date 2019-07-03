@@ -5,7 +5,6 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import ScrollableAnchor from "react-scrollable-anchor";
-// import Slider from "./components/Projects/Projects";
 import { configureAnchors } from "react-scrollable-anchor";
 import { withRouter } from "react-router-dom";
 
@@ -15,17 +14,17 @@ class App extends Component {
 
     return (
       <div className="App">
-        <ScrollableAnchor id={"section1"}>
+        <ScrollableAnchor id={"home"}>
           <Home className="home" />
         </ScrollableAnchor>
         <Nav />
-        <ScrollableAnchor id={"section2"}>
+        <ScrollableAnchor id={"about"}>
           <About className="about" />
         </ScrollableAnchor>
-        <ScrollableAnchor id={"section3"}>
+        <ScrollableAnchor id={"projects"}>
           <Projects className="projects" />
         </ScrollableAnchor>
-        <ScrollableAnchor id={"section4"}>
+        <ScrollableAnchor id={"contact"}>
           <Contact className="contact" />
         </ScrollableAnchor>
       </div>

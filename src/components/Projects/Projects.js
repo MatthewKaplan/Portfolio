@@ -83,9 +83,9 @@ export default class Projects extends Component {
       if (index === this.state.slidesPosition) {
         switch (info) {
           case "name":
-            return <div className="project-name">{project.name}</div>;
+            return <div className="project-name" key={project}>{project.name}</div>;
           case "description":
-            return <div className="description">{project.description}</div>;
+            return <div className="description" key={project}>{project.description}</div>;
           case "tools":
             return project.tool_icons.map(icon => {
               const styles = {
@@ -94,11 +94,11 @@ export default class Projects extends Component {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "50% 60%"
               };
-              return <div className="tool-icons" style={styles} />;
+              return <div className="tool-icons" style={styles} key={icon} />;
             });
           case "tool name":
             return project.tools_used.map(tool => (
-              <p className="tool-name">{tool}</p>
+              <p className="tool-name" key={tool}>{tool}</p>
             ));
           case "project link":
             const website = project.website;
@@ -106,6 +106,7 @@ export default class Projects extends Component {
               return (
                 <a
                   href={website}
+                  key={project}
                   className="link left-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -130,6 +131,7 @@ export default class Projects extends Component {
             return (
               <a
                 href={repo}
+                key={project}
                 className="link right-link"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -17,7 +17,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "https://www.matthewkaplan.dev/#section1"
+                  pathname === "https://www.matthewkaplan.dev/#home"
                     ? "active"
                     : null
                 }
@@ -34,7 +34,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "https://www.matthewkaplan.dev/#section2"
+                  pathname === "https://www.matthewkaplan.dev/#about"
                     ? "active"
                     : null
                 }
@@ -51,7 +51,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "https://www.matthewkaplan.dev/#section3"
+                  pathname === "https://www.matthewkaplan.dev/#projects"
                     ? "active"
                     : null
                 }
@@ -68,7 +68,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "https://www.matthewkaplan.dev/#section4"
+                  pathname === "https://www.matthewkaplan.dev/#contact"
                     ? "active"
                     : null
                 }
