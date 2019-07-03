@@ -17,7 +17,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "http://localhost:3000/#section1"
+                  pathname === "https://www.matthewkaplan.dev/#section1"
                     ? "active"
                     : null
                 }
@@ -34,7 +34,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "http://localhost:3000/#section2"
+                  pathname === "https://www.matthewkaplan.dev/#section2"
                     ? "active"
                     : null
                 }
@@ -51,7 +51,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "http://localhost:3000/#section3"
+                  pathname === "https://www.matthewkaplan.dev/#section3"
                     ? "active"
                     : null
                 }
@@ -68,7 +68,7 @@ export default class Nav extends Component {
             >
               <li
                 className={
-                  pathname === "http://localhost:3000/#section4"
+                  pathname === "https://www.matthewkaplan.dev/#section4"
                     ? "active"
                     : null
                 }
