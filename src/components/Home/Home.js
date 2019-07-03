@@ -24,7 +24,7 @@ export default class Home extends Component {
         <img
           className="bg-image"
           src={require("../../assets/splash.jpg")}
-          alt="Space"
+          alt="Denver Front Range"
         />
         <section>
           <div className="intro">
