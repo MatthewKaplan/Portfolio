@@ -32,6 +32,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 75px;
+    position: relative;
 
     h1 {
       font-family: $main-headings;
@@ -271,47 +272,66 @@
   }
 
   .about-me-section {
-    display: flex;
-    margin: 0 100px 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    padding-right: 160px;
+    padding-left: 120px;
 
     .profile-picture {
-      position: absolute;
       height: 300px;
       width: 300px;
       border-radius: 50%;
-      margin: 15px 0 0 50px;
-      box-shadow: 2px 5px 5px $main-text;
+      z-index: 999;
+      box-shadow: 2px 5px 2px $main-text;
+      margin-top: 25px;
     }
 
     article {
       text-align: left;
-      margin: 0px 150px 0 390px;
-      padding: 30px;
+      padding: 20px;
       border: 2px solid $main-text;
       color: $main-text;
       border-radius: 6px;
       font-family: $body-text;
       font-weight: 800;
-      width: 750px;
+      width: 75%;
       z-index: 998;
+      .close-bio {
+        min-height: 40px;
+        min-width: 115px;
+        background-image: url("https://i.imgur.com/W2MOh1G.png");
+        background-size: contain;
+        position: relative;
+        background-repeat: no-repeat;
+        left: 90%;
+        top: 0%;
+        cursor: pointer;
+        z-index: 999;
+
+        &:hover {
+          background-image: url("https://i.imgur.com/GhddtOU.png");
+        }
+      }
       p {
         font-size: 17px;
-      }
-    }
-
-    .close-section {
-      @include close-section-styles;
-
-      &:hover {
-        background-image: url("https://i.imgur.com/GhddtOU.png");
       }
     }
   }
 
   .love-section {
     .close-section {
-      @include close-section-styles;
-      left: 90%;
+      height: 50px;
+      width: 50px;
+      background-image: url("https://i.imgur.com/W2MOh1G.png");
+      background-size: contain;
+      position: absolute;
+      background-repeat: no-repeat;
+      right: 14%;
+      cursor: pointer;
+      z-index: 999;
+      top: 66%;
+      left: 48%;
 
       &:hover {
         background-image: url("https://i.imgur.com/GhddtOU.png");
@@ -328,19 +348,47 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .about-component .about-imgs {
     .heart-container,
     .fingerprint-container,
     .brain-container {
       height: 350px;
       width: 250px;
+      h1 {
+        font-size: 60px;
+      }
+    }
+    .brain-container .align-text h1 {
+      font-size: 60px;
+      margin-top: 80px;
     }
   }
 }
 
-@media (max-width: 950px)
-{
+@media screen and (max-width: 1000px) {
+  .about-component .about-me-section {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+    max-height: 100%;
+    padding-bottom: 35px;
+
+    article {
+      width: 135%;
+      padding: 0 10px 0 10px;
+    }
+
+    .profile-picture {
+      height: 200px;
+      width: 200px;
+      position: relative;
+      padding-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
   .about-component .about-imgs {
     .heart-container,
     .fingerprint-container,
@@ -348,34 +396,83 @@
       height: 300px;
       width: 200px;
     }
+    .brain-container .align-text h1 {
+      font-size: 55px;
+      margin-top: 60px;
+    }
+  }
+
+  .about-component .love-section .slides {
+    width: 950px;
   }
 }
 
-@media (max-width: 755px)
-{
+@media screen and (max-width: 755px) {
   .about-component .about-imgs {
     .heart-container,
     .fingerprint-container,
     .brain-container {
       height: 250px;
       width: 150px;
+      h1 {
+        font-size: 45px;
+      }
     }
+    .brain-container .align-text h1 {
+      font-size: 40px;
+      margin-top: 50px;
+    }
+  }
+
+  .about-me-section article .close-bio {
+    top: 2%;
+    left: 96%;
+  }
+  .about-component .love-section .slides {
+    width: 755px;
   }
 }
 
-@media (max-width: 615px)
-{
+@media screen and (max-width: 615px) {
   .about-component .about-imgs {
     grid-template-columns: none;
-    grid-template-rows: .5fr .5fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 10px;
+    margin-bottom: 50px;
 
     .heart-container,
     .fingerprint-container,
     .brain-container {
-      height: 275px;
-      width: 200px;
+      height: 225px;
+      width: 175px;
       padding: 5px 0 5px 0;
     }
+  }
+
+  .about-me-section article .close-bio {
+    top: 5%;
+    left: 85%;
+  }
+
+  .love-section .slides {
+    width: 615px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  article {
+    width: 100%;
+  }
+  .about-me-section article .close-bio {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    margin-right: 40px;
+  }
+  .love-section .slides {
+    width: 400px;
+  }
+  .about-component .love-section .slides {
+    width: 414px;
   }
 }
