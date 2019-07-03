@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .projects-component {
   display: flex;
   position: relative;
@@ -8,12 +10,12 @@
 
   .arrow {
     z-index: 3;
-    fill: #c7c7c7;
+    fill: $main-text;
     height: 50px;
     width: 70px;
     top: 45%;
     right: 0px;
-    filter: drop-shadow(1px 1px 3px white);
+    filter: drop-shadow(1px 1px 3px $main-text);
     position: absolute;
 
     &:hover {
@@ -52,41 +54,27 @@
   }
 
   .overlay {
-    background-color: #22a39f;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.35;
-    filter: alpha(opacity=75);
+    background-color: $main-overlay;
+    @include overlay-style;
   }
 
   .device {
     position: relative;
     opacity: 1;
-    
+
     .laptop-image {
       max-width: 100%;
       border: 0;
     }
 
     .default-laptop-bg-image {
-      position: absolute;
-      top: 0;
-      left: 16.9%;
-      display: inline-block;
-      width: 65.6%;
+      @include laptop-images;
       height: 76%;
       top: 6.1%;
     }
-    
+
     .laptop-bg-image {
-      position: absolute;
-      top: 0;
-      left: 16.9%;
-      display: inline-block;
-      width: 65.6%;
+      @include laptop-images;
       height: 73%;
       top: 7.1%;
       background-repeat: no-repeat;
@@ -96,10 +84,10 @@
 
   .project-description {
     position: absolute;
-    max-width: 475px;
+    max-width: 375px;
     height: auto;
     min-height: 450px;
-    left: 55%;
+    left: 58.5%;
     background: rgba(0, 0, 0, 0.704);
     border-radius: 6px;
 
@@ -135,7 +123,7 @@
         border-radius: 3px;
         box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
         cursor: pointer;
-        font-family: Industry-Book, sans-serif;
+        font-family: $main-headings;
         margin-right: 10px;
       }
 
@@ -157,44 +145,36 @@
     }
 
     .left-arrow {
-      width: 16px;
-      line-height: 0;
-      height: auto;
-      margin-right: 4px;
-      position: relative;
-      top: 1px;
+      @include arrow-styles;
       right: 0;
+      margin-right: 4px;
       -webkit-transition: right 0.3s ease;
       transition: right 0.3s ease;
     }
 
     .right-arrow {
-      width: 16px;
-      line-height: 0;
-      height: auto;
-      margin-left: 4px;
-      position: relative;
-      top: 1px;
+      @include arrow-styles;
       left: 0;
+      margin-left: 4px;
       -webkit-transition: left 0.3s ease;
       transition: left 0.3s ease;
     }
 
     .project-name {
       font-size: 35px;
-      color: white;
+      color: $main-text;
       text-align: center;
       padding-top: 20px;
       font-weight: 800;
-      font-family: "Space Mono", monospace;
+      font-family: $main-headings;
     }
 
     .description {
-      color: white;
+      color: $main-text;
       padding: 20px;
       text-align: center;
       font-size: 18px;
-      font-family: "Work Sans", sans-serif;
+      font-family: $body-text;
     }
 
     .separator {
@@ -203,35 +183,35 @@
 
       hr {
         height: 1.5px;
-        color: #fff;
-        background-color: #fff;
+        color: $main-text;
+        background-color: $main-text;
       }
     }
 
     .built-with {
-      color: #fff;
+      color: $main-text;
       padding-left: 20px;
-      font-family: "Space Mono", monospace;
+      font-family: $main-headings;
     }
 
     .tools-used {
       padding: 0 0 20px 20px;
       display: flex;
-      
+
       .icons {
         margin-left: 20px;
-        border-left: 1px solid white;
+        border-left: 1px solid $main-text;
       }
-      
+
       .tool-icons {
         margin-bottom: 10px;
         height: 40px;
         width: 75px;
       }
-      
+
       .tool-name {
-        color: white;
-        font-family: "Space Mono", monospace;
+        color: $main-text;
+        font-family: $main-headings;
         margin: 10px 0 0 0;
         width: 225px;
         height: 40px;

@@ -9,7 +9,6 @@ import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
 import { withRouter } from "react-router-dom";
 
-import "./App.css";
 class App extends Component {
   render() {
     configureAnchors({ offset: -60, scrollDuration: 200 });

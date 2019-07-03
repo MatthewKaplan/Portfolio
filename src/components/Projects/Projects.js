@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { projectData } from "../../helper/data";
 import { ReactComponent as Arrow } from "../../assets/arrow.svg";
-import "./Projects.scss";
 
 export default class Projects extends Component {
   state = { slidesPosition: 0, autoSlides: () => {} };

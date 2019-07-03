@@ -1,20 +1,11 @@
+@import "../../sass/variables";
+
 .home-component {
-  display: flex;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  @include component-styles;
 
   .overlay {
-    background-color: #22a39f;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.35;
-    filter: alpha(opacity=75);
+    background-color: $main-overlay;
+    @include overlay-style;
   }
 
   img.bg-image {
@@ -33,7 +24,7 @@
     position: relative;
 
     .intro {
-      color: white;
+      color: $main-text;
       font-size: 2.2rem;
       margin: 50px 10px;
       text-align: center;
@@ -41,16 +32,16 @@
       .name {
         padding-bottom: 20px;
         margin-bottom: 20px;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid $main-text;
         border-bottom-color: rgba(255, 255, 255, 1.35);
         display: inline-block;
-        font-family: "Space Mono", monospace;
+        font-family: $main-headings;
       }
 
       .position {
         margin-top: 0;
         font-size: 32px;
-        font-family: "Space Mono", monospace;
+        font-family: $main-headings;
       }
 
       .logo-container {
@@ -60,7 +51,7 @@
         margin: 0 2em 0 2em;
 
         a {
-          color: white;
+          color: $main-text;
         }
 
         .envelope-icon {
@@ -78,12 +69,12 @@
   }
 
   .isCopied {
-    background-color: #22a39f;
+    background-color: $main-overlay;
     position: absolute;
     bottom: -10%;
     left: 37%;
     width: 200px;
-    color: white;
+    color: $main-text;
     font-size: 30px;
     text-align: center;
 
@@ -101,7 +92,7 @@
       width: 3px;
       height: 0px;
       border-top: 10px solid transparent;
-      border-bottom: 23px solid #22a39f;
+      border-bottom: 23px solid $main-overlay;
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
       position: absolute;
@@ -126,13 +117,13 @@
     position: absolute;
     bottom: 0px;
     right: 5%;
-    background-color: #222222;
+    background-color: $navbar;
     text-align: center;
     z-index: 6;
     cursor: pointer;
 
     .scroll-down-icon {
-      color: white;
+      color: $main-text;
       margin-top: 23px;
     }
 
