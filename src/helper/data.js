@@ -30,6 +30,32 @@ const projectData = [
     ]
   },
   {
+    name: "ColorConstructor",
+    img: "https://i.imgur.com/JU9d6j3.png",
+    backdrop: "https://i.imgur.com/zqSFCAL.jpg",
+    description:
+      "Color Constructor is a single page web application where users can randomly generate color palettes. Users have the ability to lock colors that they like as they generate more, save palettes, and edit palettes.",
+    website: "https://hidden-bayou-50291.herokuapp.com/",
+    repo: "https://github.com/MatthewKaplan/ColorConstructor",
+    tools_used: [
+      "JAVASCRIPT",
+      "REACT.JS",
+      "NODE.JS",
+      "SASS"
+    ],
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/axiLwzP.png?1",
+      "https://i.imgur.com/HuxcEJX.png",
+      "https://i.imgur.com/iVwUSvz.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
+  },
+  {
     name: "MovieTracker",
     img: "https://i.imgur.com/nF2OKKA.png",
     backdrop: "https://i.imgur.com/dIABUJt.jpg",
