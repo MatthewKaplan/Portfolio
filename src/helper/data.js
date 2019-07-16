@@ -273,6 +273,7 @@ const hobbyNames = [
 
 const skillIcons = [
   "https://i.imgur.com/axiLwzP.png?1",
+  "https://i.imgur.com/G9OJmuX.png",
   "https://i.imgur.com/hQxyiun.png",
   "https://i.imgur.com/3mSlFpH.png",
   "https://i.imgur.com/txWQbDh.png",
@@ -290,11 +291,13 @@ const skillIcons = [
   "https://i.imgur.com/7ERgJOl.png",
   "https://i.imgur.com/4DAHjyl.png",
   "https://i.imgur.com/uYQtYC8.png",
-  "https://i.imgur.com/YqmfKAg.png"
+  "https://i.imgur.com/YqmfKAg.png",
+  "https://i.imgur.com/XAReGKN.png"
 ];
 
 const skillNames = [
   "REACT",
+  "REACT NATIVE",
   "CSS",
   "JAVASCRIPT",
   "HTML",
@@ -312,7 +315,8 @@ const skillNames = [
   "ADOBE XD",
   "REACT ROUTER",
   "WEBPACK",
-  "HEROKU"
+  "HEROKU",
+  "FIREBASE"
 ];
 
 module.exports = {
