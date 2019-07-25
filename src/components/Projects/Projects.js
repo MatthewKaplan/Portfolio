@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import { projectData } from '../../helper/data';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
+import TiltPhaseSix from '../TiltPhaseSix/TiltPhaseSix';
+
+const options = {
+  max: 20,
+  perspective: 1000,
+  scale: 1,
+}
 
 export default class Projects extends Component {
 	state = { slidesPosition: 0, autoSlides: () => {} };
@@ -150,17 +157,24 @@ export default class Projects extends Component {
 				<Arrow className="arrow-two arrow" data-test="arrow-back" onClick={() => this.changeSlidesPositionBack()} />
 				{this.getBackGroundImg()}
 				<div className="overlay" />
-				<div className="device">
-					{this.state.slidesPosition === 0 ? (
-						<img className="iphone-image" src={require('../../assets/phone.png')} alt="iPhone" />
-					) : (
-						<React.Fragment>
-							<img className="laptop-image" src={require('../../assets/laptop.png')} alt="Laptop" />
-							<img className="default-laptop-bg-image" src={require('../../assets/blackout.jpg')} alt="Laptop" />
-						</React.Fragment>
-					)}
-					{this.state.slidesPosition === 0 ? this.getIphoneImg() : this.getLapTopImg()}
-				</div>
+				{this.state.slidesPosition === 0 && <div className="background-styles" />}
+				<TiltPhaseSix
+					options={options}
+					style={{
+						height: '60%'
+					}}>
+					<div className="device">
+						{this.state.slidesPosition === 0 ? (
+							<img className="iphone-image" src={require('../../assets/blackIPhone.png')} alt="iPhone" />
+						) : (
+							<React.Fragment>
+								<img className="laptop-image" src={require('../../assets/laptop.png')} alt="Laptop" />
+								<img className="default-laptop-bg-image" src={require('../../assets/blackout.jpg')} alt="Laptop" />
+							</React.Fragment>
+						)}
+						{this.state.slidesPosition === 0 ? this.getIphoneImg() : this.getLapTopImg()}
+					</div>
+				</TiltPhaseSix>
 				<section className="project-description">
 					<section className="project-links">
 						{this.getProjectInfo('project link')}

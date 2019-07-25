@@ -4,7 +4,7 @@ const projectData = [
 		img: 'https://i.imgur.com/3uXYQy6.jpg',
 		backdrop: 'https://i.imgur.com/z2VjrhY.png',
 		description:
-			'LangChat is a mobile application that allow users from all over the world the ability to create a free account and chat with users in other countries in an effort to learn each others languages.',
+			'LangChat is a mobile application that allow users from all over the world to chat with eachother in an effort to learn each others languages.',
 		website: '',
 		repo: 'https://github.com/jarrettkong/LangChat',
 		tools_used: [ 'JAVASCRIPT', 'REACT NATIVE', 'REDUX' ],
