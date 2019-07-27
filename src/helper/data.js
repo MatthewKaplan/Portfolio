@@ -241,6 +241,7 @@ const hobbyNames = [
 const skillIcons = [
 	'https://i.imgur.com/axiLwzP.png?1',
 	'https://i.imgur.com/G9OJmuX.png',
+	'https://i.imgur.com/wlflg3R.png',
 	'https://i.imgur.com/hQxyiun.png',
 	'https://i.imgur.com/3mSlFpH.png',
 	'https://i.imgur.com/txWQbDh.png',
@@ -265,6 +266,7 @@ const skillIcons = [
 const skillNames = [
 	'REACT',
 	'REACT NATIVE',
+	'VUE',
 	'CSS',
 	'JAVASCRIPT',
 	'HTML',
