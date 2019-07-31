@@ -21,7 +21,7 @@ export default class Projects extends Component {
 		const { slidesPosition } = this.state;
 		const autoSlides = setInterval(this.changeSlidesPositionForward, 15000);
 		let position = slidesPosition;
-		if (position < 8) {
+		if (position < 11) {
 			position++;
 			clearInterval(this.state.autoSlides);
 			this.setState({ slidesPosition: position, autoSlides });
@@ -37,7 +37,7 @@ export default class Projects extends Component {
 		let position = slidesPosition;
 		if (slidesPosition === 0) {
 			clearInterval(this.state.autoSlides);
-			this.setState({ slidesPosition: 8, autoSlides });
+			this.setState({ slidesPosition: 11, autoSlides });
 		} else {
 			position--;
 			clearInterval(this.state.autoSlides);

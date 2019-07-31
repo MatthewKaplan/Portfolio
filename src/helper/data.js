@@ -55,6 +55,17 @@ const projectData = [
 		tested_icons: [ 'https://i.imgur.com/zUMEX7a.png', 'https://i.imgur.com/pE1ocnr.png' ]
 	},
 	{
+		name: 'Bottleneck Gallery',
+		img: 'https://i.imgur.com/K8ixZvV.jpg',
+		backdrop: 'https://i.imgur.com/hmNtWst.jpg',
+		description:
+			'Bottleneck Gallery is a web application I made using the Vue.js library. I made use of The Harvard Art Musuem API and created an online art gallery. This was my first project using Vue.',
+		website: 'https://master.d3m3ghzidizx9s.amplifyapp.com/',
+		repo: 'https://github.com/MatthewKaplan/bottleneck-gallery',
+		tools_used: [ 'JAVASCRIPT', 'VUE.JS' ],
+		tool_icons: [ 'https://i.imgur.com/3mSlFpH.png', 'https://i.imgur.com/wlflg3R.png' ]
+	},
+	{
 		name: 'MovieTracker',
 		img: 'https://i.imgur.com/nF2OKKA.png',
 		backdrop: 'https://i.imgur.com/dIABUJt.jpg',
