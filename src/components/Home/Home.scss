@@ -40,14 +40,15 @@
 
       .position {
         margin-top: 0;
-        font-size: 32px;
+        font-size: 45px;
         font-family: $main-headings;
+        margin-bottom: 30px;
       }
 
       .logo-container {
         display: flex;
         justify-content: space-around;
-        width: 10em;
+        width: 14em;
         margin: 0 auto;
 
         a {
@@ -58,6 +59,12 @@
           cursor: pointer;
         }
 
+        .resume-icon {
+          cursor: pointer;
+          height: 68px;
+        }
+        
+        .resume-icon:hover,
         .envelope-icon:hover,
         .github-icon:hover,
         .linkedin-icon:hover {
@@ -72,7 +79,7 @@
     background-color: rgba(0, 0, 0, 0.704);
     position: absolute;
     bottom: -10%;
-    left: 42%;
+    left: 39%;
     width: 200px;
     color: $main-text;
     font-size: 30px;
