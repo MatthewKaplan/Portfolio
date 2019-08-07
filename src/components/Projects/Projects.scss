@@ -250,6 +250,7 @@
 }
 
 @media screen and (max-width: 640px) {
+  .projects-component .device .iphone-image,
   .projects-component .device .laptop-image {
     display: none;
   }

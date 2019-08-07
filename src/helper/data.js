@@ -271,7 +271,8 @@ const skillIcons = [
 	'https://i.imgur.com/4DAHjyl.png',
 	'https://i.imgur.com/uYQtYC8.png',
 	'https://i.imgur.com/YqmfKAg.png',
-	'https://i.imgur.com/XAReGKN.png'
+	'https://i.imgur.com/XAReGKN.png',
+	'https://imgur.com/2AyKB58.png'
 ];
 
 const skillNames = [
@@ -296,7 +297,8 @@ const skillNames = [
 	'REACT ROUTER',
 	'WEBPACK',
 	'HEROKU',
-	'FIREBASE'
+	'FIREBASE',
+	'MONGODB'
 ];
 
 module.exports = {
