@@ -25,7 +25,7 @@ export default class Home extends Component {
 				<section>
 					<div className="intro">
 						<h1 className="name">Matthew Kaplan</h1>
-						<p className="position">Front-End Engineer</p>
+						<p className="position">Full Stack Developer</p>
 						<div className="logo-container">
 							<a href="https://github.com/MatthewKaplan" target="blank">
 								<FontAwesomeIcon icon={faGithub} className="github-icon" size="2x" />
