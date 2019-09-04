@@ -21,14 +21,15 @@ const projectData = [
 		img: 'https://i.imgur.com/wAMd7bi.png',
 		backdrop: 'https://i.imgur.com/C8KDTtZ.jpg',
 		description:
-			'I built and designed this website for a custom home theater businesses that operates out of Huntington, New York. The issue that they were having with their old website was that it was not mobile friendly and was also built in the early 2000s and in desperate need of an upgrade.',
+			'I built and designed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn\'t been updated since the early 2000s.',
 		website: 'https://master.d30uxrf9waatbu.amplifyapp.com/',
 		repo: 'https://github.com/MatthewKaplan/sound-insight',
-		tools_used: [ 'JAVASCRIPT', 'REACT', 'SASS' ],
+		tools_used: [ 'JAVASCRIPT', 'REACT', 'SASS', 'React-Router' ],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
-			'https://i.imgur.com/iVwUSvz.png'
+			'https://i.imgur.com/iVwUSvz.png',
+			'https://i.imgur.com/4DAHjyl.png'
 		],
 		tested_with: [ 'JEST', 'ENZYME' ],
 		tested_icons: [ 'https://i.imgur.com/zUMEX7a.png', 'https://i.imgur.com/pE1ocnr.png' ]
