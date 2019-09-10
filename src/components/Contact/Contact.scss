@@ -16,7 +16,7 @@
 
   article {
     display: flex;
-    padding-top: 70px;
+    padding-top: 50px;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
@@ -67,6 +67,7 @@
       border-radius: 20px;
       background-color: $contact-form;
       z-index: 999;
+      height: 335px;
 
       label {
         font-weight: bold;
@@ -96,11 +97,12 @@
         background-color: $contact-form;
         transition: all ease-in-out 200ms;
         border: 2px solid $contact-text;
-        color: $contact-btn;
+        color: $contact-text;
         cursor: pointer;
 
         &:hover {
-          color: $contact-text !important;
+          color: $contact-form !important;
+          background-color: $contact-text;
         }
       }
     }

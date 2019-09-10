@@ -31,8 +31,8 @@ export default class Contact extends Component {
           <div className="contact-intro">
             <h3>Let's get in touch!</h3>
             <p>
-              I'm currently looking for work in the Denver, CO area but would also consider relocating. If you are
-              interested in grabbing a cup of coffee or speaking over the phone
+              I'm currently looking for work in Denver, CO but would also consider relocating. If you are
+              interested in grabbing a cup of coffee or speaking over the phone,
               please reach out and I'll get back to you as soon as possible.
             </p>
           </div>
