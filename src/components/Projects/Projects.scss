@@ -340,3 +340,19 @@
     right: 0.5em;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .projects-component .device .iphone-image {
+    height: 400px;
+    margin-left: 80px;
+  }
+
+  .projects-component .device .laptop-bg-image {
+    background-size: 246px 154px;
+  }
+
+  .projects-component .device .iphone-bg-image {
+    width: 55%;
+    left: 36%;
+  }
+}
