@@ -67,14 +67,14 @@ export default class About extends Component {
 							<article>
 								<div className="close-bio" onClick={() => this.setState({ bio: false })} />
 								<p>
-									Hi! My name is Matthew Kaplan and I'm a Software Engineer who specializes in Front End development.
+									Hi! My name is Matthew Kaplan and I'm a Software Developer who specializes in Front End development.
 									Born and raised in New York City, I moved to Colorado in 2012 to study at the University of Colorado
 									Boulder.
 								</p>
 								<p>
 									After graduating from college with a B.A. in Computer Science, I found myself as a Project Manager for
 									a nationwide construction company. After almost 2 years in that position, I decided that it was time
-									to get back to doing what I love which is programming.
+									to get back to doing what I love, which is programming.
 								</p>
 							</article>
 						</section>

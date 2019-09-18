@@ -277,7 +277,11 @@
 @media screen and (max-width: 1440px) {
   .projects-component .device {
     left: 0%;
-    top: 10%;
+    top: -10%;
+  }
+
+  .projects-component .device .laptop-device {
+    margin-top: 80px;
   }
 }
 

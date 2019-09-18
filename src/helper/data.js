@@ -4,7 +4,7 @@ const projectData = [
     img: "https://i.imgur.com/IsQ7LbH.png",
     backdrop: "https://i.imgur.com/z2VjrhY.png",
     description:
-      "LangChat is a mobile application that allow users from all over the world to chat with eachother in an effort to learn each others languages.",
+      "LangChat is a language learning application where users have the ability to chat with other users from around the world in an effort to learn their language just by exchanging messages. Users have the ability to correct each others messages in the event of a spelling mistake or grammatical error.",
     website: "",
     repo: "https://github.com/jarrettkong/LangChat",
     tools_used: ["JAVASCRIPT", "REACT NATIVE", "REDUX"],
@@ -24,7 +24,7 @@ const projectData = [
     img: "https://i.imgur.com/wAMd7bi.png",
     backdrop: "https://i.imgur.com/C8KDTtZ.jpg",
     description:
-      "I built and designed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000s.",
+      "I designed and developed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000's.",
     website: "https://master.d30uxrf9waatbu.amplifyapp.com/",
     repo: "https://github.com/MatthewKaplan/sound-insight",
     tools_used: ["JAVASCRIPT", "REACT", "SASS", "React-Router"],
