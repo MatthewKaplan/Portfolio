@@ -294,18 +294,19 @@
       color: $main-text;
       border-radius: 6px;
       font-family: $body-text;
-      font-weight: 800;
+      font-weight: 400;
       width: 75%;
       z-index: 998;
+      position: relative;
       .close-bio {
         min-height: 40px;
         min-width: 115px;
         background-image: url("https://i.imgur.com/W2MOh1G.png");
         background-size: contain;
-        position: relative;
+        position: absolute;
         background-repeat: no-repeat;
-        left: 90%;
-        top: 0%;
+        left: 96.5%;
+        top: 1%;
         cursor: pointer;
         z-index: 999;
 
@@ -345,6 +346,154 @@
       text-align: center;
       width: 1000px;
     }
+  }
+}
+
+@media screen and (max-width: 2560px) {
+    .about-component .about-imgs {
+    .heart-container,
+    .fingerprint-container,
+    .brain-container {
+      height: 450px;
+      width: 350px;
+      h1 {
+        font-size: 80px;
+      }
+    }
+    .brain-container .align-text h1 {
+      font-size: 80px;
+      margin-top: 80px;
+    }
+  }
+
+  .about-component .love-section .close-section {
+    top: 58.5%;
+    left: 49%;
+  }
+
+  .about-component .about-imgs {
+    grid-column-gap: 150px;
+
+    .heart-container .image span {
+      width: 22.5%;
+    }
+
+    .brain-container .image span {
+      width: 24.7%;
+    }
+
+    .fingerprint-container .image span {
+      width: 23%;
+    }
+  }
+
+  .about-component .about-me-section {
+    grid-template-columns: 1fr 5fr;
+    article p {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+    .about-component .about-imgs {
+    .heart-container,
+    .fingerprint-container,
+    .brain-container {
+      height: 400px;
+      width: 300px;
+      h1 {
+        font-size: 80px;
+      }
+    }
+    .brain-container .align-text h1 {
+      font-size: 80px;
+      margin-top: 80px;
+    }
+  }
+
+  .about-component .about-imgs {
+    grid-column-gap: 100px;
+
+    .heart-container .image span {
+      width: 23.5%;
+    }
+
+    .brain-container .image span {
+      width: 25%;
+    }
+
+    .fingerprint-container .image span {
+      width: 24%;
+    }
+  }
+
+  .about-component .about-me-section article .close-bio {
+    left: 95.5%;
+  }
+
+  .about-component .love-section .close-section {
+    top: 61.4%;
+    left: 48.5%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+    .about-component .about-imgs {
+    .heart-container,
+    .fingerprint-container,
+    .brain-container {
+      height: 400px;
+      width: 300px;
+      h1 {
+        font-size: 80px;
+      }
+    }
+    .brain-container .align-text h1 {
+      font-size: 80px;
+      margin-top: 80px;
+    }
+  }
+
+
+    .about-component .love-section .close-section {
+      top: 61.5%;
+      left: 48.5%;
+    }
+
+  .about-component .about-imgs {
+    grid-column-gap: 100px;
+
+    .heart-container .image span {
+      width: 23.5%;
+    }
+
+    .brain-container .image span {
+      width: 25%;
+    }
+
+    .fingerprint-container .image span {
+      width: 24%;
+    }
+  }
+
+  .about-component .about-me-section article .close-bio {
+    left: 94.8%;
+  }
+
+  .about-component .about-me-section article p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1440px) { 
+  .about-component .about-me-section article .close-bio {
+    left: 93.5%;
+  }
+
+  .about-component .love-section .close-section {
+    top: 63.5%;
+    left: 48%;
   }
 }
 
@@ -404,6 +553,64 @@
 
   .about-component .love-section .slides {
     width: 950px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .about-component .about-imgs {
+    .heart-container,
+    .fingerprint-container,
+    .brain-container {
+      height: 250px;
+      width: 200px;
+    }
+    .brain-container .align-text h1 {
+      font-size: 55px;
+      margin-top: 60px;
+    }
+  }
+
+  .about-component .love-section .close-section {
+    top: 70.5%;
+    left: 47%;
+  }
+
+  .about-component .about-me-section article .close-bio {
+    left: 95%;
+    top: 2%;
+  }
+
+  .about-component .love-section .slides {
+    width: 950px;
+  }
+
+    .about-component .about-imgs {
+    grid-column-gap: 50px;
+
+    .heart-container .image span {
+      width: 22%;
+    }
+
+    .brain-container .image span {
+      width: 24%;
+    }
+
+    .fingerprint-container .image span {
+      width: 22.5%;
+    }
+  }
+
+    .about-component .about-me-section article
+    {
+      margin-left: 40px;
+    p {
+      font-size: 18px;
+      margin-top: 50px;
+    }
+  }
+
+  .about-component .about-me-section article .close-bio {
+    left: 94%;
   }
 }
 
