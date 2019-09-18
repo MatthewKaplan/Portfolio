@@ -249,16 +249,83 @@
   }
 }
 
-@media screen and (max-width: 640px) {
-  .projects-component .device .iphone-image,
-  .projects-component .device .laptop-image {
-    display: none;
+@media screen and (max-width: 2560px) {
+  .projects-component .device {
+    left: 40%;
+    top: 19%;
+  }
+
+  .projects-component .device .laptop-bg-image {
+    background-size: 581px 362px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .projects-component .device {
+    left: 15%;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .projects-component .device {
+    left: 8%;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .projects-component .device {
+    left: 0%;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projects-component .device {
+    left: 1%;
+    top: 18%;
   }
 
   .projects-component .project-description {
-    left: 0%;
-    bottom: 10%;
-    margin: 0 10px 0 10px;
+    width: 100%;
+    top: 0;
+    min-height: 173px;
+    min-width: 100%;
+    left: 0;
+    .separator,
+    .built-with,
+    .tools-used {
+      display: none;
+    }
+  }
+
+  .projects-component .device .laptop-bg-image {
+    background-size: 524px 327px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+    .projects-component .device .laptop-bg-image {
+    background-size: 271px 170px;
+  }
+
+  .projects-component .device .iphone-image {
+    margin-left: 50px;
+  }
+
+  .projects-component .device .iphone-bg-image {
+    width: 67%;
+    left: 23%;
+    background-size: cover;
+  }
+
+  .projects-component .device .laptop-device {
+    margin-top: 120px;
+  }
+
+  .projects-component .project-description {
+    min-height: 260px;
   }
 
   .projects-component .arrow {
