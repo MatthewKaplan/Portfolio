@@ -2,6 +2,7 @@
 
 .about-component {
   @include component-styles;
+  overflow: hidden;
 
   .bio-bg-color {
     background-color: $bio-background;
@@ -486,7 +487,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) { 
+@media screen and (max-width: 1445px) { 
   .about-component .about-me-section article .close-bio {
     left: 93.5%;
   }
@@ -616,14 +617,19 @@
 
 @media screen and (max-width: 755px) {
   .about-component .about-imgs {
-    .heart-container,
-    .fingerprint-container,
     .brain-container {
+        height: 250px;
+        width: 190px;
+    }
+
+    .fingerprint-container {
       height: 250px;
-      width: 150px;
-      h1 {
-        font-size: 45px;
-      }
+      width: 182px;
+    }
+
+    .heart-container {
+      height: 250px;
+      width: 173px;
     }
     .brain-container .align-text h1 {
       font-size: 40px;
@@ -631,12 +637,33 @@
     }
   }
 
-  .about-me-section article .close-bio {
+  .about-component .love-section .close-section {
+    top: 64.5%;
+    left: 47%;
+  }
+
+  .about-component .about-me-section article .close-bio {
     top: 2%;
-    left: 96%;
+    left: 93%;
   }
   .about-component .love-section .slides {
     width: 755px;
+  }
+
+  .about-component .about-imgs {
+    grid-column-gap: 50px;
+
+    .heart-container .image span {
+      width: 25%;
+    }
+
+    .brain-container .image span {
+      width: 25%;
+    }
+
+    .fingerprint-container .image span {
+      width: 25%;
+    }
   }
 }
 
@@ -656,13 +683,17 @@
     }
   }
 
-  .about-me-section article .close-bio {
-    top: 5%;
-    left: 85%;
+  .about-component .love-section .close-section {
+    top: 64.5%;
+    left: 46%;
   }
 
   .love-section .slides {
     width: 615px;
+  }
+
+  .about-component .about-me-section article .close-bio {
+    left: 90%;
   }
 }
 
@@ -681,5 +712,34 @@
   }
   .about-component .love-section .slides {
     width: 414px;
+  }
+
+  .about-component .about-imgs {
+    .brain-container {
+        height: 250px;
+        width: 200px;
+    }
+
+    .fingerprint-container {
+      height: 250px;
+      width: 186px;
+    }
+
+    .heart-container {
+      height: 250px;
+      width: 184px;
+    }
+    .brain-container .align-text h1 {
+      font-size: 40px;
+      margin-top: 50px;
+    }
+  }
+
+  .about-component .about-me-section article .close-bio {
+    left: 85%;
+  }
+
+  .about-component .about-me-section {
+    grid-template-rows: 1fr 2fr;
   }
 }
