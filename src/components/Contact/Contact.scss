@@ -16,7 +16,7 @@
 
   article {
     display: flex;
-    padding-top: 50px;
+    // padding-top: 50px;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
@@ -36,7 +36,7 @@
         font-size: 3rem;
         color: $contact-text;
         font-family: $main-headings;
-        margin: 0;
+        margin: 50px 0 0 0;
       }
 
       p {
@@ -109,9 +109,34 @@
   }
 }
 
+@media screen and (max-width: 2560px) {
+  .contact-component article div.contact-intro h3 {
+    margin-top: 160px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .contact-component article div.contact-intro h3 {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 1680px) {}
+
+@media screen and (max-width: 1445px) {
+  .contact-component article div.contact-intro h3 {
+    margin-top: 100px;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
   .contact-component article div.contact-intro h3 {
     font-size: 2rem;
+  }
+
+  .contact-component article div.contact-intro h3 {
+    margin-top: 80px;
   }
 
   .contact-component article {
