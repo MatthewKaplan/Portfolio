@@ -458,7 +458,7 @@
 
 
     .about-component .love-section .close-section {
-      top: 61.5%;
+      top: 61.8%;
       left: 48.5%;
     }
 
@@ -493,8 +493,8 @@
   }
 
   .about-component .love-section .close-section {
-    top: 63.5%;
-    left: 48%;
+    top: 63.8%;
+    left: 48.5%;
   }
 }
 
@@ -764,5 +764,14 @@
 
   .about-component .about-imgs {
     grid-row-gap: 25px;
+  }
+
+  .about-component .love-section .close-section {
+    top: 65.3%;
+    left: 44%;
+  }
+
+  .about-component .align-arrows .hobby {
+    font-size: 40px;
   }
 }

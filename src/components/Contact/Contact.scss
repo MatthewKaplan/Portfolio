@@ -4,6 +4,7 @@
   position: relative;
   height: 100vh;
   flex-direction: row;
+  overflow-y: hidden;
 
   img.bg-image {
     @include background-color-styles;

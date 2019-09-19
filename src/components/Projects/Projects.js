@@ -220,20 +220,18 @@ export default class Projects extends Component {
                 alt="iPhone"
               />
             ) : (
-              <React.Fragment>
-                <div className="laptop-device">
-                  <img
-                    className="laptop-image"
-                    src={require("../../assets/laptop.png")}
-                    alt="Laptop"
-                  />
-                  <img
-                    className="default-laptop-bg-image"
-                    src={require("../../assets/blackout.jpg")}
-                    alt="Laptop"
-                  />
-                </div>
-              </React.Fragment>
+              <div className="laptop-device">
+                <img
+                  className="laptop-image"
+                  src={require("../../assets/laptop.png")}
+                  alt="Laptop"
+                />
+                <img
+                  className="default-laptop-bg-image"
+                  src={require("../../assets/blackout.jpg")}
+                  alt="Laptop"
+                />
+              </div>
             )}
             {this.state.slidesPosition === 0
               ? this.getIphoneImg()
