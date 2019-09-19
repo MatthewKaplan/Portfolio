@@ -745,22 +745,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  article {
-    width: 100%;
-  }
-  .about-me-section article .close-bio {
-    position: absolute;
-    top: 5%;
-    left: 85%;
-    margin-right: 40px;
-  }
-  .love-section .slides {
-    width: 400px;
-  }
-  .about-component .love-section .slides {
-    width: 414px;
-  }
-
   .about-component .about-imgs {
     .brain-container {
         height: 200px;
@@ -776,17 +760,9 @@
       height: 200px;
       width: 149px;
     }
-    .brain-container .align-text h1 {
-      font-size: 40px;
-      margin-top: 50px;
-    }
   }
 
-  .about-component .about-me-section article .close-bio {
-    left: 85%;
-  }
-
-  .about-component .about-me-section {
-    grid-template-rows: 1fr 2fr;
+  .about-component .about-imgs {
+    grid-row-gap: 25px;
   }
 }

@@ -1,238 +1,266 @@
 @import "../../sass/variables";
 
 .home-component {
-  @include component-styles;
+	@include component-styles;
 
-  .overlay {
-    background-color: $main-overlay;
-    @include overlay-style;
-  }
+	.overlay {
+		background-color: $main-overlay;
+		@include overlay-style;
+	}
 
-  img.bg-image {
-    position: fixed;
-    z-index: -8;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+	img.bg-image {
+		position: fixed;
+		z-index: -8;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
 
-  section {
-    display: flex;
-    align-items: flex-end;
-    border-radius: 30px;
-    padding: 10px 40px;
-    position: relative;
+	section {
+		display: flex;
+		align-items: flex-end;
+		border-radius: 30px;
+		padding: 10px 40px;
+		position: relative;
 
-    .intro {
-      color: $main-text;
-      font-size: 2.2rem;
-      margin: 50px 10px;
-      text-align: center;
+		.intro {
+			color: $main-text;
+			font-size: 2.2rem;
+			margin: 50px 10px;
+			text-align: center;
 
-      .name {
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid $main-text;
-        border-bottom-color: rgba(255, 255, 255, 1.35);
-        display: inline-block;
-        font-family: $main-headings;
-      }
+			.name {
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid $main-text;
+				border-bottom-color: rgba(255, 255, 255, 1.35);
+				display: inline-block;
+				font-family: $main-headings;
+			}
 
-      .position {
-        margin-top: 0;
-        font-size: 45px;
-        font-family: $main-headings;
-        margin-bottom: 30px;
-      }
+			.position {
+				margin-top: 0;
+				font-size: 45px;
+				font-family: $main-headings;
+				margin-bottom: 30px;
+			}
 
-      .logo-container {
-        display: flex;
-        justify-content: space-around;
-        width: 14em;
-        margin: 0 auto;
+			.logo-container {
+				display: flex;
+				justify-content: space-around;
+				width: 14em;
+				margin: 0 auto;
 
-        a {
-          color: $main-text;
-        }
+				a {
+					color: $main-text;
+				}
 
-        .envelope-icon {
-          cursor: pointer;
-        }
+				.envelope-icon {
+					cursor: pointer;
+				}
 
-        .resume-icon {
-          cursor: pointer;
-          height: 68px;
-        }
-        
-        .resume-icon:hover,
-        .envelope-icon:hover,
-        .github-icon:hover,
-        .linkedin-icon:hover {
-          transform: scale(1.2);
-          transition: 0.25s ease-out;
-        }
-      }
-    }
-  }
+				.resume-icon {
+					cursor: pointer;
+					height: 68px;
+				}
 
-  .isCopied {
-    background-color: rgba(0, 0, 0, 0.704);
-    position: absolute;
-    bottom: -10%;
-    left: 39%;
-    width: 200px;
-    color: $main-text;
-    font-size: 30px;
-    border-radius: 5px;
-    text-align: center;
+				.resume-icon:hover,
+				.envelope-icon:hover,
+				.github-icon:hover,
+				.linkedin-icon:hover {
+					transform: scale(1.2);
+					transition: 0.25s ease-out;
+				}
+			}
+		}
+	}
 
-    &.inactive {
-      opacity: 0;
-      transition: opacity 0.25s ease-in-out;
-      -webkit-transition-delay: 0s;
-      -moz-transition-delay: 0s;
-      -o-transition-delay: 0s;
-      transition-delay: 0s;
-    }
+	.isCopied {
+		background-color: rgba(0, 0, 0, 0.704);
+		position: absolute;
+		bottom: -10%;
+		left: 39%;
+		width: 200px;
+		color: $main-text;
+		font-size: 30px;
+		border-radius: 5px;
+		text-align: center;
 
-    &:after {
-      content: "";
-      width: 3px;
-      height: 0px;
-      border-top: 10px solid transparent;
-      border-bottom: 23px solid rgba(0, 0, 0, 0.704);
-      border-right: 10px solid transparent;
-      border-left: 10px solid transparent;
-      position: absolute;
-      bottom: 100%;
-      left: 75%;
-    }
-    
-    &.active {
-      opacity: 1;
-      transition: opacity 0.25s ease-in-out;
-      -webkit-transition-delay: 0.5s;
-      -moz-transition-delay: 0.5s;
-      -o-transition-delay: 0.5s;
-      transition-delay: 0.5s;
-    }
-  }
+		&.inactive {
+			opacity: 0;
+			transition: opacity 0.25s ease-in-out;
+			-webkit-transition-delay: 0s;
+			-moz-transition-delay: 0s;
+			-o-transition-delay: 0s;
+			transition-delay: 0s;
+		}
 
-  .scroll-down {
-    height: 80px;
-    width: 110px;
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    right: 5%;
-    background-color: $navbar;
-    text-align: center;
-    z-index: 6;
-    cursor: pointer;
+		&:after {
+			content: "";
+			width: 3px;
+			height: 0px;
+			border-top: 10px solid transparent;
+			border-bottom: 23px solid rgba(0, 0, 0, 0.704);
+			border-right: 10px solid transparent;
+			border-left: 10px solid transparent;
+			position: absolute;
+			bottom: 100%;
+			left: 75%;
+		}
 
-    .scroll-down-icon {
-      color: $main-text;
-      margin-top: 23px;
-    }
+		&.active {
+			opacity: 1;
+			transition: opacity 0.25s ease-in-out;
+			-webkit-transition-delay: 0.5s;
+			-moz-transition-delay: 0.5s;
+			-o-transition-delay: 0.5s;
+			transition-delay: 0.5s;
+		}
+	}
 
-    .bounce {
-      display: inline-block;
-      position: relative;
-      -moz-animation: bounce 1.4s infinite linear;
-      -o-animation: bounce 1.4s infinite linear;
-      -webkit-animation: bounce 1.4s infinite linear;
-      animation: bounce 1.4s infinite linear;
-    }
+	.scroll-down {
+		height: 80px;
+		width: 110px;
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		right: 5%;
+		background-color: $navbar;
+		text-align: center;
+		z-index: 6;
+		cursor: pointer;
 
-    @-webkit-keyframes bounce {
-      0% {
-        top: 0;
-      }
-      50% {
-        top: -0.2em;
-      }
-      70% {
-        top: -0.3em;
-      }
-      100% {
-        top: 0;
-      }
-    }
-    @-moz-keyframes bounce {
-      0% {
-        top: 0;
-      }
-      50% {
-        top: -0.2em;
-      }
-      70% {
-        top: -0.3em;
-      }
-      100% {
-        top: 0;
-      }
-    }
-    @-o-keyframes bounce {
-      0% {
-        top: 0;
-      }
-      50% {
-        top: -0.2em;
-      }
-      70% {
-        top: -0.3em;
-      }
-      100% {
-        top: 0;
-      }
-    }
-    @-ms-keyframes bounce {
-      0% {
-        top: 0;
-      }
-      50% {
-        top: -0.2em;
-      }
-      70% {
-        top: -0.3em;
-      }
-      100% {
-        top: 0;
-      }
-    }
-    @keyframes bounce {
-      0% {
-        top: 0;
-      }
-      50% {
-        top: -0.2em;
-      }
-      70% {
-        top: -0.3em;
-      }
-      100% {
-        top: 0;
-      }
-    }
-  }
+		.scroll-down-icon {
+			color: $main-text;
+			margin-top: 23px;
+		}
+
+		.bounce {
+			display: inline-block;
+			position: relative;
+			-moz-animation: bounce 1.4s infinite linear;
+			-o-animation: bounce 1.4s infinite linear;
+			-webkit-animation: bounce 1.4s infinite linear;
+			animation: bounce 1.4s infinite linear;
+		}
+
+		@-webkit-keyframes bounce {
+			0% {
+				top: 0;
+			}
+			50% {
+				top: -0.2em;
+			}
+			70% {
+				top: -0.3em;
+			}
+			100% {
+				top: 0;
+			}
+		}
+		@-moz-keyframes bounce {
+			0% {
+				top: 0;
+			}
+			50% {
+				top: -0.2em;
+			}
+			70% {
+				top: -0.3em;
+			}
+			100% {
+				top: 0;
+			}
+		}
+		@-o-keyframes bounce {
+			0% {
+				top: 0;
+			}
+			50% {
+				top: -0.2em;
+			}
+			70% {
+				top: -0.3em;
+			}
+			100% {
+				top: 0;
+			}
+		}
+		@-ms-keyframes bounce {
+			0% {
+				top: 0;
+			}
+			50% {
+				top: -0.2em;
+			}
+			70% {
+				top: -0.3em;
+			}
+			100% {
+				top: 0;
+			}
+		}
+		@keyframes bounce {
+			0% {
+				top: 0;
+			}
+			50% {
+				top: -0.2em;
+			}
+			70% {
+				top: -0.3em;
+			}
+			100% {
+				top: 0;
+			}
+		}
+	}
 }
 
-@media (max-width: 480px)
-{
-  .home-component section {
-    .intro {
-      font-size: 1.6rem;
-      .position {
-        font-size: 25px;
-      }
-    }
-  }
+@media (max-width: 480px) {
+	.home-component section {
+		.intro {
+			font-size: 1.6rem;
+			.position {
+				font-size: 25px;
+			}
+		}
+	}
 
-  .home-component section .intro .logo-container .resume-icon {
-    height: 48px;
-  }
+	.home-component section .intro .logo-container .resume-icon {
+		height: 48px;
+	}
 
-  .home-component section {
-    padding: 0;
-  }
+	.home-component section {
+		padding: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.envelope-icon,
+	.linkedin-icon,
+	.github-icon {
+		height: 40px;
+	}
+
+	.home-component section .intro .logo-container .resume-icon {
+		height: 38px;
+	}
+
+	.home-component section .intro .logo-container {
+		width: 12em;
+	}
+
+	.home-component h1 {
+		font-size: 1.5em;
+	}
+
+	.home-component .isCopied {
+		left: 27.5%;
+		width: 150px;
+	}
+
+	.home-component .isCopied {
+		font-size: 25px;
+	}
 }
