@@ -220,7 +220,6 @@ const projectData = [
     name: "Jest Do It",
     img: "https://i.imgur.com/jF45CmO.jpg",
     mobile_img: "https://i.imgur.com/NagrJxO.jpg",
-    // mobile_img: "https://i.imgur.com/0QsK0ql.png",
     backdrop: "https://i.imgur.com/LVGVG8f.png",
     description:
       "Jest Do It is a flash card application that tests the user on their knowledge of the popular testing framework Jest. The application also includes a leaderboard so friends can challenge one another.",
@@ -263,7 +262,7 @@ const projectData = [
   {
     name: "GameTime",
     img: "https://i.imgur.com/Rtmd87X.png",
-    mobile_img: "",
+    mobile_img: "https://i.imgur.com/uY5zAjn.png",
     backdrop: "https://i.imgur.com/LaoxIMa.jpg",
     description:
       '"I\'ll take ___ for $1,000, Alex." Come test your trivia knowledge playing Jeopardy, Revenge of the nerds style! ',
