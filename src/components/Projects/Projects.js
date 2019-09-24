@@ -21,7 +21,7 @@ export default class Projects extends Component {
     const { slidesPosition } = this.state;
     const autoSlides = setInterval(this.changeSlidesPositionForward, 15000);
     let position = slidesPosition;
-    if (position < 12) {
+    if (position < 13) {
       position++;
       clearInterval(this.state.autoSlides);
       this.setState({ slidesPosition: position, autoSlides });
@@ -37,7 +37,7 @@ export default class Projects extends Component {
     let position = slidesPosition;
     if (slidesPosition === 0) {
       clearInterval(this.state.autoSlides);
-      this.setState({ slidesPosition: 12, autoSlides });
+      this.setState({ slidesPosition: 13, autoSlides });
     } else {
       position--;
       clearInterval(this.state.autoSlides);
@@ -90,7 +90,7 @@ export default class Projects extends Component {
         };
         return (
           <div
-            className="iphone-bg-image"
+            className={this.state.slidesPosition === 0 || this.state.slidesPosition === 2 ? "iphone-bg-image sm-iphone-image" : "iphone-bg-image"}
             key={Date.now()}
             style={backgroundImage}
           />
@@ -114,12 +114,12 @@ export default class Projects extends Component {
         return (
           <div className="device2">
             <img
-              className="blank-iphone"
+              className={this.state.slidesPosition === 0 || this.state.slidesPosition === 2 ? "blank-iphone mobile-slide" : "blank-iphone"}
               src={require("../../assets/blackIPhone.png")}
               alt="iPhone"
             />
             <div
-              className="iphone-svg-image"
+              className={this.state.slidesPosition === 0 || this.state.slidesPosition === 2 ? "iphone-svg-image mobile-slide-img" : "iphone-svg-image"}
               key={Date.now() + 1}
               style={backgroundImage}
             />
@@ -243,7 +243,8 @@ export default class Projects extends Component {
           }}
         >
           <div className="device">
-            {this.state.slidesPosition === 0 ? (
+            {this.state.slidesPosition === 0 ||
+            this.state.slidesPosition === 2 ? (
               <img
                 className="iphone-image"
                 src={require("../../assets/blackIPhone.png")}
@@ -263,7 +264,8 @@ export default class Projects extends Component {
                 />
               </div>
             )}
-            {this.state.slidesPosition === 0
+            {this.state.slidesPosition === 0 ||
+            this.state.slidesPosition === 2
               ? this.getIphoneImg()
               : this.getLapTopImg()}
           </div>
