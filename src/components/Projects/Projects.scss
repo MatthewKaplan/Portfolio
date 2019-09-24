@@ -46,7 +46,7 @@
 
   .bg-image {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     height: 100%;
     width: 100%;
     background-position: top center;
@@ -57,22 +57,20 @@
   .overlay {
     background-color: $main-overlay;
     @include overlay-style;
-    z-index: -1;
   }
 
   .background-styles {
     background-color: palevioletred;
     position: absolute;
+    z-index: -1;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -2;
   }
 
   .device2 {
-    position: relative;
+        position: relative;
     opacity: 1;
-    z-index: 999;
 
       .iphone-svg-image {
         position: absolute;
@@ -107,34 +105,12 @@
         background-size: 120px 240px;
         width: 20%;
         top: -108%;
-        z-index: 999;
-      }
-
-      .default-iphone-bg-image {
-        visibility: hidden;
-        // position: absolute;
-        // height: 240px;
-        // width: 120px;
-        // left: 37.5%;
-        // top: -108%;
-        // z-index: -999;
-      }
-
-      .default-iphone-sm-image {
-        // position: absolute;
-        // height: 240px;
-        // width: 120px;
-        // left: 7.6%;
-        // top: -153%;
-        // z-index: 999;
-        visibility: hidden;
       }
     }
 
   .device {
     position: relative;
     opacity: 1;
-    z-index: 999;
 
     .laptop-image {
       max-width: 100%;
@@ -430,9 +406,8 @@
 
 @media screen and (max-width: 1440px) {
   .projects-component .device {
-    left: 2%;
+    left: 0%;
     top: -10%;
-    z-index: -1;
   }
 
   .projects-component .device .laptop-device {
@@ -442,7 +417,6 @@
   .projects-component .device2 {
     position: relative;
     opacity: 1;
-    left: 2%;
 
     .iphone-svg-image {
       position: absolute;
@@ -475,26 +449,6 @@
       background-size: 120px 240px;
       width: 20%;
       top: -108%;
-    }
-
-    .default-iphone-bg-image {
-      visibility: visible;
-      position: absolute;
-      height: 240px;
-      width: 120px;
-      left: 37.5%;
-      top: -108%;
-      z-index: -1;
-    }
-
-    .default-iphone-sm-image {
-      visibility: visible;
-      position: absolute;
-      height: 240px;
-      width: 120px;
-      left: 7.6%;
-      top: -121%;
-      z-index: -1;
     }
   }
 }
@@ -614,26 +568,6 @@
       background-size: 50px 100px;
       width: 20%;
       top: 40.7%;
-    }
-
-    .default-iphone-bg-image {
-      visibility: visible;
-      position: absolute;
-      height: 100px;
-      width: 50px;
-      left: 17.0%;
-      top: 38%;
-      z-index: -1;
-    }
-
-    .default-iphone-sm-image {
-      visibility: visible;
-      position: absolute;
-      height: 100px;
-      width: 50px;
-      left: 7.8%;
-      top: 30%;
-      z-index: -1;
     }
   }
 }
