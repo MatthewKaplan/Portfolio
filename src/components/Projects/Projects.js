@@ -101,6 +101,36 @@ export default class Projects extends Component {
     });
   };
 
+  renderMobileImg = () => {
+    return projectData.map((project, index) => {
+      if (
+        index === this.state.slidesPosition &&
+        project.mobile_img.length > 0
+      ) {
+        const backImg = project.mobile_img;
+        let backgroundImage = {
+          backgroundImage: `url(${backImg})`
+        };
+        return (
+          <div className="device2">
+            <img
+              className="blank-iphone"
+              src={require("../../assets/blackIPhone.png")}
+              alt="iPhone"
+            />
+            <div
+              className="iphone-svg-image"
+              key={Date.now() + 1}
+              style={backgroundImage}
+            />
+          </div>
+        );
+      } else {
+        return null;
+      }
+    });
+  };
+
   getProjectInfo = info => {
     return projectData.map((project, index) => {
       if (index === this.state.slidesPosition) {
@@ -237,6 +267,7 @@ export default class Projects extends Component {
               ? this.getIphoneImg()
               : this.getLapTopImg()}
           </div>
+          {this.renderMobileImg()}
         </TiltPhaseSix>
         <section className="project-description">
           <section className="project-links">
