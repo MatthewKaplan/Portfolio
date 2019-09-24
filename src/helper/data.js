@@ -188,7 +188,7 @@ const projectData = [
   {
     name: "TrapperKeeper",
     img: "https://i.imgur.com/DQ51leb.jpg",
-    mobile_img: "https://i.imgur.com/aEfk61X.png",
+    mobile_img: "https://i.imgur.com/MtOD8B0.jpg",
     backdrop: "https://i.imgur.com/6aWO3UL.jpg",
     description:
       "TrapperKeeper is a web application that is based off the famous note-taking service Google Keep. It allows the user to keep track of their busy life by creating an online checklist.",
@@ -219,7 +219,8 @@ const projectData = [
   {
     name: "Jest Do It",
     img: "https://i.imgur.com/jF45CmO.jpg",
-    mobile_img: "https://i.imgur.com/0QsK0ql.png",
+    mobile_img: "https://i.imgur.com/NagrJxO.jpg",
+    // mobile_img: "https://i.imgur.com/0QsK0ql.png",
     backdrop: "https://i.imgur.com/LVGVG8f.png",
     description:
       "Jest Do It is a flash card application that tests the user on their knowledge of the popular testing framework Jest. The application also includes a leaderboard so friends can challenge one another.",
