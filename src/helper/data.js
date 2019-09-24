@@ -1,18 +1,19 @@
 const projectData = [
   {
     name: "LangChat",
-    img: "https://i.imgur.com/IsQ7LbH.png",
-    mobile_img: "",
+    img: "https://i.imgur.com/FV31imK.jpg",
+    mobile_img: "https://i.imgur.com/IsQ7LbH.png",
     backdrop: "https://i.imgur.com/z2VjrhY.png",
     description:
       "LangChat is a language learning application where users have the ability to chat with other users from around the world in an effort to learn their language just by exchanging messages. Users have the ability to correct each others messages in the event of a spelling mistake or grammatical error.",
     website: "",
     repo: "https://github.com/jarrettkong/LangChat",
-    tools_used: ["JAVASCRIPT", "REACT NATIVE", "REDUX"],
+    tools_used: ["JAVASCRIPT", "REACT NATIVE", "REDUX", "DJANGO"],
     tool_icons: [
       "https://i.imgur.com/3mSlFpH.png",
       "https://i.imgur.com/G9OJmuX.png",
-      "https://i.imgur.com/s9F3Q5b.png"
+      "https://i.imgur.com/s9F3Q5b.png",
+      "https://i.imgur.com/q2N5A5n.png"
     ],
     tested_with: ["JEST", "ENZYME"],
     tested_icons: [
@@ -29,12 +30,34 @@ const projectData = [
       "I designed and developed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000's.",
     website: "https://master.d30uxrf9waatbu.amplifyapp.com/",
     repo: "https://github.com/MatthewKaplan/sound-insight",
-    tools_used: ["JAVASCRIPT", "REACT", "SASS", "React-Router"],
+    tools_used: ["JAVASCRIPT", "REACT", "SASS", "REACT-ROUTER"],
     tool_icons: [
       "https://i.imgur.com/3mSlFpH.png",
       "https://i.imgur.com/axiLwzP.png?1",
       "https://i.imgur.com/iVwUSvz.png",
       "https://i.imgur.com/4DAHjyl.png"
+    ],
+    tested_with: ["JEST", "ENZYME"],
+    tested_icons: [
+      "https://i.imgur.com/zUMEX7a.png",
+      "https://i.imgur.com/pE1ocnr.png"
+    ]
+  },
+  {
+    name: "InstaList",
+    img: "https://i.imgur.com/KhvncQi.jpg?1",
+    mobile_img: "https://i.imgur.com/kW7wMbw.jpg",
+    backdrop: "https://i.imgur.com/RvGbRaM.png",
+    description:
+      "InstaList is a mobile application built using React Native, that allow users to buy and sell items online. I built this with the idea of creating a platform like craigslists with a delivery service such as InstaCart.",
+    website: "",
+    repo: "https://github.com/MatthewKaplan/Instalist",
+    tools_used: ["JAVASCRIPT", "REACT NATIVE", "REDUX", "NODE.JS"],
+    tool_icons: [
+      "https://i.imgur.com/3mSlFpH.png",
+      "https://i.imgur.com/G9OJmuX.png",
+      "https://i.imgur.com/s9F3Q5b.png",
+      "https://i.imgur.com/HuxcEJX.png"
     ],
     tested_with: ["JEST", "ENZYME"],
     tested_icons: [
@@ -56,7 +79,7 @@ const projectData = [
       "REACT.JS",
       "REDUX",
       "NODE.JS",
-      "React-Router",
+      "REACT-ROUTER",
       "SASS"
     ],
     tool_icons: [
@@ -76,7 +99,7 @@ const projectData = [
   {
     name: "ColorConstructor",
     img: "https://i.imgur.com/JU9d6j3.png",
-    mobile_img: "https://i.imgur.com/wwVnDRk.png",
+    mobile_img: "https://i.imgur.com/I0vAxRW.jpg",
     backdrop: "https://i.imgur.com/zqSFCAL.jpg",
     description:
       "Color Constructor is a single page web application where users can randomly generate color palettes. Users have the ability to lock colors that they like as they generate more, save palettes, and edit palettes.",
@@ -124,7 +147,7 @@ const projectData = [
       "REACT.JS",
       "REDUX",
       "NODE.JS",
-      "React-Router",
+      "REACT-ROUTER",
       "SASS"
     ],
     tool_icons: [
@@ -176,7 +199,7 @@ const projectData = [
       "REACT.JS",
       "REDUX",
       "NODE.JS",
-      "React-Router",
+      "REACT-ROUTER",
       "SASS"
     ],
     tool_icons: [
@@ -202,7 +225,7 @@ const projectData = [
       "Jest Do It is a flash card application that tests the user on their knowledge of the popular testing framework Jest. The application also includes a leaderboard so friends can challenge one another.",
     website: "https://jest-do-it.netlify.com/",
     repo: "https://github.com/MatthewKaplan/Jest-Do-It",
-    tools_used: ["JAVASCRIPT", "REACT.JS", "SASS", "React-Router"],
+    tools_used: ["JAVASCRIPT", "REACT.JS", "SASS", "REACT-ROUTER"],
     tool_icons: [
       "https://i.imgur.com/3mSlFpH.png",
       "https://i.imgur.com/axiLwzP.png?1",
@@ -301,7 +324,7 @@ const hobbyImages = [
   "https://i.imgur.com/AZeDkyX.png",
   "https://i.imgur.com/2JgZsQP.png",
   "https://i.imgur.com/JO27CzS.png",
-  "https://i.imgur.com/axiLwzP.png?1",
+  "https://i.imgur.com/oYAO28Z.png",
   "https://i.imgur.com/pi9t8dL.png",
   "https://i.imgur.com/Nhww1SJ.png",
   "https://i.imgur.com/WsaWOHd.png",
@@ -321,7 +344,7 @@ const hobbyNames = [
   "MUSIC",
   "CAMPING",
   "FAMILY",
-  "REACT",
+  "FRIENDS",
   "READING",
   "SWIMMING",
   "MAC",
