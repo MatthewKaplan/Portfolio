@@ -2,6 +2,7 @@ const projectData = [
   {
     name: "LangChat",
     img: "https://i.imgur.com/IsQ7LbH.png",
+    mobile_img: "",
     backdrop: "https://i.imgur.com/z2VjrhY.png",
     description:
       "LangChat is a language learning application where users have the ability to chat with other users from around the world in an effort to learn their language just by exchanging messages. Users have the ability to correct each others messages in the event of a spelling mistake or grammatical error.",
@@ -22,6 +23,7 @@ const projectData = [
   {
     name: "Sound-Insight",
     img: "https://i.imgur.com/wAMd7bi.png",
+    mobile_img: "https://i.imgur.com/ZJHAGOD.png",
     backdrop: "https://i.imgur.com/C8KDTtZ.jpg",
     description:
       "I designed and developed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000's.",
@@ -43,6 +45,7 @@ const projectData = [
   {
     name: "GoPhish",
     img: "https://i.imgur.com/efke6kI.png",
+    mobile_img: "https://i.imgur.com/QN9kMxA.png",
     backdrop: "https://i.imgur.com/6dwW8Af.jpg",
     description:
       "GoPhish is a web application that allows fans of the rock band Phish to dig through their musical archive and explore their previous tours, songs, shows, set lists, band information, and upcoming shows.",
@@ -73,6 +76,7 @@ const projectData = [
   {
     name: "ColorConstructor",
     img: "https://i.imgur.com/JU9d6j3.png",
+    mobile_img: "https://i.imgur.com/wwVnDRk.png",
     backdrop: "https://i.imgur.com/zqSFCAL.jpg",
     description:
       "Color Constructor is a single page web application where users can randomly generate color palettes. Users have the ability to lock colors that they like as they generate more, save palettes, and edit palettes.",
@@ -94,6 +98,7 @@ const projectData = [
   {
     name: "Bottleneck Gallery",
     img: "https://i.imgur.com/K8ixZvV.jpg",
+    mobile_img: "",
     backdrop: "https://i.imgur.com/hmNtWst.jpg",
     description:
       "Bottleneck Gallery is a web application I made using the Vue.js library. I made use of The Harvard Art Musuem API and created an online art gallery. This was my first project using Vue.",
@@ -108,6 +113,7 @@ const projectData = [
   {
     name: "MovieTracker",
     img: "https://i.imgur.com/nF2OKKA.png",
+    mobile_img: "",
     backdrop: "https://i.imgur.com/dIABUJt.jpg",
     description:
       "MovieTracker is a web application that allows the user to keep track of their favorite movies and television shows all while allowing them to create an account so they can save their favorites.",
@@ -138,6 +144,7 @@ const projectData = [
   {
     name: "CoYo - Colorado Yoga Collective",
     img: "https://i.imgur.com/7fhOXHc.jpg",
+    mobile_img: "https://i.imgur.com/vdzARDD.png",
     backdrop: "https://i.imgur.com/a1S7nq6.jpg",
     description:
       "CoYo is a web application that allow users to search for yoga studios in the Denver metropolitan area based on drop-in fees, reviews, classes offered, and location.",
@@ -158,6 +165,7 @@ const projectData = [
   {
     name: "TrapperKeeper",
     img: "https://i.imgur.com/DQ51leb.jpg",
+    mobile_img: "https://i.imgur.com/aEfk61X.png",
     backdrop: "https://i.imgur.com/6aWO3UL.jpg",
     description:
       "TrapperKeeper is a web application that is based off the famous note-taking service Google Keep. It allows the user to keep track of their busy life by creating an online checklist.",
@@ -188,6 +196,7 @@ const projectData = [
   {
     name: "Jest Do It",
     img: "https://i.imgur.com/jF45CmO.jpg",
+    mobile_img: "https://i.imgur.com/0QsK0ql.png",
     backdrop: "https://i.imgur.com/LVGVG8f.png",
     description:
       "Jest Do It is a flash card application that tests the user on their knowledge of the popular testing framework Jest. The application also includes a leaderboard so friends can challenge one another.",
@@ -209,6 +218,7 @@ const projectData = [
   {
     name: "SwapiBox",
     img: "https://i.imgur.com/JfAKu0P.png",
+    mobile_img: "https://i.imgur.com/vOxibZM.png",
     backdrop: "https://i.imgur.com/KwuxvD8.jpg",
     description:
       "SwapiBox is a web application where fans of the famous Star Wars franchise can go to learn more about the characters, planets, and vehicles",
@@ -229,6 +239,7 @@ const projectData = [
   {
     name: "GameTime",
     img: "https://i.imgur.com/Rtmd87X.png",
+    mobile_img: "",
     backdrop: "https://i.imgur.com/LaoxIMa.jpg",
     description:
       '"I\'ll take ___ for $1,000, Alex." Come test your trivia knowledge playing Jeopardy, Revenge of the nerds style! ',
@@ -250,6 +261,7 @@ const projectData = [
   {
     name: "Foto Finder",
     img: "https://i.imgur.com/my7hZ5n.png",
+    mobile_img: "https://i.imgur.com/WzdeBqB.png",
     backdrop: "https://i.imgur.com/0Ji9r0z.jpg",
     description:
       "A web application where the user can create an online photo collection by uploading photos that can also be favorited.",
@@ -265,6 +277,7 @@ const projectData = [
   {
     name: "Idea Box",
     img: "https://i.imgur.com/PkHm9Fb.png",
+    mobile_img: "https://i.imgur.com/qBw590M.png",
     backdrop: "https://i.imgur.com/pEHYfs5.jpg",
     description:
       "A web application where the user can jot down ideas to refeer to later. They can also rank their ideas based on how good they think it is.",
@@ -278,105 +291,100 @@ const projectData = [
     ]
   }
 ];
-
 const hobbyImages = [
-	'https://i.imgur.com/3TRADSU.png',
-	'https://i.imgur.com/yHJwMgA.png',
-	'https://i.imgur.com/gGmiMCC.png',
-	'https://i.imgur.com/sdoC1cK.png',
-	'https://i.imgur.com/DmoHKgD.png',
-	'https://i.imgur.com/dlg3Tlv.png',
-	'https://i.imgur.com/AZeDkyX.png',
-	'https://i.imgur.com/2JgZsQP.png',
-	'https://i.imgur.com/JO27CzS.png',
-	'https://i.imgur.com/axiLwzP.png?1',
-	'https://i.imgur.com/pi9t8dL.png',
-	'https://i.imgur.com/Nhww1SJ.png',
-	'https://i.imgur.com/WsaWOHd.png',
-	'https://i.imgur.com/G1w3d15.png',
-	'https://i.imgur.com/XsOIazD.png',
-	'https://i.imgur.com/mB5USbc.png',
-	'https://i.imgur.com/eekTAXP.png',
-	'https://i.imgur.com/fDQlZES.png'
+  "https://i.imgur.com/3TRADSU.png",
+  "https://i.imgur.com/yHJwMgA.png",
+  "https://i.imgur.com/gGmiMCC.png",
+  "https://i.imgur.com/sdoC1cK.png",
+  "https://i.imgur.com/DmoHKgD.png",
+  "https://i.imgur.com/dlg3Tlv.png",
+  "https://i.imgur.com/AZeDkyX.png",
+  "https://i.imgur.com/2JgZsQP.png",
+  "https://i.imgur.com/JO27CzS.png",
+  "https://i.imgur.com/axiLwzP.png?1",
+  "https://i.imgur.com/pi9t8dL.png",
+  "https://i.imgur.com/Nhww1SJ.png",
+  "https://i.imgur.com/WsaWOHd.png",
+  "https://i.imgur.com/G1w3d15.png",
+  "https://i.imgur.com/XsOIazD.png",
+  "https://i.imgur.com/mB5USbc.png",
+  "https://i.imgur.com/eekTAXP.png",
+  "https://i.imgur.com/fDQlZES.png"
 ];
-
 const hobbyNames = [
-	'SCUBA DIVING',
-	'CLIMBING',
-	'TRAVELING',
-	'DOGS',
-	'SKIING',
-	'FOOTBALL',
-	'MUSIC',
-	'CAMPING',
-	'FAMILY',
-	'REACT',
-	'READING',
-	'SWIMMING',
-	'MAC',
-	'TELEVISION',
-	'BREWING',
-	'COOKING',
-	'ASTRONOMY',
-	'HIKING'
+  "SCUBA DIVING",
+  "CLIMBING",
+  "TRAVELING",
+  "DOGS",
+  "SKIING",
+  "FOOTBALL",
+  "MUSIC",
+  "CAMPING",
+  "FAMILY",
+  "REACT",
+  "READING",
+  "SWIMMING",
+  "MAC",
+  "TELEVISION",
+  "BREWING",
+  "COOKING",
+  "ASTRONOMY",
+  "HIKING"
 ];
-
 const skillIcons = [
-	'https://i.imgur.com/axiLwzP.png?1',
-	'https://i.imgur.com/G9OJmuX.png',
-	'https://i.imgur.com/wlflg3R.png',
-	'https://i.imgur.com/hQxyiun.png',
-	'https://i.imgur.com/3mSlFpH.png',
-	'https://i.imgur.com/txWQbDh.png',
-	'https://i.imgur.com/iVwUSvz.png',
-	'https://i.imgur.com/s9F3Q5b.png',
-	'https://i.imgur.com/HuxcEJX.png',
-	'https://i.imgur.com/sTWqv95.png',
-	'https://i.imgur.com/zUMEX7a.png',
-	'https://i.imgur.com/pE1ocnr.png',
-	'https://i.imgur.com/AwGXGTT.png',
-	'https://i.imgur.com/nrqz7cO.png',
-	'https://i.imgur.com/u1x56ni.png',
-	'https://i.imgur.com/xYrmrDV.png',
-	'https://i.imgur.com/eBGvh81.png',
-	'https://i.imgur.com/7ERgJOl.png',
-	'https://i.imgur.com/4DAHjyl.png',
-	'https://i.imgur.com/uYQtYC8.png',
-	'https://i.imgur.com/YqmfKAg.png',
-	'https://i.imgur.com/XAReGKN.png',
-	'https://imgur.com/2AyKB58.png'
+  "https://i.imgur.com/axiLwzP.png?1",
+  "https://i.imgur.com/G9OJmuX.png",
+  "https://i.imgur.com/wlflg3R.png",
+  "https://i.imgur.com/hQxyiun.png",
+  "https://i.imgur.com/3mSlFpH.png",
+  "https://i.imgur.com/txWQbDh.png",
+  "https://i.imgur.com/iVwUSvz.png",
+  "https://i.imgur.com/s9F3Q5b.png",
+  "https://i.imgur.com/HuxcEJX.png",
+  "https://i.imgur.com/sTWqv95.png",
+  "https://i.imgur.com/zUMEX7a.png",
+  "https://i.imgur.com/pE1ocnr.png",
+  "https://i.imgur.com/AwGXGTT.png",
+  "https://i.imgur.com/nrqz7cO.png",
+  "https://i.imgur.com/u1x56ni.png",
+  "https://i.imgur.com/xYrmrDV.png",
+  "https://i.imgur.com/eBGvh81.png",
+  "https://i.imgur.com/7ERgJOl.png",
+  "https://i.imgur.com/4DAHjyl.png",
+  "https://i.imgur.com/uYQtYC8.png",
+  "https://i.imgur.com/YqmfKAg.png",
+  "https://i.imgur.com/XAReGKN.png",
+  "https://imgur.com/2AyKB58.png"
 ];
-
 const skillNames = [
-	'REACT',
-	'REACT NATIVE',
-	'VUE',
-	'CSS',
-	'JAVASCRIPT',
-	'HTML',
-	'SASS',
-	'REDUX',
-	'NODE.JS',
-	'JQUERY',
-	'JEST',
-	'ENZYME',
-	'BOOTSTRAP',
-	'MOCHA',
-	'CHAI',
-	'GITHUB',
-	'POSTGRES',
-	'ADOBE XD',
-	'REACT ROUTER',
-	'WEBPACK',
-	'HEROKU',
-	'FIREBASE',
-	'MONGODB'
+  "REACT",
+  "REACT NATIVE",
+  "VUE",
+  "CSS",
+  "JAVASCRIPT",
+  "HTML",
+  "SASS",
+  "REDUX",
+  "NODE.JS",
+  "JQUERY",
+  "JEST",
+  "ENZYME",
+  "BOOTSTRAP",
+  "MOCHA",
+  "CHAI",
+  "GITHUB",
+  "POSTGRES",
+  "ADOBE XD",
+  "REACT ROUTER",
+  "WEBPACK",
+  "HEROKU",
+  "FIREBASE",
+  "MONGODB"
 ];
-
 module.exports = {
-	projectData,
-	hobbyImages,
-	hobbyNames,
-	skillIcons,
-	skillNames
+  projectData,
+  hobbyImages,
+  hobbyNames,
+  skillIcons,
+  skillNames
 };
