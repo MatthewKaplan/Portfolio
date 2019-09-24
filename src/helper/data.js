@@ -121,7 +121,7 @@ const projectData = [
   {
     name: "Bottleneck Gallery",
     img: "https://i.imgur.com/K8ixZvV.jpg",
-    mobile_img: "",
+    mobile_img: "https://i.imgur.com/HSu5A3h.png",
     backdrop: "https://i.imgur.com/hmNtWst.jpg",
     description:
       "Bottleneck Gallery is a web application I made using the Vue.js library. I made use of The Harvard Art Musuem API and created an online art gallery. This was my first project using Vue.",
