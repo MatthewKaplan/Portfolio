@@ -94,6 +94,18 @@
         right: 180px;
         left: 100px;
       }
+
+      .mobile-slide {
+        left: -89px;
+        bottom: 365px;
+      }
+
+      .mobile-slide-img {
+        left: 37.5%;
+        background-size: 120px 240px;
+        width: 20%;
+        top: -108%;
+      }
     }
 
   .device {
@@ -286,6 +298,20 @@
   .projects-component .device .laptop-bg-image {
     background-size: 581px 362px;
   }
+
+  .projects-component .device2 {
+    .mobile-slide {
+      left: 159px;
+      bottom: 148px;
+    }
+
+    .mobile-slide-img {
+      left: 77.9%;
+      background-size: 120px 240px;
+      width: 20%;
+      top: -35%;
+    }
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -317,6 +343,18 @@
       position: relative;
       bottom: 275px;
       left: -120px;
+    }
+
+    .mobile-slide {
+      left: 5px;
+      bottom: 248px;
+    }
+
+    .mobile-slide-img {
+      left: 52.9%;
+      background-size: 120px 240px;
+      width: 20%;
+      top: -68%;
     }
   }
 }
@@ -350,6 +388,18 @@
       position: relative;
       bottom: 275px;
       left: -180px;
+    }
+
+    .mobile-slide {
+      left: -35px;
+      bottom: 248px;
+    }
+
+    .mobile-slide-img {
+      left: 46.2%;
+      background-size: 120px 240px;
+      width: 20%;
+      top: -68%;
     }
   }
 }
@@ -387,6 +437,18 @@
       position: relative;
       bottom: 400px;
       left: -250px;
+    }
+
+    .mobile-slide {
+      left: -89px;
+      bottom: 365px;
+    }
+
+    .mobile-slide-img {
+      left: 37.5%;
+      background-size: 120px 240px;
+      width: 20%;
+      top: -108%;
     }
   }
 }
@@ -460,6 +522,11 @@
 
   .projects-component .device {
     top: 32%;
+
+    .sm-iphone-image {
+      left: 28%;
+      background-size: 161px 362px;
+    }
   }
 
   .projects-component .project-description {
@@ -490,6 +557,18 @@
       bottom: -30px;
       left: -275px;
     }
+
+    .mobile-slide {
+      left: -245px;
+      bottom: -38px;
+    }
+
+    .mobile-slide-img {
+      left: 17.0%;
+      background-size: 50px 100px;
+      width: 20%;
+      top: 40.7%;
+    }
   }
 }
 
@@ -510,6 +589,11 @@
 
   .projects-component .device {
     top: 32%;
+
+    .sm-iphone-image {
+      left: 28%;
+      background-size: 161px 362px;
+    }
   }
 
   .projects-component .project-description {
@@ -539,6 +623,18 @@
       position: relative;
       bottom: -10px;
       left: -275px;
+    }
+
+    .mobile-slide {
+      left: -245px;
+      bottom: -25px;
+    }
+
+    .mobile-slide-img {
+      left: 17.0%;
+      background-size: 50px 100px;
+      width: 20%;
+      top: 30.7%;
     }
   }
 }
