@@ -68,6 +68,34 @@
     object-fit: cover;
   }
 
+  .device2 {
+        position: relative;
+    opacity: 1;
+
+      .iphone-svg-image {
+        position: absolute;
+        top: 0;
+        left: 47.2%;
+        display: inline-block;
+        width: 18%;
+        height: 73%;
+        top: -47.1%;
+        background-repeat: no-repeat;
+        background-size: 120px 240px;
+      }
+
+      .blank-iphone {
+        max-width: 100%;
+        border: 0;
+        margin-left: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 180px;
+        right: 180px;
+        left: 100px;
+      }
+    }
+
   .device {
     position: relative;
     opacity: 1;
@@ -265,12 +293,64 @@
     left: 15%;
     top: 10%;
   }
+
+  .projects-component .device2 {
+    position: relative;
+    opacity: 1;
+
+    .iphone-svg-image {
+      position: absolute;
+      top: 0;
+      left: 22.3%;
+      display: inline-block;
+      width: 18%;
+      height: 73%;
+      top: -77.0%;
+      background-repeat: no-repeat;
+      background-size: 120px 240px;
+    }
+
+    .blank-iphone {
+      max-width: 100%;
+      border: 0;
+      height: 300px;
+      position: relative;
+      bottom: 275px;
+      left: -120px;
+    }
+  }
 }
 
 @media screen and (max-width: 1680px) {
   .projects-component .device {
     left: 8%;
     top: 10%;
+  }
+
+  .projects-component .device2 {
+    position: relative;
+    opacity: 1;
+
+    .iphone-svg-image {
+      position: absolute;
+      top: 0;
+      left: 15.6%;
+      display: inline-block;
+      width: 18%;
+      height: 73%;
+      top: -77.0%;
+      background-repeat: no-repeat;
+      background-size: 120px 240px;
+    }
+
+    .blank-iphone {
+      max-width: 100%;
+      border: 0;
+      height: 300px;
+      position: relative;
+      bottom: 275px;
+      left: -180px;
+    }
   }
 }
 
@@ -282,6 +362,32 @@
 
   .projects-component .device .laptop-device {
     margin-top: 80px;
+  }
+
+  .projects-component .device2 {
+    position: relative;
+    opacity: 1;
+
+    .iphone-svg-image {
+      position: absolute;
+      top: 0;
+      left: 7.6%;
+      display: inline-block;
+      width: 18%;
+      height: 73%;
+      top: -118.0%;
+      background-repeat: no-repeat;
+      background-size: 120px 240px;
+    }
+
+    .blank-iphone {
+      max-width: 100%;
+      border: 0;
+      height: 300px;
+      position: relative;
+      bottom: 400px;
+      left: -250px;
+    }
   }
 }
 
@@ -362,5 +468,31 @@
 
   .projects-component .project-description {
     min-height: 280px;
+  }
+
+  .projects-component .device2 {
+    position: relative;
+    opacity: 1;
+
+    .iphone-svg-image {
+      position: absolute;
+      top: 0;
+      left: 8.6%;
+      display: inline-block;
+      width: 18%;
+      height: 73%;
+      top: 18.8%;
+      background-repeat: no-repeat;
+      background-size: 50px 100px;
+    }
+
+    .blank-iphone {
+      max-width: 100%;
+      border: 0;
+      height: 125px;
+      position: relative;
+      bottom: -10px;
+      left: -275px;
+    }
   }
 }
