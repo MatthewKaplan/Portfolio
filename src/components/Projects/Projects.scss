@@ -447,6 +447,52 @@
   }
 }
 
+@media screen and (max-width: 414px) {
+  .projects-component .device .iphone-image {
+    height: 400px;
+    margin-left: 80px;
+  }
+
+  .projects-component .device .iphone-bg-image {
+    width: 55%;
+    left: 36%;
+  }
+
+  .projects-component .device {
+    top: 32%;
+  }
+
+  .projects-component .project-description {
+    min-height: 280px;
+  }
+
+  .projects-component .device2 {
+    position: relative;
+    opacity: 1;
+
+    .iphone-svg-image {
+      position: absolute;
+      top: 0;
+      left: 7.8%;
+      display: inline-block;
+      width: 18%;
+      height: 73%;
+      top: 34.8%;
+      background-repeat: no-repeat;
+      background-size: 50px 100px;
+    }
+
+    .blank-iphone {
+      max-width: 100%;
+      border: 0;
+      height: 125px;
+      position: relative;
+      bottom: -30px;
+      left: -275px;
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .projects-component .device .iphone-image {
     height: 400px;
