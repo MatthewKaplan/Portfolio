@@ -49,10 +49,7 @@ export default class Projects extends Component {
 		return projectData.map((project, index) => {
 			if (index === this.state.slidesPosition) {
 				const backImg = project.backdrop;
-				let backgroundImage = {
-					backgroundImage: `url(${backImg})`
-				};
-				return <div className="bg-image" key={Date.now()} style={backgroundImage} />;
+				return <div className="bg-image" key={Date.now()} style={{ backgroundImage: `url(${backImg})` }} />;
 			}
 			return null;
 		});
@@ -75,9 +72,7 @@ export default class Projects extends Component {
 				const backImg = project.img;
 				return (
 					<div
-						className={
-							slidesPosition === 0 || slidesPosition === 1 ? 'iphone-bg-image sm-iphone-image' : 'iphone-bg-image'
-						}
+						className={slidesPosition <= 1 ? 'iphone-bg-image sm-iphone-image' : 'iphone-bg-image'}
 						key={Date.now()}
 						style={{ backgroundImage: `url(${backImg})` }}
 					/>

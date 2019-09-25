@@ -101,7 +101,7 @@ const projectData = [
 	{
 		name: 'MovieTracker',
 		img: 'https://ik.imagekit.io/4rwaenzjt/movie-laptop_U_Ya0bTkkO.jpg',
-		mobile_img: 'https://i.imgur.com/vtv3r1M.jpg',
+		mobile_img: 'https://i.imgur.com/MxmXXWv.jpg',
 		backdrop: 'https://ik.imagekit.io/4rwaenzjt/movie-background_hJE5bSnPC.jpg',
 		description:
 			'MovieTracker is a web application that allows the user to keep track of their favorite movies and television shows all while allowing them to create an account so they can save their favorites.',

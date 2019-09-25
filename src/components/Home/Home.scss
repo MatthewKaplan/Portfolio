@@ -2,8 +2,7 @@
 
 .home-component {
 	@include component-styles;
-  overflow-y: hidden;
-
+	overflow-y: hidden;
 
 	.overlay {
 		background-color: $main-overlay;
@@ -221,48 +220,43 @@
 
 @media (max-width: 480px) {
 	.home-component section {
+		padding: 0;
 		.intro {
 			font-size: 1.6rem;
+			.logo-container .resume-icon {
+				height: 48px;
+			}
 			.position {
 				font-size: 25px;
 			}
 		}
 	}
-
-	.home-component section .intro .logo-container .resume-icon {
-		height: 48px;
-	}
-
-	.home-component section {
-		padding: 0;
-	}
 }
 
 @media (max-width: 375px) {
-	.envelope-icon,
-	.linkedin-icon,
-	.github-icon {
-		height: 40px;
-	}
+	.home-component {
+		.envelope-icon,
+		.linkedin-icon,
+		.github-icon {
+			height: 40px;
+		}
 
-	.home-component section .intro .logo-container .resume-icon {
-		height: 38px;
-	}
+		section .intro .logo-container {
+			width: 12em;
 
-	.home-component section .intro .logo-container {
-		width: 12em;
-	}
+			.resume-icon {
+				height: 38px;
+			}
+		}
 
-	.home-component h1 {
-		font-size: 1.5em;
-	}
+		h1 {
+			font-size: 1.5em;
+		}
 
-	.home-component .isCopied {
-		left: 27.5%;
-		width: 150px;
-	}
-
-	.home-component .isCopied {
-		font-size: 25px;
+		.isCopied {
+			left: 27.5%;
+			width: 150px;
+			font-size: 25px;
+		}
 	}
 }
