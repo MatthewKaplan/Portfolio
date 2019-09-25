@@ -40,7 +40,7 @@ export default class Home extends Component {
 								<FontAwesomeIcon icon={faEnvelope} className="envelope-icon" size="2x" />
 							</CopyToClipboard>
 							<a href={require('../../assets/MatthewKaplan-CV2019.pdf')} download>
-                <img src={require("../../assets/resume.png")} alt="resume icon" className="resume-icon"/>
+								<img src={require('../../assets/resume.png')} alt="resume icon" className="resume-icon" />
 							</a>
 						</div>
 					</div>

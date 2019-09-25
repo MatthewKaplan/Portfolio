@@ -1,167 +1,164 @@
 @import "../../sass/variables";
 
 .contact-component {
-  position: relative;
-  height: 100vh;
-  flex-direction: row;
-  overflow-y: hidden;
+	position: relative;
+	height: 100vh;
+	flex-direction: row;
+	overflow-y: hidden;
 
-  img.bg-image {
-    @include background-color-styles;
-  }
+	img.bg-image {
+		@include background-color-styles;
+	}
 
-  .overlay {
-    background-color: $secondary-overlay;
-    @include overlay-style;
-  }
+	.overlay {
+		background-color: $secondary-overlay;
+		@include overlay-style;
+	}
 
-  article {
-    display: flex;
-    // padding-top: 50px;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-    opacity: 1;
-    position: relative;
-    z-index: 999;
-    width: 600px;
+	article {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+		opacity: 1;
+		position: relative;
+		z-index: 999;
+		width: 600px;
 
-    div.contact-intro {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      text-align: center;
-      opacity: 1;
+		div.contact-intro {
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			text-align: center;
+			opacity: 1;
 
-      h3 {
-        font-size: 3rem;
-        color: $contact-text;
-        font-family: $main-headings;
-        margin: 50px 0 0 0;
-      }
+			h3 {
+				font-size: 3rem;
+				color: $contact-text;
+				font-family: $main-headings;
+				margin: 50px 0 0 0;
+			}
 
-      p {
-        color: $contact-text;
-        font-size: 1.2rem;
-        min-width: 550px;
-        padding: 5px 20px;
-        font-family: $body-text;
-        text-align: center;
-        margin-bottom: 50px;
-      }
-    }
-  }
+			p {
+				color: $contact-text;
+				font-size: 1.2rem;
+				min-width: 550px;
+				padding: 5px 20px;
+				font-family: $body-text;
+				text-align: center;
+				margin-bottom: 50px;
+			}
+		}
+	}
 
-  .contact-form {
-    z-index: 999;
-    position: relative;
-    margin: 0 150px 0 150px;
+	.contact-form {
+		z-index: 999;
+		position: relative;
+		margin: 0 150px 0 150px;
 
-    div.input-container {
-      display: flex;
-      flex-direction: column;
-      min-width: 300px;
-      max-width: 500px;
-      margin: auto;
-      padding: 20px;
-      border: 2px solid $contact-text;
-      border-radius: 20px;
-      background-color: $contact-form;
-      z-index: 999;
-      height: 335px;
+		div.input-container {
+			display: flex;
+			flex-direction: column;
+			min-width: 300px;
+			max-width: 500px;
+			margin: auto;
+			padding: 20px;
+			border: 2px solid $contact-text;
+			border-radius: 20px;
+			background-color: $contact-form;
+			z-index: 999;
+			height: 335px;
 
-      label {
-        font-weight: bold;
-        color: $contact-text;
-      }
+			label {
+				font-weight: bold;
+				color: $contact-text;
+			}
 
-      input {
-        height: 2.5rem;
-        letter-spacing: 0.5px;
-        margin-bottom: 20px;
-      }
+			input {
+				height: 2.5rem;
+				letter-spacing: 0.5px;
+				margin-bottom: 20px;
+			}
 
-      textarea {
-        height: 125px;
-        margin-bottom: 25px;
-        background-color: $main-text;
-        resize: none;
-      }
+			textarea {
+				height: 125px;
+				margin-bottom: 25px;
+				background-color: $main-text;
+				resize: none;
+			}
 
-      input.submit-btn {
-        width: 100px;
-        margin: auto;
-        height: 40px;
-        border: 0;
-        font-weight: bold;
-        font-size: 1.2rem;
-        background-color: $contact-form;
-        transition: all ease-in-out 200ms;
-        border: 2px solid $contact-text;
-        color: $contact-text;
-        cursor: pointer;
+			input.submit-btn {
+				width: 100px;
+				margin: auto;
+				height: 40px;
+				border: 0;
+				font-weight: bold;
+				font-size: 1.2rem;
+				background-color: $contact-form;
+				transition: all ease-in-out 200ms;
+				border: 2px solid $contact-text;
+				color: $contact-text;
+				cursor: pointer;
 
-        &:hover {
-          color: $contact-form !important;
-          background-color: $contact-text;
-        }
-      }
-    }
-  }
+				&:hover {
+					color: $contact-form !important;
+					background-color: $contact-text;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 2560px) {
-  .contact-component article div.contact-intro h3 {
-    margin-top: 160px;
-  }
+	.contact-component article div.contact-intro h3 {
+		margin-top: 160px;
+	}
 }
 
 @media screen and (max-width: 1920px) {
-  .contact-component article div.contact-intro h3 {
-    margin-top: 130px;
-  }
+	.contact-component article div.contact-intro h3 {
+		margin-top: 130px;
+	}
 }
-
-@media screen and (max-width: 1680px) {}
 
 @media screen and (max-width: 1445px) {
-  .contact-component article div.contact-intro h3 {
-    margin-top: 100px;
-  }
+	.contact-component article div.contact-intro h3 {
+		margin-top: 100px;
+	}
 }
 
-
 @media screen and (max-width: 640px) {
-  .contact-component article div.contact-intro h3 {
-    font-size: 2rem;
-  }
+	.contact-component {
+		article {
+			width: 100%;
+			padding-top: 35px;
 
-  .contact-component article div.contact-intro h3 {
-    margin-top: 80px;
-  }
+			div.contact-intro {
+				h3 {
+					font-size: 2rem;
+					margin-top: 80px;
+				}
 
-  .contact-component article {
-    width: 100%;
-    padding-top: 35px;
-  }
+				p {
+					font-size: 1rem;
+					min-width: 300px;
+					width: 300px;
+				}
+			}
+		}
 
-  .contact-component .contact-form {
-    margin: 0;
-  }
+		.contact-form {
+			margin: 0;
 
-  .contact-component article div.contact-intro p {
-    font-size: 1rem;
-    min-width: 300px;
-    width: 300px;
-  }
-
-  .contact-component .contact-form div.input-container {
-    max-width: 300px;
-  }
+			div.input-container {
+				max-width: 300px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 375px) {
-  .contact-component article div.contact-intro h3 {
-    margin-top: 40px;
-  }
+	.contact-component article div.contact-intro h3 {
+		margin-top: 40px;
+	}
 }
