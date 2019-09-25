@@ -50,7 +50,7 @@ export default class Projects extends Component {
       if (index === this.state.slidesPosition) {
         const backImg = project.backdrop;
         let backgroundImage = {
-          backgroundImage: `url(${backImg})`
+          backgroundImage: `url(${require(`../../assets/${backImg}`)})`
         };
         return (
           <div className="bg-image" key={Date.now()} style={backgroundImage} />
@@ -66,7 +66,7 @@ export default class Projects extends Component {
       if (index === this.state.slidesPosition) {
         const backImg = project.img;
         let backgroundImage = {
-          backgroundImage: `url(${backImg})`
+          backgroundImage: `url(${require(`../../assets/${backImg}`)})`
         };
         return (
           <div
@@ -86,7 +86,7 @@ export default class Projects extends Component {
       if (index === this.state.slidesPosition) {
         const backImg = project.img;
         let backgroundImage = {
-          backgroundImage: `url(${backImg})`
+          backgroundImage: `url(${require(`../../assets/${backImg}`)})`
         };
         return (
           <div
@@ -109,7 +109,7 @@ export default class Projects extends Component {
       ) {
         const backImg = project.mobile_img;
         let backgroundImage = {
-          backgroundImage: `url(${backImg})`
+          backgroundImage: `url(${require(`../../assets/${backImg}`)})`
         };
         return (
           <div className="device2">

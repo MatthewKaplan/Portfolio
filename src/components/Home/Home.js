@@ -21,7 +21,7 @@ export default class Home extends Component {
 		return (
 			<div className="home-component">
 				<div className="overlay" />
-				<img className="bg-image" src={require('../../assets/splash.jpg')} alt="Denver Front Range" />
+				<img className="bg-image" src={require('../../assets/mountians.jpg')} alt="Denver Front Range" />
 				<section>
 					<div className="intro">
 						<h1 className="name">Matthew Kaplan</h1>

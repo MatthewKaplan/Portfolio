@@ -1,9 +1,9 @@
 const projectData = [
   {
     name: "LangChat",
-    img: "https://i.imgur.com/FV31imK.jpg",
-    mobile_img: "https://i.imgur.com/IsQ7LbH.png",
-    backdrop: "https://i.imgur.com/z2VjrhY.png",
+    img: "lang-mobile.jpg",
+    mobile_img: "lang-sm-mobile.jpg",
+    backdrop: "lang-background.png",
     description:
       "LangChat is a language learning application where users have the ability to chat with other users from around the world in an effort to learn their language just by exchanging messages. Users have the ability to correct each others messages in the event of a spelling mistake or grammatical error.",
     website: "",
@@ -23,9 +23,9 @@ const projectData = [
   },
   {
     name: "Sound-Insight",
-    img: "https://i.imgur.com/wAMd7bi.png",
-    mobile_img: "https://i.imgur.com/ZJHAGOD.png",
-    backdrop: "https://i.imgur.com/C8KDTtZ.jpg",
+    img: "insight-laptop.jpg",
+    mobile_img: "insight-sm-mobile.jpg",
+    backdrop: "insight-background.jpg",
     description:
       "I designed and developed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000's.",
     website: "https://master.d30uxrf9waatbu.amplifyapp.com/",
@@ -45,9 +45,9 @@ const projectData = [
   },
   {
     name: "InstaList",
-    img: "https://i.imgur.com/KhvncQi.jpg?1",
-    mobile_img: "https://i.imgur.com/kW7wMbw.jpg",
-    backdrop: "https://i.imgur.com/RvGbRaM.png",
+    img: "insta-mobile.jpg",
+    mobile_img: "insta-sm-mobile.jpg",
+    backdrop: "insta-background.jpg",
     description:
       "InstaList is a mobile application built using React Native, that allow users to buy and sell items online. I built this with the idea of creating a platform like craigslists with a delivery service such as InstaCart.",
     website: "",
@@ -67,9 +67,9 @@ const projectData = [
   },
   {
     name: "GoPhish",
-    img: "https://i.imgur.com/efke6kI.png",
-    mobile_img: "https://i.imgur.com/QN9kMxA.png",
-    backdrop: "https://i.imgur.com/6dwW8Af.jpg",
+    img: "phish-laptop.jpg",
+    mobile_img: "phish-sm-mobile.jpg",
+    backdrop: "phish-background.jpg",
     description:
       "GoPhish is a web application that allows fans of the rock band Phish to dig through their musical archive and explore their previous tours, songs, shows, set lists, band information, and upcoming shows.",
     website: "https://gophish.netlify.com",
@@ -98,9 +98,9 @@ const projectData = [
   },
   {
     name: "ColorConstructor",
-    img: "https://i.imgur.com/JU9d6j3.png",
-    mobile_img: "https://i.imgur.com/I0vAxRW.jpg",
-    backdrop: "https://i.imgur.com/zqSFCAL.jpg",
+    img: "palette-laptop.jpg",
+    mobile_img: "palette-sm-mobile.jpg",
+    backdrop: "palette-background.jpg",
     description:
       "Color Constructor is a single page web application where users can randomly generate color palettes. Users have the ability to lock colors that they like as they generate more, save palettes, and edit palettes.",
     website: "https://hidden-bayou-50291.herokuapp.com/",
@@ -120,9 +120,9 @@ const projectData = [
   },
   {
     name: "Bottleneck Gallery",
-    img: "https://i.imgur.com/K8ixZvV.jpg",
-    mobile_img: "https://i.imgur.com/HSu5A3h.png",
-    backdrop: "https://i.imgur.com/hmNtWst.jpg",
+    img: "bottleneck-laptop.jpg",
+    mobile_img: "bottleneck-sm-mobile.jpg",
+    backdrop: "bottleneck-background.jpg",
     description:
       "Bottleneck Gallery is a web application I made using the Vue.js library. I made use of The Harvard Art Musuem API and created an online art gallery. This was my first project using Vue.",
     website: "https://master.d3m3ghzidizx9s.amplifyapp.com/",
@@ -135,9 +135,9 @@ const projectData = [
   },
   {
     name: "MovieTracker",
-    img: "https://i.imgur.com/nF2OKKA.png",
-    mobile_img: "https://i.imgur.com/BrjEvDn.png",
-    backdrop: "https://i.imgur.com/dIABUJt.jpg",
+    img: "movie-laptop.jpg",
+    mobile_img: "movie-sm-mobile.jpg",
+    backdrop: "movie-background.jpg",
     description:
       "MovieTracker is a web application that allows the user to keep track of their favorite movies and television shows all while allowing them to create an account so they can save their favorites.",
     website: "https://matthewkaplan.github.io/Movie-Tracker",
@@ -166,9 +166,9 @@ const projectData = [
   },
   {
     name: "CoYo - Colorado Yoga Collective",
-    img: "https://i.imgur.com/7fhOXHc.jpg",
-    mobile_img: "https://i.imgur.com/vdzARDD.png",
-    backdrop: "https://i.imgur.com/a1S7nq6.jpg",
+    img: "coyo-laptop.jpg",
+    mobile_img: "coyo-sm-mobile.jpg",
+    backdrop: "coyo-background.jpg",
     description:
       "CoYo is a web application that allow users to search for yoga studios in the Denver metropolitan area based on drop-in fees, reviews, classes offered, and location.",
     website: "https://matthewkaplan.github.io/CoYo-Colorado-Yoga-Collective/",
@@ -187,9 +187,9 @@ const projectData = [
   },
   {
     name: "TrapperKeeper",
-    img: "https://i.imgur.com/DQ51leb.jpg",
-    mobile_img: "https://i.imgur.com/MtOD8B0.jpg",
-    backdrop: "https://i.imgur.com/6aWO3UL.jpg",
+    img: "trapper-laptop.jpg",
+    mobile_img: "trapper-sm-mobile.jpg",
+    backdrop: "trapper-background.jpg",
     description:
       "TrapperKeeper is a web application that is based off the famous note-taking service Google Keep. It allows the user to keep track of their busy life by creating an online checklist.",
     website: "https://trapper-keeper-front.herokuapp.com/",
@@ -218,9 +218,9 @@ const projectData = [
   },
   {
     name: "Jest Do It",
-    img: "https://i.imgur.com/jF45CmO.jpg",
-    mobile_img: "https://i.imgur.com/NagrJxO.jpg",
-    backdrop: "https://i.imgur.com/LVGVG8f.png",
+    img: "jest-laptop.jpg",
+    mobile_img: "jest-sm-mobile.jpg",
+    backdrop: "jest-background.jpg",
     description:
       "Jest Do It is a flash card application that tests the user on their knowledge of the popular testing framework Jest. The application also includes a leaderboard so friends can challenge one another.",
     website: "https://jest-do-it.netlify.com/",
@@ -240,9 +240,9 @@ const projectData = [
   },
   {
     name: "SwapiBox",
-    img: "https://i.imgur.com/JfAKu0P.png",
-    mobile_img: "https://i.imgur.com/vOxibZM.png",
-    backdrop: "https://i.imgur.com/KwuxvD8.jpg",
+    img: "starwars-laptop.jpg",
+    mobile_img: "starwars-sm-mobile.jpg",
+    backdrop: "starwars-background.jpg",
     description:
       "SwapiBox is a web application where fans of the famous Star Wars franchise can go to learn more about the characters, planets, and vehicles",
     website: "https://matthewkaplan.github.io/swapiBox/",
@@ -261,9 +261,9 @@ const projectData = [
   },
   {
     name: "GameTime",
-    img: "https://i.imgur.com/Rtmd87X.png",
-    mobile_img: "https://i.imgur.com/uY5zAjn.png",
-    backdrop: "https://i.imgur.com/LaoxIMa.jpg",
+    img: "gametime-laptop.jpg",
+    mobile_img: "gametime-sm-mobile.jpg",
+    backdrop: "gametime_board.jpg",
     description:
       '"I\'ll take ___ for $1,000, Alex." Come test your trivia knowledge playing Jeopardy, Revenge of the nerds style! ',
     website: "",
@@ -283,9 +283,9 @@ const projectData = [
   },
   {
     name: "Foto Finder",
-    img: "https://i.imgur.com/my7hZ5n.png",
-    mobile_img: "https://i.imgur.com/WzdeBqB.png",
-    backdrop: "https://i.imgur.com/0Ji9r0z.jpg",
+    img: "foto-laptop.jpg",
+    mobile_img: "foto-sm-mobile.jpg",
+    backdrop: "foto-background.jpg",
     description:
       "A web application where the user can create an online photo collection by uploading photos that can also be favorited.",
     website: "https://matthewkaplan.github.io/Foto-Finder/",
@@ -299,9 +299,9 @@ const projectData = [
   },
   {
     name: "Idea Box",
-    img: "https://i.imgur.com/PkHm9Fb.png",
-    mobile_img: "https://i.imgur.com/qBw590M.png",
-    backdrop: "https://i.imgur.com/pEHYfs5.jpg",
+    img: "idea-laptop.jpg",
+    mobile_img: "idea-sm-mobile.jpg",
+    backdrop: "idea-background.jpg",
     description:
       "A web application where the user can jot down ideas to refeer to later. They can also rank their ideas based on how good they think it is.",
     website: "https://matthewkaplan.github.io/IdeaBox/",

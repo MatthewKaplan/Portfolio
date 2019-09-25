@@ -23,7 +23,7 @@ export default class Contact extends Component {
       <div className="contact-component">
         <img
           className="bg-image"
-          src={require("../../assets/trees.jpg")}
+          src={require("../../assets/tree-tops.jpg")}
           alt="Space"
         />
         <div className="overlay" />
