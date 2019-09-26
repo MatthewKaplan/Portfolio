@@ -243,6 +243,8 @@
 			text-align: center;
 			font-size: 18px;
 			font-family: $body-text;
+			letter-spacing: 0.5px;
+			line-height: 1.6em;
 		}
 
 		.separator {
@@ -330,7 +332,7 @@
 
 			.blank-iphone {
 				bottom: 275px;
-        left: -120px;
+				left: -120px;
 			}
 
 			.mobile-slide {
@@ -428,6 +430,10 @@
 			.tools-used {
 				display: none;
 			}
+			.description {
+				letter-spacing: 0.5px;
+				line-height: 1.3em;
+			}
 		}
 	}
 }
@@ -464,6 +470,7 @@
 
 		.project-description .project-links {
 			right: 0.5em;
+			bottom: -1.5em;
 		}
 	}
 }
@@ -496,7 +503,7 @@
 			.iphone-svg-image {
 				left: 7.8%;
 				top: 34.8%;
-				background-size: 50px 100px;
+				background-size: 50px 93px;
 			}
 
 			.blank-iphone {
@@ -519,11 +526,15 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-device-width: 375px) and (-webkit-max-device-pixel-ratio: 3) {
 	.projects-component {
 		.device {
 			.laptop-bg-image {
 				background-size: 246px 154px;
+			}
+			.sm-iphone-image {
+				left: 28%;
+				background-size: 161px 296px;
 			}
 		}
 
@@ -542,8 +553,39 @@
 			}
 
 			.mobile-slide-img {
-        top: 30.7%;
-        left: 17.0%;
+				top: 30.7%;
+				left: 17.0%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width: 375px) and (-webkit-max-device-pixel-ratio: 2) {
+	.projects-component {
+		.project-description {
+			min-height: 260px;
+			.description {
+				letter-spacing: 0.5px;
+				line-height: 1.15em;
+				font-size: 16px;
+			}
+		}
+		.device {
+			.sm-iphone-image {
+				background-size: 131px 242px;
+				left: 32.5%;
+			}
+			.iphone-image {
+				height: 325px;
+				margin-left: 100px;
+			}
+		}
+		.device2 {
+			.mobile-slide {
+				left: -220px;
+			}
+			.mobile-slide-img {
+				left: 24%;
 			}
 		}
 	}

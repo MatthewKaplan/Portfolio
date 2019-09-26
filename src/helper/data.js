@@ -7,7 +7,7 @@ const projectData = [
 		description:
 			'LangChat is a language learning application where users have the ability to chat with other users from around the world in an effort to learn their language just by exchanging messages. Users have the ability to correct each others messages in the event of a spelling mistake or grammatical error.',
 		website: '',
-		repo: 'https://github.com/jarrettkong/LangChat',
+		repo: 'https://github.com/MatthewKaplan/LangChat',
 		tools_used: [ 'JAVASCRIPT', 'REACT NATIVE', 'REDUX', 'DJANGO' ],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',

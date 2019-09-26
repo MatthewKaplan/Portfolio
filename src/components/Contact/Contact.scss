@@ -158,7 +158,12 @@
 }
 
 @media screen and (max-width: 375px) {
-	.contact-component article div.contact-intro h3 {
-		margin-top: 40px;
+	.contact-component article div.contact-intro {
+		h3 {
+			margin-top: 40px;
+		}
+		p {
+			width: 330px;
+		}
 	}
 }

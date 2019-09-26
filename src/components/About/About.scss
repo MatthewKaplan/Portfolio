@@ -177,7 +177,7 @@
 					width: 100%;
 					height: 100%;
 					font-size: 76px;
-					transition: 1s;
+					transition: .5s;
 					transition-delay: 0.1s;
 					font-family: $main-headings;
 				}
@@ -194,7 +194,7 @@
 			&:hover .left-content h1,
 			&:hover .right-content h1 {
 				transform: translateX(0%);
-				transition: 1s;
+				transition: .5s;
 				transition-delay: 0.1s;
 			}
 		}
@@ -641,7 +641,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-max-device-pixel-ratio: 3) {
 	.about-component {
 		.about-imgs {
 			grid-row-gap: 25px;
@@ -659,6 +659,37 @@
 				height: 200px;
 				width: 149px;
 			}
+		}
+
+		.align-arrows .hobby {
+			font-size: 40px;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-max-device-pixel-ratio: 2) {
+	.about-component {
+		.about-imgs {
+			grid-row-gap: 25px;
+			.brain-container {
+				height: 175px;
+				width: 144px;
+			}
+
+			.fingerprint-container {
+				height: 175px;
+				width: 133px;
+			}
+
+			.heart-container {
+				height: 175px;
+				width: 131px;
+			}
+		}
+
+		.about-me-section article {
+			margin-left: 40px;
+			overflow-x: hidden;
 		}
 
 		.align-arrows .hobby {
