@@ -91,7 +91,7 @@ export default class Projects extends Component {
 					<div className="device2">
 						<img
 							className={slidesPosition <= 1 ? 'blank-iphone mobile-slide' : 'blank-iphone'}
-							src="https://i.imgur.com/GD12kMS.png"
+							src="https://i.imgur.com/nsTenwY.png"
 							alt="iPhone"
 						/>
 						<div
@@ -184,11 +184,10 @@ export default class Projects extends Component {
 					}}>
 					<div className="device">
 						{slidesPosition <= 1 ? (
-							<img className="iphone-image" src="https://i.imgur.com/GD12kMS.png" alt="iPhone" />
+							<img className="iphone-image" src="https://i.imgur.com/nsTenwY.png" alt="iPhone" />
 						) : (
 							<div className="laptop-device">
-								<img className="laptop-image" src="https://i.imgur.com/fdG3vks.png" alt="Laptop" />
-								<img className="default-laptop-bg-image" src="https://i.imgur.com/F7PbQx1.jpg" alt="Laptop" />
+								<img className="laptop-image" src="https://i.imgur.com/mYV4YN6.png" alt="Laptop" />
 							</div>
 						)}
 						{slidesPosition <= 1 ? this.getIphoneImg() : this.getLapTopImg()}

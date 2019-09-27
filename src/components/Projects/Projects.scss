@@ -123,12 +123,6 @@
 			height: 600px;
 		}
 
-		.default-laptop-bg-image {
-			@include laptop-images;
-			height: 76%;
-			top: 6.1%;
-		}
-
 		.laptop-bg-image {
 			@include laptop-images;
 			height: 73%;
@@ -390,6 +384,7 @@
 			.iphone-svg-image {
 				left: 7.6%;
 				top: -118.0%;
+				background-size: 120px 222px;
 			}
 
 			.blank-iphone {

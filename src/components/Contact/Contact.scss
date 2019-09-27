@@ -64,7 +64,7 @@
 			margin: auto;
 			padding: 20px;
 			border: 2px solid $contact-text;
-			border-radius: 20px;
+			border-radius: 10px;
 			background-color: $contact-form;
 			z-index: 999;
 			height: 335px;
@@ -78,6 +78,7 @@
 				height: 2.5rem;
 				letter-spacing: 0.5px;
 				margin-bottom: 20px;
+				border-radius: 5px;
 			}
 
 			textarea {
@@ -85,6 +86,7 @@
 				margin-bottom: 25px;
 				background-color: $main-text;
 				resize: none;
+				border-radius: 5px;
 			}
 
 			input.submit-btn {
