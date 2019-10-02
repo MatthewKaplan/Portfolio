@@ -7,10 +7,12 @@ class LazyLoad extends Component {
 		return projectData.map(data => {
 			const laptopImg = data.img;
 			const mobileImg = data.mobile_img;
+			const backgroundImg = data.backdrop;
 			return (
 				<React.Fragment>
-					<img className="preload" src={laptopImg} height="1" width="1" alt="Laptop background"/>
-					<img className="preload" src={mobileImg} height="1" width="1" alt="iPhone background"/>
+					<img src={laptopImg} height="1" width="1" alt="Laptop background"/>
+					<img src={mobileImg} height="1" width="1" alt="iPhone background"/>
+					<img src={backgroundImg} height="1" width="1" alt="iPhone background"/>
 				</React.Fragment>
 			);
 		});
@@ -20,8 +22,8 @@ class LazyLoad extends Component {
 		return (
       <div className="lazyLoad">
         {this.renderImages()}
-        <img className="preload" src="https://i.imgur.com/mYV4YN6.png" height="1" width="1" alt="MacBook"/>
-        <img className="preload" src="https://i.imgur.com/nsTenwY.png" height="1" width="1" alt="iPhone"/>
+        <img src="https://i.imgur.com/mYV4YN6.png" height="1" width="1" alt="MacBook"/>
+        <img src="https://i.imgur.com/nsTenwY.png" height="1" width="1" alt="iPhone"/>
       </div>
     )
 	}
