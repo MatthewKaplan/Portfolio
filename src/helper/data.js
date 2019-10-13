@@ -50,6 +50,21 @@ const projectData = [
 			'https://i.imgur.com/4DAHjyl.png'
 		]
 	},
+  {
+		name: 'Software DayDreams',
+		img: 'https://i.imgur.com/hDc4WeR.png',
+		mobile_img: 'https://i.imgur.com/bJ0JZ7S.png',
+		backdrop: 'https://i.imgur.com/eBnf6qQ.jpg',
+		description:
+			"Software DayDreams is a website in which Developers & Engineers of all languages can come to blog on their lunch breaks. Built using Ruby on Rails, users can create an account, write blog posts, and view other user's blog posts.",
+		website: 'https://software-daydreams.herokuapp.com',
+		repo: 'https://github.com/MatthewKaplan/Software-Daydreams',
+		tools_used: [ 'RUBY ON RAILS', 'RUBY' ],
+		tool_icons: [
+			'https://i.imgur.com/M3dQAMV.png',
+			'https://i.imgur.com/R9YKJGA.png',
+		]
+	},
 	{
 		name: 'GoPhish',
 		img: 'https://ik.imagekit.io/4rwaenzjt/phish-laptop_r-YtjGm06I.jpg',
@@ -285,6 +300,8 @@ const skillIcons = [
 	'https://i.imgur.com/iVwUSvz.png',
 	'https://i.imgur.com/s9F3Q5b.png',
 	'https://i.imgur.com/HuxcEJX.png',
+	'https://i.imgur.com/R9YKJGA.png',
+	'https://i.imgur.com/M3dQAMV.png',
 	'https://i.imgur.com/sTWqv95.png',
 	'https://i.imgur.com/zUMEX7a.png',
 	'https://i.imgur.com/pE1ocnr.png',
@@ -310,6 +327,8 @@ const skillNames = [
 	'SASS',
 	'REDUX',
 	'NODE.JS',
+	'RUBY',
+	'RUBY ON RAILS',
 	'JQUERY',
 	'JEST',
 	'ENZYME',
