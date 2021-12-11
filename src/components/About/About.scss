@@ -273,10 +273,8 @@
 	}
 
 	.about-me-section {
-		display: grid;
-		grid-template-columns: 1fr 3fr;
 		justify-items: center;
-		padding-right: 160px;
+		padding-right: 220px;
 		padding-left: 120px;
 
 		.profile-picture {
@@ -296,9 +294,10 @@
 			border-radius: 6px;
 			font-family: $body-text;
 			font-weight: 400;
-			width: 75%;
 			z-index: 998;
 			position: relative;
+			max-height: 825px;
+			overflow: scroll;
 			.close-bio {
 				min-height: 40px;
 				min-width: 115px;
@@ -370,7 +369,7 @@
 		.about-me-section {
 			grid-template-columns: 1fr 5fr;
 			article p {
-				font-size: 28px;
+				font-size: 18px;
 			}
 		}
 	}
@@ -447,7 +446,7 @@
 				left: 94.8%;
 			}
 			p {
-				font-size: 24px;
+				font-size: 18px;
 			}
 		}
 	}
@@ -479,14 +478,12 @@
 
 @media screen and (max-width: 1000px) {
 	.about-component .about-me-section {
-		grid-template-rows: 1fr 1fr;
-		grid-template-columns: none;
 		max-height: 100%;
 		padding-bottom: 35px;
+		padding-right: 190px;
 
 		article {
-			width: 135%;
-			padding: 0 10px 0 10px;
+			width: 100%;
 		}
 
 		.profile-picture {
@@ -534,7 +531,6 @@
 		}
 
 		.about-me-section article {
-			margin-left: 40px;
 			.close-bio {
 				left: 94%;
 				top: 2%;
@@ -632,10 +628,12 @@
 		}
 
 		.about-me-section {
-			grid-template-rows: 1fr 2fr;
-
 			article .close-bio {
 				left: 85%;
+			}
+
+			article p {
+				font-size: 14px;
 			}
 		}
 	}
@@ -688,7 +686,6 @@
 		}
 
 		.about-me-section article {
-			margin-left: 40px;
 			overflow-x: hidden;
 		}
 

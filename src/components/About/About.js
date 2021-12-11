@@ -79,18 +79,20 @@ export default class About extends Component {
 				{bio && (
 					<React.Fragment>
 						<section className="about-me-section">
+							<article className="about-box">
 							<img className="profile-picture" src={'https://i.imgur.com/8AF2NOa.jpg?1'} alt="profile" />
-							<article>
 								<div className="close-bio" onClick={() => this.setState({ bio: false })} />
 								<p>
-									Hi! My name is Matthew Kaplan and I'm a Software Developer who specializes in Front End Development.
-									Born and raised in New York City, I moved to Colorado in 2012 to study at the University of Colorado
-									Boulder where I studied Computer Science.
+								The dictionary describes an Astrophilia as a person who has a love of and/or obsession with planets, stars, and outer space. Growing up, I was exactly that, so much so that when it came time to decide on a college major, I didn't hesitate at all when choosing Astronomy. It was always a dream of mine to work in different astronomical observatories and planetariums all around the world, while carrying out important research.
 								</p>
 								<p>
-									After graduating from college with a B.A. in Computer Science, I found myself as a Project Manager for
-									a nationwide construction company. After almost 2 years in that position, I decided that it was time
-									to get back to doing what I love, programming.
+									It wasn't until a friend of mine showed me a project that he was working on for his Data Structures course that instantly sparked an entirely new interest for me. It was then that I realized that programming calls to all of my passions; it incorporates creativity, problem-solving, and provides endless opportunities to learn. Following my very first semester, I switched majors to Computer Science and never looked back.
+								</p>
+								<p>
+									Currently, I'm an Associate Software Engineer at Edible Arrangements working hard with my team as we're in the middle of a massive effort to replatform the entire eCommerce solution from the top down. Edible finally decided to move on from ASP.NET and VB.NET to the MERN stack utilizing programming languages and frameworks such as JavaScript, TypeScript, React, Redux, Node.JS, NestJS, SQL, and MongoDB. My position also provides me with the opportunity to work with tools that are new to me, such as Microsoft Azure, TestCafe, GraphDB, and Gremlin.
+								</p>
+								<p>
+									I'll forever be enthusiastically jumping into any other programming languages, frameworks, or principles I can integrate into my tool belt so that I can continue to make the internet more captivating and optimized than ever.
 								</p>
 							</article>
 						</section>
