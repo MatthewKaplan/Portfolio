@@ -39,7 +39,7 @@ export default class Home extends Component {
 								onMouseLeave={() => setTimeout(this.hideMessage, 2000)}>
 								<FontAwesomeIcon icon={faEnvelope} className="envelope-icon" size="2x" />
 							</CopyToClipboard>
-							<a href={require('../../assets/MatthewKaplan-CV2021.pdf')} download>
+							<a href={require('../../assets/Matthew_Kaplan_CV2022.pdf')} download>
 								<img src={require('../../assets/resume.png')} alt="resume icon" className="resume-icon" />
 							</a>
 						</div>
