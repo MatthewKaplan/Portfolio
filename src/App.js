@@ -3,7 +3,6 @@ import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
 import LazyLoad from './components/LazyLoad/LazyLoad';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
