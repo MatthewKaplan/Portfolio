@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 
 export default class Nav extends Component {
-	render () {
+	render() {
 		let pathname = window.location.href;
 		return (
 			<div className="nav-component">
@@ -16,9 +16,6 @@ export default class Nav extends Component {
 						</Link>
 						<Link to="projects-component" spy={true} smooth={true} offset={0} duration={600}>
 							<li className={pathname === 'https://www.matthewkaplan.dev/#projects' ? 'active' : null}>PORTFOLIO</li>
-						</Link>
-						<Link to="contact-component" spy={true} smooth={true} offset={0} duration={600}>
-							<li className={pathname === 'https://www.matthewkaplan.dev/#contact' ? 'active' : null}>CONTACT</li>
 						</Link>
 					</ul>
 				</nav>

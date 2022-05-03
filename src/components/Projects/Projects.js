@@ -10,9 +10,9 @@ const options = {
 };
 
 export default class Projects extends Component {
-	state = { slidesPosition: 0, autoSlides: () => {} };
+	state = { slidesPosition: 0, autoSlides: () => { } };
 
-	componentDidMount () {
+	componentDidMount() {
 		const autoSlides = setInterval(this.changeSlidesPositionForward, 15000);
 		this.setState({ autoSlides });
 	}
@@ -164,7 +164,7 @@ export default class Projects extends Component {
 		});
 	};
 
-	render () {
+	render() {
 		const { slidesPosition } = this.state;
 		return (
 			<div className="projects-component">
@@ -214,7 +214,7 @@ export default class Projects extends Component {
 		);
 	}
 
-	componentWillUnmount () {
+	componentWillUnmount() {
 		clearInterval(this.state.autoSlides);
 	}
 }

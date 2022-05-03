@@ -10,7 +10,7 @@ import { configureAnchors } from 'react-scrollable-anchor';
 import { withRouter } from 'react-router-dom';
 
 class App extends Component {
-	render () {
+	render() {
 		configureAnchors({ offset: -60, scrollDuration: 200 });
 
 		return (
@@ -24,9 +24,6 @@ class App extends Component {
 				</ScrollableAnchor>
 				<ScrollableAnchor id={'projects'}>
 					<Projects className="projects" />
-				</ScrollableAnchor>
-				<ScrollableAnchor id={'contact'}>
-					<Contact className="contact" />
 				</ScrollableAnchor>
 				<LazyLoad />
 			</div>
