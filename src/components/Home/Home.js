@@ -26,12 +26,12 @@ export default class Home extends Component {
 				<div className="overlay" />
 				<img className="bg-image" src='https://i.imgur.com/C2j7bjD.jpg' alt="Denver Front Range" />
 				<Canvas>
-					<OrbitControls autoRotate autoRotateSpeed={0.25} enableZoom={false} />
+					<OrbitControls minAzimuthAngle={0} maxAzimuthAngle={0} maxPolarAngle={0} autoRotate autoRotateSpeed={0.25} enableZoom={false} />
 					<Stars
 						radius={85}
-						depth={50}
+						depth={150}
 						count={5000}
-						factor={8}
+						factor={9}
 						saturation={0}
 						fade
 					/>
