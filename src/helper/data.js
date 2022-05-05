@@ -8,7 +8,7 @@ const projectData = [
 			'LangChat is a language learning application where users have the ability to chat with other users from around the world in an effort to learn their language just by exchanging messages. Users have the ability to correct each others messages in the event of a spelling mistake or grammatical error.',
 		website: '',
 		repo: 'https://github.com/MatthewKaplan/LangChat',
-		tools_used: [ 'JAVASCRIPT', 'REACT NATIVE', 'REDUX', 'DJANGO' ],
+		tools_used: ['JAVASCRIPT', 'REACT NATIVE', 'REDUX', 'DJANGO'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/G9OJmuX.png',
@@ -25,15 +25,15 @@ const projectData = [
 			'InstaList is a mobile application built using React Native, that allow users to buy and sell items online. I built this with the idea of creating a platform like craigslists with a delivery service such as InstaCart.',
 		website: '',
 		repo: 'https://github.com/MatthewKaplan/Instalist',
-		tools_used: [ 'JAVASCRIPT', 'REACT NATIVE', 'REDUX', 'NODE.JS' ],
+		tools_used: ['JAVASCRIPT', 'REACT NATIVE', 'REDUX', 'NODE.JS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/G9OJmuX.png',
 			'https://i.imgur.com/s9F3Q5b.png',
 			'https://i.imgur.com/HuxcEJX.png'
 		]
-  },
-  {
+	},
+	{
 		name: 'Sound-Insight',
 		img: 'https://ik.imagekit.io/4rwaenzjt/insight-laptop_AvL2qLwxzI.jpg',
 		mobile_img: 'https://i.imgur.com/FjJPgB9.jpg',
@@ -42,7 +42,7 @@ const projectData = [
 			"I designed and developed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000's.",
 		website: 'https://master.d30uxrf9waatbu.amplifyapp.com/',
 		repo: 'https://github.com/MatthewKaplan/sound-insight',
-		tools_used: [ 'JAVASCRIPT', 'REACT', 'SASS', 'REACT-ROUTER' ],
+		tools_used: ['JAVASCRIPT', 'REACT', 'SASS', 'REACT-ROUTER'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -50,7 +50,7 @@ const projectData = [
 			'https://i.imgur.com/4DAHjyl.png'
 		]
 	},
-  {
+	{
 		name: 'Software DayDreams',
 		img: 'https://i.imgur.com/hDc4WeR.png',
 		mobile_img: 'https://i.imgur.com/bJ0JZ7S.png',
@@ -59,7 +59,7 @@ const projectData = [
 			"Software DayDreams is a website in which Developers & Engineers of all languages can come to blog on their lunch breaks. Built using Ruby on Rails, users can create an account, write blog posts, and view other user's blog posts.",
 		website: 'https://software-daydreams.herokuapp.com',
 		repo: 'https://github.com/MatthewKaplan/Software-Daydreams',
-		tools_used: [ 'RUBY ON RAILS', 'RUBY' ],
+		tools_used: ['RUBY ON RAILS', 'RUBY'],
 		tool_icons: [
 			'https://i.imgur.com/M3dQAMV.png',
 			'https://i.imgur.com/R9YKJGA.png',
@@ -74,7 +74,7 @@ const projectData = [
 			'GoPhish is a web application that allows fans of the rock band Phish to dig through their musical archive and explore their previous tours, songs, shows, set lists, band information, and upcoming shows.',
 		website: 'https://gophish.netlify.com',
 		repo: 'https://github.com/MatthewKaplan/Go-Phish',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'REDUX', 'NODE.JS', 'REACT-ROUTER', 'SASS' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'REDUX', 'NODE.JS', 'REACT-ROUTER', 'SASS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -93,7 +93,7 @@ const projectData = [
 			'Color Constructor is a single page web application where users can randomly generate color palettes. Users have the ability to lock colors that they like as they generate more, save palettes, and edit palettes.',
 		website: 'https://hidden-bayou-50291.herokuapp.com/',
 		repo: 'https://github.com/MatthewKaplan/ColorConstructor',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'NODE.JS', 'SASS' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'NODE.JS', 'SASS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -110,8 +110,8 @@ const projectData = [
 			'Bottleneck Gallery is a web application I made using the Vue.js library. I made use of The Harvard Art Musuem API and created an online art gallery. This was my first project using Vue.',
 		website: 'https://master.d3m3ghzidizx9s.amplifyapp.com/',
 		repo: 'https://github.com/MatthewKaplan/bottleneck-gallery',
-		tools_used: [ 'JAVASCRIPT', 'VUE.JS' ],
-		tool_icons: [ 'https://i.imgur.com/3mSlFpH.png', 'https://i.imgur.com/wlflg3R.png' ]
+		tools_used: ['JAVASCRIPT', 'VUE.JS'],
+		tool_icons: ['https://i.imgur.com/3mSlFpH.png', 'https://i.imgur.com/wlflg3R.png']
 	},
 	{
 		name: 'MovieTracker',
@@ -122,7 +122,7 @@ const projectData = [
 			'MovieTracker is a web application that allows the user to keep track of their favorite movies and television shows all while allowing them to create an account so they can save their favorites.',
 		website: 'https://matthewkaplan.github.io/Movie-Tracker',
 		repo: 'https://github.com/MatthewKaplan/Movie-Tracker',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'REDUX', 'NODE.JS', 'REACT-ROUTER', 'SASS' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'REDUX', 'NODE.JS', 'REACT-ROUTER', 'SASS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -141,7 +141,7 @@ const projectData = [
 			'CoYo is a web application that allow users to search for yoga studios in the Denver metropolitan area based on drop-in fees, reviews, classes offered, and location.',
 		website: 'https://matthewkaplan.github.io/CoYo-Colorado-Yoga-Collective/',
 		repo: 'https://github.com/MatthewKaplan/CoYo-Colorado-Yoga-Collective',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'SASS' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'SASS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -157,7 +157,7 @@ const projectData = [
 			'TrapperKeeper is a web application that is based off the famous note-taking service Google Keep. It allows the user to keep track of their busy life by creating an online checklist.',
 		website: 'https://trapper-keeper-front.herokuapp.com/',
 		repo: 'https://github.com/MatthewKaplan/Trapper-Keeper',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'REDUX', 'NODE.JS', 'REACT-ROUTER', 'SASS' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'REDUX', 'NODE.JS', 'REACT-ROUTER', 'SASS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -176,7 +176,7 @@ const projectData = [
 			'Jest Do It is a flash card application that tests the user on their knowledge of the popular testing framework Jest. The application also includes a leaderboard so friends can challenge one another.',
 		website: 'https://jest-do-it.netlify.com/',
 		repo: 'https://github.com/MatthewKaplan/Jest-Do-It',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'SASS', 'REACT-ROUTER' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'SASS', 'REACT-ROUTER'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -193,7 +193,7 @@ const projectData = [
 			'SwapiBox is a web application where fans of the famous Star Wars franchise can go to learn more about the characters, planets, and vehicles',
 		website: 'https://matthewkaplan.github.io/swapiBox/',
 		repo: 'https://github.com/MatthewKaplan/swapiBox',
-		tools_used: [ 'JAVASCRIPT', 'REACT.JS', 'SASS' ],
+		tools_used: ['JAVASCRIPT', 'REACT.JS', 'SASS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
@@ -209,7 +209,7 @@ const projectData = [
 			'"I\'ll take ___ for $1,000, Alex." Come test your trivia knowledge playing Jeopardy, Revenge of the nerds style! ',
 		website: '',
 		repo: 'https://github.com/MatthewKaplan/Jeopardy',
-		tools_used: [ 'JAVASCRIPT', 'Webpack', 'HTML', 'CSS' ],
+		tools_used: ['JAVASCRIPT', 'Webpack', 'HTML', 'CSS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/uYQtYC8.png',
@@ -226,7 +226,7 @@ const projectData = [
 			'A web application where the user can create an online photo collection by uploading photos that can also be favorited.',
 		website: 'https://matthewkaplan.github.io/Foto-Finder/',
 		repo: 'https://github.com/MatthewKaplan/Foto-Finder',
-		tools_used: [ 'JAVASCRIPT', 'HTML', 'CSS' ],
+		tools_used: ['JAVASCRIPT', 'HTML', 'CSS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/txWQbDh.png',
@@ -242,7 +242,7 @@ const projectData = [
 			'A web application where the user can jot down ideas to refeer to later. They can also rank their ideas based on how good they think it is.',
 		website: 'https://matthewkaplan.github.io/IdeaBox/',
 		repo: 'https://github.com/MatthewKaplan/IdeaBox',
-		tools_used: [ 'JAVASCRIPT', 'HTML', 'CSS' ],
+		tools_used: ['JAVASCRIPT', 'HTML', 'CSS'],
 		tool_icons: [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/txWQbDh.png',
@@ -256,6 +256,7 @@ const hobbyImages = [
 	'https://i.imgur.com/gGmiMCC.png',
 	'https://i.imgur.com/sdoC1cK.png',
 	'https://i.imgur.com/DmoHKgD.png',
+	'https://i.imgur.com/G3ZVfKf.png',
 	'https://i.imgur.com/dlg3Tlv.png',
 	'https://i.imgur.com/AZeDkyX.png',
 	'https://i.imgur.com/2JgZsQP.png',
@@ -276,6 +277,7 @@ const hobbyNames = [
 	'TRAVELING',
 	'DOGS',
 	'SKIING',
+	'FORMULA 1',
 	'FOOTBALL',
 	'MUSIC',
 	'CAMPING',
