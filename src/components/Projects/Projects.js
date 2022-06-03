@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { projectData } from '../../helper/data';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import TiltPhaseSix from '../TiltPhaseSix/TiltPhaseSix';
@@ -9,86 +9,56 @@ const options = {
 	scale: 1
 };
 
-export default class Projects extends Component {
-	state = { slidesPosition: 0, autoSlides: () => { } };
+export const Projects = () => {
+	const [slidesPosition, setSlidesPosition] = useState(0);
+	const [autoSlides, setAutoSlides] = useState(1);
 
-	componentDidMount() {
-		const autoSlides = setInterval(this.changeSlidesPositionForward, 15000);
-		this.setState({ autoSlides });
-	}
-
-	changeSlidesPositionForward = () => {
-		const { slidesPosition } = this.state;
-		const autoSlides = setInterval(this.changeSlidesPositionForward, 15000);
+	const changeSlidesPositionForward = () => {
+		const slide = setInterval(() => changeSlidesPositionForward(), 15000);
 		let position = slidesPosition;
 		if (position < 14) {
 			position++;
-			clearInterval(this.state.autoSlides);
-			this.setState({ slidesPosition: position, autoSlides });
+			clearInterval(autoSlides);
+			setSlidesPosition(position);
+			setAutoSlides(slide);
 		} else {
-			clearInterval(this.state.autoSlides);
-			this.setState({ slidesPosition: 0, autoSlides });
+			clearInterval(autoSlides);
+			setSlidesPosition(0);
+			setAutoSlides(slide);
 		}
 	};
 
-	changeSlidesPositionBack = () => {
-		const { slidesPosition } = this.state;
-		const autoSlides = setInterval(this.changeSlidesPositionForward, 15000);
+	const changeSlidesPositionBack = () => {
+		const slide = setInterval(() => changeSlidesPositionForward(), 15000);
 		let position = slidesPosition;
 		if (slidesPosition === 0) {
-			clearInterval(this.state.autoSlides);
-			this.setState({ slidesPosition: 14, autoSlides });
+			clearInterval(autoSlides);
+			setSlidesPosition(14);
+			setAutoSlides(slide);
 		} else {
 			position--;
-			clearInterval(this.state.autoSlides);
-			this.setState({ slidesPosition: position, autoSlides });
+			clearInterval(autoSlides);
+			setSlidesPosition(position);
+			setAutoSlides(slide);
 		}
 	};
 
-	getBackGroundImg = () => {
-		return projectData.map((project, index) => {
-			if (index === this.state.slidesPosition) {
-				const backImg = project.backdrop;
-				return <div className="bg-image" key={Date.now()} style={{ backgroundImage: `url(${backImg})` }} />;
-			}
-			return null;
-		});
-	};
-
-	getLapTopImg = () => {
-		return projectData.map((project, index) => {
-			if (index === this.state.slidesPosition) {
-				const backImg = project.img;
-				return <div className="laptop-bg-image" key={Date.now()} style={{ backgroundImage: `url(${backImg})` }} />;
-			}
-			return null;
-		});
-	};
-
-	getIphoneImg = () => {
-		const { slidesPosition } = this.state;
+	const getProjectImages = (imgToRetrieve, classStyles) => {
 		return projectData.map((project, index) => {
 			if (index === slidesPosition) {
-				const backImg = project.img;
-				return (
-					<div
-						className={slidesPosition <= 1 ? 'iphone-bg-image sm-iphone-image' : 'iphone-bg-image'}
-						key={Date.now()}
-						style={{ backgroundImage: `url(${backImg})` }}
-					/>
-				);
+				const projectImg = project[imgToRetrieve];
+				return <div className={classStyles} key={projectImg} style={{ backgroundImage: `url(${projectImg})` }} />;
 			}
 			return null;
 		});
 	};
 
-	renderMobileImg = () => {
-		const { slidesPosition } = this.state;
+	const renderMobileImg = () => {
 		return projectData.map((project, index) => {
 			if (index === slidesPosition && project.mobile_img.length > 0) {
 				const backImg = project.mobile_img;
 				return (
-					<div className="device2">
+					<div className="device2" key={backImg}>
 						<img
 							className={slidesPosition <= 1 ? 'blank-iphone mobile-slide' : 'blank-iphone'}
 							src="https://i.imgur.com/nsTenwY.png"
@@ -96,7 +66,6 @@ export default class Projects extends Component {
 						/>
 						<div
 							className={slidesPosition <= 1 ? 'iphone-svg-image mobile-slide-img' : 'iphone-svg-image'}
-							key={Date.now() + 1}
 							style={{ backgroundImage: `url(${backImg})` }}
 						/>
 					</div>
@@ -106,9 +75,9 @@ export default class Projects extends Component {
 		});
 	};
 
-	getProjectInfo = info => {
+	const getProjectInfo = info => {
 		return projectData.map((project, index) => {
-			if (index === this.state.slidesPosition) {
+			if (index === slidesPosition) {
 				switch (info) {
 					case 'name':
 						return (
@@ -164,57 +133,50 @@ export default class Projects extends Component {
 		});
 	};
 
-	render() {
-		const { slidesPosition } = this.state;
-		return (
-			<div className="projects-component">
-				<Arrow
-					className="arrow-one arrow"
-					data-test="arrow-forward"
-					onClick={() => this.changeSlidesPositionForward()}
-				/>
-				<Arrow className="arrow-two arrow" data-test="arrow-back" onClick={() => this.changeSlidesPositionBack()} />
-				{this.getBackGroundImg()}
-				<div className="overlay" />
-				{slidesPosition === 0 && <div className="background-styles" />}
-				<TiltPhaseSix
-					options={options}
-					style={{
-						height: '60%'
-					}}>
-					<div className="device">
-						{slidesPosition <= 1 ? (
-							<img className="iphone-image" src="https://i.imgur.com/nsTenwY.png" alt="iPhone" />
-						) : (
-							<div className="laptop-device">
-								<img className="laptop-image" src="https://i.imgur.com/mYV4YN6.png" alt="Laptop" />
-							</div>
-						)}
-						{slidesPosition <= 1 ? this.getIphoneImg() : this.getLapTopImg()}
-					</div>
-					{this.renderMobileImg()}
-				</TiltPhaseSix>
-				<section className="project-description">
-					<section className="project-links">
-						{this.getProjectInfo('project link')}
-						{this.getProjectInfo('github link')}
-					</section>
-					{this.getProjectInfo('name')}
-					{this.getProjectInfo('description')}
-					<div className="separator">
-						<hr />
-					</div>
-					<h1 className="built-with">BUILT WITH</h1>
-					<div className="tools-used">
-						<div className="icons">{this.getProjectInfo('tools')}</div>
-						<div className="names">{this.getProjectInfo('tool name')}</div>
-					</div>
+	return (
+		<div className="projects-component">
+			<Arrow
+				className="arrow-one arrow"
+				data-test="arrow-forward"
+				onClick={() => changeSlidesPositionForward()}
+			/>
+			<Arrow className="arrow-two arrow" data-test="arrow-back" onClick={() => changeSlidesPositionBack()} />
+			{getProjectImages('backdrop', 'bg-image')}
+			<div className="overlay" />
+			{slidesPosition === 0 && <div className="background-styles" />}
+			<TiltPhaseSix
+				options={options}
+				style={{
+					height: '60%'
+				}}>
+				<div className="device">
+					{slidesPosition <= 1 ? (
+						<img className="iphone-image" src="https://i.imgur.com/nsTenwY.png" alt="iPhone" />
+					) : (
+						<div className="laptop-device">
+							<img className="laptop-image" src="https://i.imgur.com/mYV4YN6.png" alt="Laptop" />
+						</div>
+					)}
+					{slidesPosition <= 1 ? getProjectImages('img', slidesPosition <= 1 ? 'iphone-bg-image sm-iphone-image' : 'iphone-bg-image') : getProjectImages('img', 'laptop-bg-image')}
+				</div>
+				{renderMobileImg()}
+			</TiltPhaseSix>
+			<section className="project-description">
+				<section className="project-links">
+					{getProjectInfo('project link')}
+					{getProjectInfo('github link')}
 				</section>
-			</div>
-		);
-	}
-
-	componentWillUnmount() {
-		clearInterval(this.state.autoSlides);
-	}
+				{getProjectInfo('name')}
+				{getProjectInfo('description')}
+				<div className="separator">
+					<hr />
+				</div>
+				<h1 className="built-with">BUILT WITH</h1>
+				<div className="tools-used">
+					<div className="icons">{getProjectInfo('tools')}</div>
+					<div className="names">{getProjectInfo('tool name')}</div>
+				</div>
+			</section>
+		</div>
+	);
 }

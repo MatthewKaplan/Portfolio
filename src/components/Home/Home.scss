@@ -78,12 +78,12 @@
 	}
 
 	.isCopied {
-		background-color: rgba(0, 0, 0, 0.704);
+		background-color: hsl(0deg 0% 100% / 79%);
 		position: absolute;
 		bottom: -10%;
 		left: 39%;
 		width: 200px;
-		color: $main-text;
+		color: #000000;
 		font-size: 30px;
 		border-radius: 5px;
 		text-align: center;
@@ -102,7 +102,7 @@
 			width: 3px;
 			height: 0px;
 			border-top: 10px solid transparent;
-			border-bottom: 23px solid rgba(0, 0, 0, 0.704);
+			border-bottom: 23px solid hsl(0deg 0% 100% / 79%);
 			border-right: 10px solid transparent;
 			border-left: 10px solid transparent;
 			position: absolute;
