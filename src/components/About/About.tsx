@@ -1,34 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Slides } from '../Slides/Slides';
+import { AboutImages } from './AboutImages';
 import { hobbyImages, hobbyNames, skillNames, skillIcons } from '../../helper/data';
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
+import { Fade, Zoom } from "react-awesome-reveal";
 
-export const About = () => {
+export const About: FC = () => {
 	const [bio, setBio] = useState(false);
 	const [love, setLove] = useState(false);
 	const [skills, setSkills] = useState(false);
-	const [scrollPosition, setScrollPosition] = useState(0);
-	const displayImages = scrollPosition >= 400 && scrollPosition <= 1600;
 
 	const handleCloseEvent = () => {
 		setBio(false);
 		setLove(false);
 		setSkills(false);
 	};
-
-	const handleScroll = () => {
-		const position = window.pageYOffset;
-		setScrollPosition(position);
-	};
-
-	useEffect(() => {
-		window.addEventListener('scroll', handleScroll, { passive: true });
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
 
 	return (
 		<div className="about-component">
@@ -40,49 +25,14 @@ export const About = () => {
 					<div className="bg-color" />
 					<div className="overlay" />
 					<section className="about-imgs">
-						<Fade left when={displayImages} duration={2000}>
-							<div className="fingerprint-container" onClick={() => setBio(true)}>
-								<div className="image">
-									<span />
-									<span />
-									<span />
-									<span />
-								</div>
-								<div className="content">
-									<h1>BIO</h1>
-								</div>
-							</div>
+						<Fade direction="left" duration={2000}>
+							<AboutImages setCategory={setBio} containerClass="fingerprint-container" titleOne="BIO" />
 						</Fade>
-						<Zoom when={displayImages} duration={2000}>
-							<div className="brain-container" onClick={() => setSkills(true)}>
-								<div className="image">
-									<span />
-									<span />
-									<span />
-									<span />
-								</div>
-								<div className="align-text">
-									<div className="left-content">
-										<h1>SKI</h1>
-									</div>
-									<div className="right-content">
-										<h1>LLS</h1>
-									</div>
-								</div>
-							</div>
+						<Zoom duration={2000}>
+							<AboutImages setCategory={setSkills} containerClass="brain-container" titleOne="SKI" titleTwo="LLS" />
 						</Zoom>
-						<Fade right when={displayImages} duration={2000}>
-							<div className="heart-container" onClick={() => setLove(true)}>
-								<div className="image">
-									<span />
-									<span />
-									<span />
-									<span />
-								</div>
-								<div className="content">
-									<h1>LOVE</h1>
-								</div>
-							</div>
+						<Fade direction="right" duration={2000}>
+							<AboutImages setCategory={setLove} containerClass="heart-container" titleOne="LOVE" />
 						</Fade>
 					</section>
 				</ >
@@ -92,7 +42,7 @@ export const About = () => {
 				bio && (
 					<section className="about-me-section">
 						<article className="about-box">
-							<div width="100%" style={{ display: 'flex', justifyContent: 'center' }}>
+							<div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
 								<img className="profile-picture" src={'https://i.imgur.com/8AF2NOa.jpg?1'} alt="profile" />
 							</div>
 							<div className="close-bio" onClick={() => setBio(false)} />
@@ -116,7 +66,6 @@ export const About = () => {
 				love && (
 					<section className="love-section">
 						<div className="slides">
-							{/* <Slides icons={hobbyImages} iconNames={hobbyNames} handleCloseEvent={handleCloseEvent} /> */}
 							<Slides slideIcons={hobbyImages} slideIconNames={hobbyNames} closeSection={handleCloseEvent} />
 						</div>
 					</section>
@@ -127,7 +76,6 @@ export const About = () => {
 					<section className="love-section">
 						<div className="slides">
 							<Slides slideIcons={skillIcons} slideIconNames={skillNames} closeSection={handleCloseEvent} />
-							{/* <Slides icons={skillIcons} iconNames={skillNames} handleCloseEvent={handleCloseEvent} /> */}
 						</div>
 					</section>
 				)

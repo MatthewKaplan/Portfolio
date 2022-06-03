@@ -1,8 +1,8 @@
-import React, { } from 'react';
+import React, { FC } from 'react';
 import { projectData } from '../../helper/data';
 import './LazyLoad.scss';
 
-export const LazyLoad = () => {
+export const LazyLoad: FC = () => {
 	const renderImages = () => {
 		return projectData.map(data => {
 			return (

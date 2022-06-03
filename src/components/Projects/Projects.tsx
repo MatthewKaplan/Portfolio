@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { projectData } from '../../helper/data';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
-import TiltPhaseSix from '../TiltPhaseSix/TiltPhaseSix';
+import Tilt from 'react-parallax-tilt';
 
-const options = {
-	max: 20,
-	perspective: 1000,
-	scale: 1
-};
-
-export const Projects = () => {
-	const [slidesPosition, setSlidesPosition] = useState(0);
-	const [autoSlides, setAutoSlides] = useState(1);
+export const Projects: FC = () => {
+	const [slidesPosition, setSlidesPosition] = useState<number>(0);
+	const [autoSlides, setAutoSlides] = useState<NodeJS.Timer>(setInterval(() => {}));
 
 	const changeSlidesPositionForward = () => {
 		const slide = setInterval(() => changeSlidesPositionForward(), 15000);
@@ -43,11 +37,11 @@ export const Projects = () => {
 		}
 	};
 
-	const getProjectImages = (imgToRetrieve, classStyles) => {
+	const getProjectImages = (imgToRetrieve: string, classStyles: string) => {
 		return projectData.map((project, index) => {
 			if (index === slidesPosition) {
-				const projectImg = project[imgToRetrieve];
-				return <div className={classStyles} key={projectImg} style={{ backgroundImage: `url(${projectImg})` }} />;
+				const projectImg = project[imgToRetrieve as keyof typeof project];
+				return <div className={classStyles} key={projectImg as string} style={{ backgroundImage: `url(${projectImg})` }} />;
 			}
 			return null;
 		});
@@ -75,19 +69,19 @@ export const Projects = () => {
 		});
 	};
 
-	const getProjectInfo = info => {
+	const getProjectInfo = (info: string) => {
 		return projectData.map((project, index) => {
 			if (index === slidesPosition) {
 				switch (info) {
 					case 'name':
 						return (
-							<div className="project-name" key={project}>
+							<div className="project-name" key={project.name}>
 								{project.name}
 							</div>
 						);
 					case 'description':
 						return (
-							<div className="description" key={project}>
+							<div className="description" key={project.description}>
 								{project.description}
 							</div>
 						);
@@ -111,7 +105,7 @@ export const Projects = () => {
 						const website = project.website;
 						if (website.length > 0) {
 							return (
-								<a href={website} key={project} className="link left-link" target="_blank" rel="noopener noreferrer">
+								<a href={website} key={project.website} className="link left-link" target="_blank" rel="noopener noreferrer">
 									<img src="https://i.imgur.com/vYmjUIL.png" alt="left arrow" className="left-arrow" />
 									<img src="https://i.imgur.com/ayShYqf.png" alt="eye" className="web-page" />
 								</a>
@@ -121,7 +115,7 @@ export const Projects = () => {
 					case 'github link':
 						const repo = project.repo;
 						return (
-							<a href={repo} key={project} className="link right-link" target="_blank" rel="noopener noreferrer">
+							<a href={repo} key={project.repo} className="link right-link" target="_blank" rel="noopener noreferrer">
 								<img src="https://i.imgur.com/EqwwU5F.png" alt="github" className="web-page" />
 								<img src="https://i.imgur.com/j1UgHSb.png" alt="right arrow" className="right-arrow" />
 							</a>
@@ -130,6 +124,7 @@ export const Projects = () => {
 						return null;
 				}
 			}
+			return null;
 		});
 	};
 
@@ -144,11 +139,7 @@ export const Projects = () => {
 			{getProjectImages('backdrop', 'bg-image')}
 			<div className="overlay" />
 			{slidesPosition === 0 && <div className="background-styles" />}
-			<TiltPhaseSix
-				options={options}
-				style={{
-					height: '60%'
-				}}>
+			<Tilt>
 				<div className="device">
 					{slidesPosition <= 1 ? (
 						<img className="iphone-image" src="https://i.imgur.com/nsTenwY.png" alt="iPhone" />
@@ -160,7 +151,7 @@ export const Projects = () => {
 					{slidesPosition <= 1 ? getProjectImages('img', slidesPosition <= 1 ? 'iphone-bg-image sm-iphone-image' : 'iphone-bg-image') : getProjectImages('img', 'laptop-bg-image')}
 				</div>
 				{renderMobileImg()}
-			</TiltPhaseSix>
+			</Tilt>
 			<section className="project-description">
 				<section className="project-links">
 					{getProjectInfo('project link')}

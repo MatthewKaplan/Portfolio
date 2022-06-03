@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import resumeCV from '../../assets/Matthew_Kaplan_2022CV.pdf';
+import React, { FC, useState } from 'react';
 import { Link } from 'react-scroll';
+import Pdf from '../../assets/Matthew_Kaplan_2022CV.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -8,11 +8,16 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Canvas } from 'react-three-fiber';
 import { OrbitControls, Stars, Html } from 'drei';
 
-export const Home = () => {
+export const Home: FC = () => {
 	const [isNotCopied, setIsNotCopied] = useState(true);
 
+	const setIsCopied = () => {
+		setIsNotCopied(false)
+		setTimeout(() => setIsNotCopied(true), 1500)
+	}
+
 	const openPdf = () => {
-		window.open(resumeCV);
+		window.open(Pdf);
 		return false;
 	}
 
@@ -43,9 +48,9 @@ export const Home = () => {
 									<FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" size="2x" />
 								</a>
 								<CopyToClipboard
-									onCopy={() => setIsNotCopied(false)}
+									onCopy={() => setIsCopied()}
 									text={'Kaplan.Matthew.P@gmail.com'}
-									onMouseLeave={() => setTimeout(() => setIsNotCopied(true), 1500)}>
+								>
 									<FontAwesomeIcon icon={faEnvelope} className="envelope-icon" size="2x" />
 								</CopyToClipboard>
 								<div onClick={() => openPdf()}>
