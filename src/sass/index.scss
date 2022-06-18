@@ -1,9 +1,11 @@
 @import './variables';
-@import '../components/Home/Home.scss';
-@import '../components/Nav/Nav.scss';
-@import '../components/About/About.scss';
-@import '../components/Projects/Projects.scss';
-@import '../components/Slides/Slides.scss';
+@import '../components/Styles/Home.scss';
+@import '../components/Styles/Nav.scss';
+@import '../components/Styles/About.scss';
+@import '../components/Styles/Projects.scss';
+@import '../components/Styles/Slides.scss';
+@import '../components/Styles/Carousel.scss';
+@import '../components/Styles/LazyLoad.scss';
 
 body {
   margin: 0;

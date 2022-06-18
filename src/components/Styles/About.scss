@@ -322,6 +322,10 @@
 	}
 
 	.love-section {
+		display: flex;
+    flex-direction: column-reverse;
+		align-items: flex-end;
+
 		.slides {
 			height: 455px;
 			position: relative;
@@ -329,6 +333,13 @@
 			text-align: center;
 			width: 1000px;
 		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+  .about-component .love-section {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 

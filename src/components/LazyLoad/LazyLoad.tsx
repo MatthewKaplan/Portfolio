@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { projectData } from '../../helper/data';
-import './LazyLoad.scss';
 
 export const LazyLoad: FC = () => {
 	const renderImages = () => {

@@ -1,8 +1,8 @@
 import React, { FC, useState } from 'react';
-import { Slides } from '../Slides/Slides';
 import { AboutImages } from './AboutImages';
 import { hobbyImages, hobbyNames, skillNames, skillIcons } from '../../helper/data';
 import { Fade, Zoom } from "react-awesome-reveal";
+import { CarouselSlides } from '../Carousel/Carousel';
 
 export const About: FC = () => {
 	const [bio, setBio] = useState(false);
@@ -66,8 +66,9 @@ export const About: FC = () => {
 				love && (
 					<section className="love-section">
 						<div className="slides">
-							<Slides slideIcons={hobbyImages} slideIconNames={hobbyNames} closeSection={handleCloseEvent} />
+							<CarouselSlides slideIcons={hobbyImages} slideIconNames={hobbyNames} closeSection={handleCloseEvent} />
 						</div>
+						<button className="close-section" onClick={() => handleCloseEvent()} />
 					</section>
 				)
 			}
@@ -75,8 +76,9 @@ export const About: FC = () => {
 				skills && (
 					<section className="love-section">
 						<div className="slides">
-							<Slides slideIcons={skillIcons} slideIconNames={skillNames} closeSection={handleCloseEvent} />
+							<CarouselSlides slideIcons={skillIcons} slideIconNames={skillNames} closeSection={handleCloseEvent} />
 						</div>
+						<button className="close-section" onClick={() => handleCloseEvent()} />
 					</section>
 				)
 			}

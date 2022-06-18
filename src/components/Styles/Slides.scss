@@ -1,5 +1,25 @@
 @import "../../sass/variables";
 
+.close-section {
+	height: 50px;
+	width: 50px;
+	background-image: url("https://i.imgur.com/W2MOh1G.png");
+	background-size: contain;
+	// position: absolute;
+	background-repeat: no-repeat;
+	right: 14%;
+	cursor: pointer;
+	z-index: 999;
+	top: 66%;
+	background-color: transparent;
+	border: none;
+	left: 476px;
+
+	&:hover {
+		background-image: url("https://i.imgur.com/GhddtOU.png");
+	}
+}
+
 .slider {
 	position: relative;
 	width: 275px;
