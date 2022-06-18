@@ -6,11 +6,8 @@
   margin-top: 30px !important;
 }
 
-.mobileCarousel {
-  padding-top: 30px;
-}
-
 .carouselContainer .mobileCarousel {
+  padding-top: 30px;
   display: none;
 }
 
@@ -31,6 +28,37 @@
   max-width: 200px;
   margin: 0 auto;
   cursor: pointer
+}
+
+.close-section {
+	height: 50px;
+	width: 50px;
+	background-image: url("https://i.imgur.com/W2MOh1G.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 999;
+	background-color: transparent;
+	border: none;
+
+	&:hover {
+		background-image: url("https://i.imgur.com/GhddtOU.png");
+	}
+}
+
+.slider {
+	position: relative;
+	width: 275px;
+	margin: 0 auto;
+	height: 275px;
+	white-space: nowrap;
+}
+
+
+.slide {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
 }
 
 @media screen and (max-width: 850px) {

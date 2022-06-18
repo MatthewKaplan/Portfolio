@@ -14,7 +14,8 @@ const projectData = [
 			'https://i.imgur.com/G9OJmuX.png',
 			'https://i.imgur.com/s9F3Q5b.png',
 			'https://i.imgur.com/q2N5A5n.png'
-		]
+		],
+		backgroundPlaceholderColor: '#d87093'
 	},
 	{
 		name: 'InstaList',
@@ -31,7 +32,8 @@ const projectData = [
 			'https://i.imgur.com/G9OJmuX.png',
 			'https://i.imgur.com/s9F3Q5b.png',
 			'https://i.imgur.com/HuxcEJX.png'
-		]
+		],
+		backgroundPlaceholderColor: '#4c8cb0'
 	},
 	{
 		name: 'Sound-Insight',
@@ -40,15 +42,16 @@ const projectData = [
 		backdrop: 'https://ik.imagekit.io/4rwaenzjt/insight-background_bfSJeJARu1.jpg',
 		description:
 			"I designed and developed this website for a custom home theater and audio company that operates out of Huntington, NY. The main issue with their previous site was that it was not mobile friendly and that it hadn't been updated since the early 2000's.",
-		website: 'https://master.d30uxrf9waatbu.amplifyapp.com/',
-		repo: 'https://github.com/MatthewKaplan/sound-insight',
-		tools_used: ['JAVASCRIPT', 'REACT', 'SASS', 'REACT-ROUTER'],
+		website: 'https://www.sound-insight.com/',
+		repo: '',
+		tools_used: ['TYPESCRIPT', 'REACT', 'NEXT.JS', 'REACT-ROUTER'],
 		tool_icons: [
-			'https://i.imgur.com/3mSlFpH.png',
+			'https://i.imgur.com/1iGFscv.png',
 			'https://i.imgur.com/axiLwzP.png?1',
-			'https://i.imgur.com/iVwUSvz.png',
+			'https://i.imgur.com/DcHkhwT.png',
 			'https://i.imgur.com/4DAHjyl.png'
-		]
+		],
+		backgroundPlaceholderColor: '#6d5e49'
 	},
 	{
 		name: 'Software DayDreams',
@@ -63,7 +66,8 @@ const projectData = [
 		tool_icons: [
 			'https://i.imgur.com/M3dQAMV.png',
 			'https://i.imgur.com/R9YKJGA.png',
-		]
+		],
+		backgroundPlaceholderColor: '#abb99c'
 	},
 	{
 		name: 'GoPhish',
@@ -82,7 +86,8 @@ const projectData = [
 			'https://i.imgur.com/HuxcEJX.png',
 			'https://i.imgur.com/4DAHjyl.png',
 			'https://i.imgur.com/iVwUSvz.png'
-		]
+		],
+		backgroundPlaceholderColor: '#19aadb'
 	},
 	{
 		name: 'ColorConstructor',
@@ -99,7 +104,8 @@ const projectData = [
 			'https://i.imgur.com/axiLwzP.png?1',
 			'https://i.imgur.com/HuxcEJX.png',
 			'https://i.imgur.com/iVwUSvz.png'
-		]
+		],
+		backgroundPlaceholderColor: '#209d93'
 	},
 	{
 		name: 'Bottleneck Gallery',
@@ -111,7 +117,8 @@ const projectData = [
 		website: 'https://master.d3m3ghzidizx9s.amplifyapp.com/',
 		repo: 'https://github.com/MatthewKaplan/bottleneck-gallery',
 		tools_used: ['JAVASCRIPT', 'VUE.JS'],
-		tool_icons: ['https://i.imgur.com/3mSlFpH.png', 'https://i.imgur.com/wlflg3R.png']
+		tool_icons: ['https://i.imgur.com/3mSlFpH.png', 'https://i.imgur.com/wlflg3R.png'],
+		backgroundPlaceholderColor: '#577773'
 	},
 	{
 		name: 'MovieTracker',
@@ -130,7 +137,8 @@ const projectData = [
 			'https://i.imgur.com/HuxcEJX.png',
 			'https://i.imgur.com/4DAHjyl.png',
 			'https://i.imgur.com/iVwUSvz.png'
-		]
+		],
+		backgroundPlaceholderColor: '#af5249'
 	},
 	{
 		name: 'CoYo - Colorado Yoga Collective',
@@ -146,7 +154,8 @@ const projectData = [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
 			'https://i.imgur.com/iVwUSvz.png'
-		]
+		],
+		backgroundPlaceholderColor: '#5aa3c0'
 	},
 	{
 		name: 'TrapperKeeper',
@@ -165,7 +174,8 @@ const projectData = [
 			'https://i.imgur.com/HuxcEJX.png',
 			'https://i.imgur.com/4DAHjyl.png',
 			'https://i.imgur.com/iVwUSvz.png'
-		]
+		],
+		backgroundPlaceholderColor: '#ffff73'
 	},
 	{
 		name: 'Jest Do It',
@@ -182,7 +192,8 @@ const projectData = [
 			'https://i.imgur.com/axiLwzP.png?1',
 			'https://i.imgur.com/iVwUSvz.png',
 			'https://i.imgur.com/4DAHjyl.png'
-		]
+		],
+		backgroundPlaceholderColor: '#294050'
 	},
 	{
 		name: 'SwapiBox',
@@ -198,7 +209,8 @@ const projectData = [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/axiLwzP.png?1',
 			'https://i.imgur.com/iVwUSvz.png'
-		]
+		],
+		backgroundPlaceholderColor: '#123a38'
 	},
 	{
 		name: 'GameTime',
@@ -215,7 +227,8 @@ const projectData = [
 			'https://i.imgur.com/uYQtYC8.png',
 			'https://i.imgur.com/txWQbDh.png',
 			'https://i.imgur.com/hQxyiun.png'
-		]
+		],
+		backgroundPlaceholderColor: '#133b9a'
 	},
 	{
 		name: 'Foto Finder',
@@ -231,7 +244,8 @@ const projectData = [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/txWQbDh.png',
 			'https://i.imgur.com/hQxyiun.png'
-		]
+		],
+		backgroundPlaceholderColor: '#c0694d'
 	},
 	{
 		name: 'Idea Box',
@@ -247,7 +261,8 @@ const projectData = [
 			'https://i.imgur.com/3mSlFpH.png',
 			'https://i.imgur.com/txWQbDh.png',
 			'https://i.imgur.com/hQxyiun.png'
-		]
+		],
+		backgroundPlaceholderColor: '#aed2d0'
 	}
 ];
 const hobbyImages = [
@@ -294,20 +309,23 @@ const hobbyNames = [
 ];
 const skillIcons = [
 	'https://i.imgur.com/axiLwzP.png?1',
+	'https://i.imgur.com/HuxcEJX.png',
+	'https://i.imgur.com/DcHkhwT.png',
 	'https://i.imgur.com/mWg1cu4.png',
 	'https://i.imgur.com/1iGFscv.png',
+	'https://i.imgur.com/3mSlFpH.png',
+	'https://i.imgur.com/s9F3Q5b.png',
 	'https://i.imgur.com/MLACbsl.png',
+	'https://i.imgur.com/TApjVA2.png',
+	'https://i.imgur.com/C0VUXnS.png',
 	'https://i.imgur.com/dj9gWRc.png',
-	'https://i.imgur.com/VzSJtVe.png',
+	'https://imgur.com/2AyKB58.png',
 	'https://i.imgur.com/BLzgcvp.png',
 	'https://i.imgur.com/G9OJmuX.png',
 	'https://i.imgur.com/wlflg3R.png',
-	'https://i.imgur.com/hQxyiun.png',
-	'https://i.imgur.com/3mSlFpH.png',
 	'https://i.imgur.com/txWQbDh.png',
+	'https://i.imgur.com/hQxyiun.png',
 	'https://i.imgur.com/iVwUSvz.png',
-	'https://i.imgur.com/s9F3Q5b.png',
-	'https://i.imgur.com/HuxcEJX.png',
 	'https://i.imgur.com/R9YKJGA.png',
 	'https://i.imgur.com/M3dQAMV.png',
 	'https://i.imgur.com/sTWqv95.png',
@@ -325,25 +343,27 @@ const skillIcons = [
 	'https://i.imgur.com/4DAHjyl.png',
 	'https://i.imgur.com/uYQtYC8.png',
 	'https://i.imgur.com/YqmfKAg.png',
-	'https://i.imgur.com/XAReGKN.png',
-	'https://imgur.com/2AyKB58.png'
+	'https://i.imgur.com/XAReGKN.png'
 ];
 const skillNames = [
 	'REACT',
-	'NESTJS',
+	'NODE.JS',
+	'NEXT.JS',
+	'NEST.JS',
 	'TYPESCRIPT',
+	'JAVASCRIPT',
+	'REDUX',
 	'MICROSOFT AZURE',
+	'THREE.JS',
+	'BLENDER',
 	'GRAPH DB',
 	'MONGO DB',
 	'SQL',
 	'REACT NATIVE',
 	'VUE',
-	'CSS',
-	'JAVASCRIPT',
 	'HTML',
+	'CSS',
 	'SASS',
-	'REDUX',
-	'NODE.JS',
 	'RUBY',
 	'RUBY ON RAILS',
 	'JQUERY',
@@ -361,8 +381,7 @@ const skillNames = [
 	'REACT ROUTER',
 	'WEBPACK',
 	'HEROKU',
-	'FIREBASE',
-	'MONGODB'
+	'FIREBASE'
 ];
 module.exports = {
 	projectData,

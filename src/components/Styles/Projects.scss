@@ -8,6 +8,12 @@
 	height: 100vh;
 	overflow: hidden;
 
+	.css-lmrzma,
+	.css-1gzxeik,
+	.css-118h23m {
+		height: 100%;
+	}
+
 	.arrow {
 		z-index: 3;
 		fill: $main-text;
@@ -60,7 +66,6 @@
 	}
 
 	.background-styles {
-		background-color: palevioletred;
 		position: absolute;
 		z-index: -1;
 		height: 100%;

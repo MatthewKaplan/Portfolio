@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { AboutImages } from './AboutImages';
 import { hobbyImages, hobbyNames, skillNames, skillIcons } from '../../helper/data';
-import { Fade, Zoom } from "react-awesome-reveal";
+import { JackInTheBox, Bounce } from "react-awesome-reveal";
 import { CarouselSlides } from '../Carousel/Carousel';
 
 export const About: FC = () => {
@@ -25,8 +25,6 @@ export const About: FC = () => {
 		setIsVisible(false);
 	}
 
-	console.log(isVisible);
-
 	return (
 		<div className="about-component">
 			{bio && <div className="bio-bg-color" />}
@@ -37,15 +35,15 @@ export const About: FC = () => {
 					<div className="bg-color" />
 					<div className="overlay" />
 					<section className="about-imgs">
-						<Fade direction="left" duration={2000} onVisibilityChange={(inView: boolean) => handleIsVisible(inView)}>
+						<JackInTheBox duration={2000} onVisibilityChange={(inView: boolean) => handleIsVisible(inView)} fraction={.2} triggerOnce>
 							<AboutImages setCategory={setBio} containerClass="fingerprint-container" titleOne="BIO" isVisible={isVisible} />
-						</Fade>
-						<Zoom duration={2000}>
+						</JackInTheBox>
+						<Bounce duration={2000} fraction={.2} triggerOnce>
 							<AboutImages setCategory={setSkills} containerClass="brain-container" titleOne="SKI" titleTwo="LLS" isVisible={isVisible} />
-						</Zoom>
-						<Fade direction="right" duration={2000}>
+						</Bounce>
+						<JackInTheBox duration={2000} fraction={.2} triggerOnce>
 							<AboutImages setCategory={setLove} containerClass="heart-container" titleOne="LOVE" isVisible={isVisible} />
-						</Fade>
+						</JackInTheBox>
 					</section>
 				</>
 			)

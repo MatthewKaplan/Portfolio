@@ -30,7 +30,7 @@ export const CarouselSlides: FC<Props> = ({ slideIcons, slideIconNames, closeSec
     thumbWidth: number('thumbWidth', 100, {}, valuesGroupId),
     selectedItem: number('selectedItem', 0, {}, valuesGroupId),
     interval: number('interval', 6000, {}, valuesGroupId),
-    transitionTime: number('transitionTime', 2000, {}, valuesGroupId),
+    transitionTime: number('transitionTime', 1000, {}, valuesGroupId),
     swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, valuesGroupId),
     ariaLabel: text('ariaLabel', '')
   });

@@ -1,39 +1,29 @@
 import React, { FC, useState } from 'react';
 import { projectData } from '../../helper/data';
+import { Fade } from "react-awesome-reveal";
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import Tilt from 'react-parallax-tilt';
 
 export const Projects: FC = () => {
 	const [slidesPosition, setSlidesPosition] = useState<number>(0);
-	const [autoSlides, setAutoSlides] = useState<NodeJS.Timer>(setInterval(() => {}));
 
 	const changeSlidesPositionForward = () => {
-		const slide = setInterval(() => changeSlidesPositionForward(), 15000);
-		let position = slidesPosition;
-		if (position < 14) {
-			position++;
-			clearInterval(autoSlides);
-			setSlidesPosition(position);
-			setAutoSlides(slide);
+		if (slidesPosition < 14) {
+			let triggeredPosition = slidesPosition;
+			triggeredPosition++;
+			setSlidesPosition(triggeredPosition);
 		} else {
-			clearInterval(autoSlides);
 			setSlidesPosition(0);
-			setAutoSlides(slide);
 		}
 	};
 
 	const changeSlidesPositionBack = () => {
-		const slide = setInterval(() => changeSlidesPositionForward(), 15000);
 		let position = slidesPosition;
 		if (slidesPosition === 0) {
-			clearInterval(autoSlides);
 			setSlidesPosition(14);
-			setAutoSlides(slide);
 		} else {
 			position--;
-			clearInterval(autoSlides);
 			setSlidesPosition(position);
-			setAutoSlides(slide);
 		}
 	};
 
@@ -41,7 +31,17 @@ export const Projects: FC = () => {
 		return projectData.map((project, index) => {
 			if (index === slidesPosition) {
 				const projectImg = project[imgToRetrieve as keyof typeof project];
-				return <div className={classStyles} key={projectImg as string} style={{ backgroundImage: `url(${projectImg})` }} />;
+				if (classStyles === "bg-image") {
+					return (
+						<Fade duration={2000}>
+							<>
+								<div className={classStyles} key={projectImg as string} style={{ backgroundImage: `url(${projectImg})` }} />
+							</>
+					</Fade>
+					)
+				} else {
+					return <div className={classStyles} key={projectImg as string} style={{ backgroundImage: `url(${projectImg})` }} />;
+			}
 			}
 			return null;
 		});
@@ -114,11 +114,18 @@ export const Projects: FC = () => {
 						return null;
 					case 'github link':
 						const repo = project.repo;
+						if (repo.length > 0) {
+							return (
+								<a href={repo} key={project.repo} className="link right-link" target="_blank" rel="noopener noreferrer">
+									<img src="https://i.imgur.com/EqwwU5F.png" alt="github" className="web-page" />
+									<img src="https://i.imgur.com/j1UgHSb.png" alt="right arrow" className="right-arrow" />
+								</a>
+							);
+						}
+						return null;
+					case 'bg color': 
 						return (
-							<a href={repo} key={project.repo} className="link right-link" target="_blank" rel="noopener noreferrer">
-								<img src="https://i.imgur.com/EqwwU5F.png" alt="github" className="web-page" />
-								<img src="https://i.imgur.com/j1UgHSb.png" alt="right arrow" className="right-arrow" />
-							</a>
+							<div className="background-styles" style={{ backgroundColor: project.backgroundPlaceholderColor }} />
 						);
 					default:
 						return null;
@@ -138,7 +145,7 @@ export const Projects: FC = () => {
 			<Arrow className="arrow-two arrow" data-test="arrow-back" onClick={() => changeSlidesPositionBack()} />
 			{getProjectImages('backdrop', 'bg-image')}
 			<div className="overlay" />
-			{slidesPosition === 0 && <div className="background-styles" />}
+			{getProjectInfo('bg color')}
 			<Tilt>
 				<div className="device">
 					{slidesPosition <= 1 ? (
