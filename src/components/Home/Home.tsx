@@ -41,21 +41,21 @@ export const Home: FC = () => {
 							<h1 className="name">Matthew Kaplan</h1>
 							<p className="position">Software Engineer</p>
 							<div className="logo-container">
-								<a href="https://github.com/MatthewKaplan" target="blank">
-									<FontAwesomeIcon icon={faGithub} className="github-icon" size="2x" />
-								</a>
 								<a href="https://www.linkedin.com/in/kaplan-matthew/" target="blank">
 									<FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" size="2x" />
 								</a>
+								<a href="https://github.com/MatthewKaplan" target="blank">
+									<FontAwesomeIcon icon={faGithub} className="github-icon" size="2x" />
+								</a>
+								<div onClick={() => openPdf()}>
+									<img src='https://i.imgur.com/wGi4VFM.png' alt="resume icon" className="resume-icon" />
+								</div>
 								<CopyToClipboard
 									onCopy={() => setIsCopied()}
 									text={'Kaplan.Matthew.P@gmail.com'}
 								>
 									<FontAwesomeIcon icon={faEnvelope} className="envelope-icon" size="2x" />
 								</CopyToClipboard>
-								<div onClick={() => openPdf()}>
-									<img src='https://i.imgur.com/wGi4VFM.png' alt="resume icon" className="resume-icon" />
-								</div>
 							</div>
 						</div>
 						<div className={isNotCopied === true ? 'isCopied inactive' : 'isCopied active'}>Email Copied to Clipboard</div>

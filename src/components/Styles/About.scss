@@ -36,7 +36,7 @@
 		position: relative;
 
 		h1 {
-			font-family: $main-headings;
+			font-family: 'Krona One', sans-serif;
 		}
 
 		.fingerprint-container {
@@ -49,7 +49,8 @@
 				height: 100%;
 			}
 
-			.image {
+			.image,
+			.imgHover {
 				@include about-me-image-styles;
 
 				span {
@@ -97,9 +98,25 @@
 				transform: translateY(100%);
 			}
 
+			.imgHover > span:nth-child(1) {
+				transform: translateY(-100%);
+			}
+
+			.imgHover > span:nth-child(2) {
+				transform: translateY(100%);
+			}
+
+			.imgHover > span:nth-child(3) {
+				transform: translateY(-100%);
+			}
+
+			.imgHover > span:nth-child(4) {
+				transform: translateY(100%);
+			}
+
 			.content {
-				color: $bio-background;
-				font-size: 50px;
+				color: #08abff;
+				font-size: 80px;
 				transform: translateX(-100%);
 				@include content-styles;
 			}
@@ -108,6 +125,18 @@
 				transform: translateX(0%);
 				transition: 1s;
 				transition-delay: 0.1s;
+			}
+
+			.contentHover {
+				color: #08abff;
+				font-size: 50px;
+				transform: translateX(0%);
+				transition: 1s;
+				transition-delay: 0.1s;
+				display: flex;
+    		justify-content: center;
+    		height: 100%;
+    		align-items: center;
 			}
 		}
 
@@ -121,7 +150,8 @@
 				height: 100%;
 			}
 
-			.image {
+			.image,
+			.imgHover {
 				@include about-me-image-styles;
 
 				span {
@@ -166,20 +196,39 @@
 				transform: translateY(100%);
 			}
 
+			.imgHover > span:nth-child(1) {
+				transform: translateY(-100%);
+			}
+
+			.imgHover > span:nth-child(2) {
+				transform: translateY(100%);
+			}
+
+			.imgHover > span:nth-child(3) {
+				transform: translateY(-100%);
+			}
+
+			.imgHover > span:nth-child(4) {
+				transform: translateY(100%);
+			}
+
 			.align-text {
 				display: flex;
+    		justify-content: center;
+    		height: 100%;
+    		align-items: center;
 
 				h1 {
 					justify-content: center;
 					align-items: center;
 					display: flex;
-					color: $skills-background;
+					color: #124651;
 					width: 100%;
 					height: 100%;
-					font-size: 76px;
+					font-size: 60px;
 					transition: .5s;
 					transition-delay: 0.1s;
-					font-family: $main-headings;
+					font-family: 'Krona One', sans-serif;
 				}
 
 				.left-content h1 {
@@ -197,6 +246,13 @@
 				transition: .5s;
 				transition-delay: 0.1s;
 			}
+
+			.leftContentHover h1,
+			.rightContentHover h1 {
+				transform: translateX(0%);
+				transition: .5s;
+				transition-delay: 0.1s;
+			}
 		}
 
 		.heart-container {
@@ -209,7 +265,8 @@
 				height: 100%;
 			}
 
-			.image {
+			.image,
+			.imgHover {
 				@include about-me-image-styles;
 
 				span {
@@ -257,8 +314,25 @@
 				transform: translateY(100%);
 			}
 
-			.content {
-				color: $love-background;
+			.imgHover > span:nth-child(1) {
+				transform: translateY(-100%);
+			}
+
+			.imgHover > span:nth-child(2) {
+				transform: translateY(100%);
+			}
+
+			.imgHover > span:nth-child(3) {
+				transform: translateY(-100%);
+			}
+
+			.imgHover > span:nth-child(4) {
+				transform: translateY(100%);
+			}
+
+			.content,
+			.contentHover {
+				color: #20dad8;
 				font-size: 60px;
 				transform: translateX(120%);
 				@include content-styles;
@@ -268,6 +342,16 @@
 				transform: translateX(0%);
 				transition: 1s;
 				transition-delay: 0.1s;
+			}
+
+			.contentHover {
+				transform: translateX(0%);
+				transition: 1s;
+				transition-delay: 0.1s;
+				display: flex;
+    		justify-content: center;
+    		height: 100%;
+    		align-items: center;
 			}
 		}
 	}
@@ -354,6 +438,8 @@
 				width: 350px;
 				h1 {
 					font-size: 80px;
+					margin-top: 80px;
+
 				}
 			}
 			.brain-container .align-text h1 {
@@ -398,10 +484,11 @@
 				width: 300px;
 				h1 {
 					font-size: 80px;
+					margin-top: 80px;
 				}
 			}
 			.brain-container .align-text h1 {
-				font-size: 80px;
+				font-size: 60px;
 				margin-top: 80px;
 			}
 			.heart-container .image span {
@@ -437,7 +524,7 @@
 				}
 			}
 			.brain-container .align-text h1 {
-				font-size: 80px;
+				font-size: 60px;
 				margin-top: 80px;
 			}
 			.heart-container .image span {
@@ -482,7 +569,7 @@
 			}
 		}
 		.brain-container .align-text h1 {
-			font-size: 60px;
+			font-size: 54px;
 			margin-top: 80px;
 		}
 	}
@@ -518,7 +605,7 @@
 			width: 200px;
 		}
 		.brain-container .align-text h1 {
-			font-size: 55px;
+			font-size: 43px;
 			margin-top: 60px;
 		}
 	}
@@ -538,7 +625,11 @@
 				}
 			}
 			.brain-container .align-text h1 {
-				font-size: 55px;
+				font-size: 35px;
+				margin-top: 60px;
+			}
+			.heart-container h1 {
+				font-size: 45px;
 				margin-top: 60px;
 			}
 		}
@@ -567,9 +658,14 @@
 					width: 25%;
 				}
 				.align-text h1 {
-					font-size: 40px;
+					font-size: 30px;
 					margin-top: 50px;
 				}
+			}
+
+			.heart-container h1 {
+				font-size: 40px;
+				margin-top: 60px;
 			}
 
 			.fingerprint-container {

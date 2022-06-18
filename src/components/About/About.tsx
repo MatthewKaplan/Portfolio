@@ -8,12 +8,24 @@ export const About: FC = () => {
 	const [bio, setBio] = useState(false);
 	const [love, setLove] = useState(false);
 	const [skills, setSkills] = useState(false);
+	const [isVisible, setIsVisible] = useState(false);
 
 	const handleCloseEvent = () => {
 		setBio(false);
 		setLove(false);
 		setSkills(false);
 	};
+
+	const handleIsVisible = (inView: boolean) => {
+		if (inView) {
+			setTimeout(() => {
+				setIsVisible(true);
+			}, 1800)
+		}
+		setIsVisible(false);
+	}
+
+	console.log(isVisible);
 
 	return (
 		<div className="about-component">
@@ -25,17 +37,17 @@ export const About: FC = () => {
 					<div className="bg-color" />
 					<div className="overlay" />
 					<section className="about-imgs">
-						<Fade direction="left" duration={2000}>
-							<AboutImages setCategory={setBio} containerClass="fingerprint-container" titleOne="BIO" />
+						<Fade direction="left" duration={2000} onVisibilityChange={(inView: boolean) => handleIsVisible(inView)}>
+							<AboutImages setCategory={setBio} containerClass="fingerprint-container" titleOne="BIO" isVisible={isVisible} />
 						</Fade>
 						<Zoom duration={2000}>
-							<AboutImages setCategory={setSkills} containerClass="brain-container" titleOne="SKI" titleTwo="LLS" />
+							<AboutImages setCategory={setSkills} containerClass="brain-container" titleOne="SKI" titleTwo="LLS" isVisible={isVisible} />
 						</Zoom>
 						<Fade direction="right" duration={2000}>
-							<AboutImages setCategory={setLove} containerClass="heart-container" titleOne="LOVE" />
+							<AboutImages setCategory={setLove} containerClass="heart-container" titleOne="LOVE" isVisible={isVisible} />
 						</Fade>
 					</section>
-				</ >
+				</>
 			)
 			}
 			{
