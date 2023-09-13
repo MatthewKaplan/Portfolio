@@ -21,7 +21,9 @@
     "newLine": "lf",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "typeRoots": ["./src/types"],
+    "typeRoots": [
+      "./src/types"
+    ],
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",

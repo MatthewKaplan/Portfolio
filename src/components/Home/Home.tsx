@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import Pdf from '../../assets/Matthew_Kaplan_2022CV.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,6 +20,10 @@ export const Home: FC = () => {
 		window.open(Pdf);
 		return false;
 	}
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
 
 	return (
 		<div className="home-component">
