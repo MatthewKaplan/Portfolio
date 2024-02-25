@@ -7,7 +7,6 @@ import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Canvas } from 'react-three-fiber';
 import { OrbitControls, Stars, Html } from 'drei';
-// Is this going to work?
 export const Home: FC = () => {
 	const [isNotCopied, setIsNotCopied] = useState(true);
 
