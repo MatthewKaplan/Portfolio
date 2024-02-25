@@ -57,13 +57,10 @@ export const About: FC = () => {
 							</div>
 							<div className="close-bio" onClick={() => setBio(false)} />
 							<p>
-								The dictionary describes an Astrophilia as a person who has a love of and/or obsession with planets, stars, and outer space. Growing up, I was exactly that, so much so that when it came time to decide on a college major, I didn't hesitate at all when choosing Astronomy. It was always a dream of mine to work in different astronomical observatories and planetariums all around the world, while carrying out important research.
+								Experienced Software Engineering Manager with a hands-on approach to leading high-performing teams. Proven track record in overseeing software development lifecycle, driving innovation, and ensuring project success. Passionate about mentorship, continuous improvement, and delivering impactful solutions.
 							</p>
 							<p>
-								It wasn't until a friend of mine showed me a project that he was working on for his Data Structures course that instantly sparked an entirely new interest for me. It was then that I realized that programming calls to all of my passions; it incorporates creativity, problem-solving, and provides endless opportunities to learn. Following my very first semester, I switched majors to Computer Science and never looked back.
-							</p>
-							<p>
-								Currently, I'm a Full Stack Engineer at Edible Arrangements working hard with my team as we're in the middle of a massive effort to replatform the entire eCommerce solution from the top down. Edible finally decided to move on from ASP.NET and VB.NET to the MERN stack utilizing programming languages and frameworks such as JavaScript, TypeScript, React, Redux, Node.JS, NestJS, SQL, and MongoDB. My position also provides me with the opportunity to work with tools that are new to me, such as Microsoft Azure, TestCafe, GraphDB, and Gremlin.
+								Currently, Software Engineering Lead, Manager at Edible Brands working hard with my team as we're in the middle of a massive effort to replatform the entire eCommerce site from the top down. Edible decided to move on from ASP.NET and VB.NET to the MERN stack utilizing programming languages and frameworks such as JavaScript, TypeScript, React, Redux, Node.JS, NestJS, SQL, and MongoDB. My position also provides me with the opportunity to work with tools that are new to me, such as Microsoft Azure, TestCafe, GraphDB, and Gremlin.
 							</p>
 							<p>
 								I'll forever be enthusiastically jumping into any other programming languages, frameworks, or principles I can integrate into my tool belt so that I can continue to make the internet more captivating and optimized than ever.

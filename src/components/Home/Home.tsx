@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import Pdf from '../../assets/Matthew_Kaplan_2022CV.pdf';
+import Pdf from '../../assets/Matthew_Kaplan_CV2024.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
