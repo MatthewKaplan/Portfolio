@@ -42,7 +42,7 @@ export const Home: FC = () => {
 					<section>
 						<div className="intro">
 							<h1 className="name">Matthew Kaplan</h1>
-							<p className="position">Software Engineer</p>
+							<p className="position">Engineering Manager</p>
 							<div className="logo-container">
 								<a href="https://www.linkedin.com/in/kaplan-matthew/" target="blank">
 									<FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" size="2x" />
